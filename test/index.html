@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Doc titile</title>
+		<!--SPELL CHECKING-->
+	</head>
+
+	<body>
+		<p>
+			<!--This is text below-->
+			this is soome text that is speltt wrongl
+		</p>
+		<!-- This is a comment ->> wrong speling -->
+	</body>
+	<!--This is text belower-->
+	<textarea>
+		Here is worng spelling see how it only spots specifyc areas it knows contaons phrases.
+	</textarea>
+	<script>
+		// this is code see how none of the code is spell checked only text and phrases
+
+		$('body').addClass('classCamelCaseName'); // camelCase camelcase not spell checked
+
+		$('p').text(
+			'This must be spel checkde' 	// this is text must be checked
+		)
+
+		document.getElementById('textarea').text = 'Some more txet to selt wron for ssingment to a dipley elemment'
+
+		/* this is a commment  */
+	</script>
+
+</html>

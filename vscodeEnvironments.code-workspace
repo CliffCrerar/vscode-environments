@@ -1,0 +1,71 @@
+{
+	"folders": [
+		{
+			"name": "VSCODE-ENV-CONTROLLER",
+			"path": "."
+		},
+		{
+			"name": "LOCAL FILES",
+			"path": "/Users/cliffordcrerar/Library/Application Support/Code"
+		},
+		{
+			"name": "Extensions Root",
+			"path": "/Users/cliffordcrerar/.vscode/extensions/"
+		},
+		{
+			"name": "VSCODE Source files",
+			"path": "/Applications/Visual Studio Code.app/Contents"
+		}
+	],
+	"settings": {
+		"jsFileHeader.Author": "Clifford Crerar",
+		"liveServer.settings.port": 5511,
+		"liveServer.settings.root": "/proto/dropdowncheckbox",
+		"liveServer.settings.host": "172.31.43.190",
+		"eslint.enable": true,
+		"eslint.autoFixOnSave": true,
+		"eslint.packageManager": "npm",
+		"eslint.run": "onType",
+		"eslint.alwaysShowStatus": true,
+		"git.ignoreLimitWarning": true,
+		"editor.insertSpaces": false,
+		"editor.renderIndentGuides": true,
+		"html.format.indentInnerHtml": true,
+		"html.format.indentHandlebars": true,
+		"javascript.format.insertSpaceAfterCommaDelimiter": true,
+		"typescript.format.insertSpaceAfterCommaDelimiter": true,
+		"javascript.format.insertSpaceAfterSemicolonInForStatements": true,
+		"html.format.enable": true,
+		"json.format.enable": true,
+		"javascript.format.enable": true,
+		"editor.formatOnSave": true,
+		"eslint.trace.server": "verbose",
+		"npm-intellisense.importES6": true,
+		"eslint.validate": [
+			"javascript",
+			"javascriptreact"
+		],
+		"css.lint.compatibleVendorPrefixes": "warning",
+		"css.lint.emptyRules": "warning",
+		"css.lint.unknownProperties": "warning",
+		"css.lint.unknownAtRules": "warning",
+		"css.lint.unknownVendorSpecificProperties": "warning",
+		"css.lint.vendorPrefix": "warning",
+		"css.trace.server": "messages",
+		"css.validate": true,
+		"html.trace.server": "messages",
+		"json.trace.server": "messages",
+		"html.format.wrapAttributes": "preserve",
+		"vsicons.presets.angular": false,
+		"material-icon-theme.activeIconPack": "none",
+		"html.format.wrapLineLength": 0,
+		"html.format.endWithNewline": true,
+		"editor.highlightActiveIndentGuide": true,
+		"editor.foldingStrategy": "auto",
+		"editor.useTabStops": true,
+		"html.validate.styles": true,
+		"editor.renderWhitespace": "all",
+		"gitlens.blame.ignoreWhitespace": true,
+		"workbench.view.alwaysShowHeaderActions": true
+	}
+}
