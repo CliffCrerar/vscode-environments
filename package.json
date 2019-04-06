@@ -1,0 +1,19 @@
+{
+  "name": "vscode-environments",
+  "version": "1.0.0",
+  "description": "Create branches of extensions for vscode environments",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/vscode-environments.git"
+  },
+  "author": "Cliff Crerar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/vscode-environments/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/vscode-environments#readme"
+}
