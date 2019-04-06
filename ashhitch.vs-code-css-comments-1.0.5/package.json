@@ -1,0 +1,89 @@
+{
+	"name": "vs-code-css-comments",
+	"displayName": "VS Code CSS Comments",
+	"description": "Visual Studio CSS Comment Snippets",
+	"version": "1.0.5",
+	"publisher": "ashhitch",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"homepage": "https://github.com/ashhitch/vs-code-css-comments",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ashhitch/vs-code-css-comments.git"
+	},
+	"bugs": "https://github.com/ashhitch/vs-code-css-comments/issues",
+	"categories": [
+		"Snippets"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "css",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "postcss",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "less",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "sass",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "sass-indented",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "stylus",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "jsx",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "coffeescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "solidity",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vsce": "^1.45.1",
+		"vscode": "^1.1.18"
+	},
+	"__metadata": {
+		"id": "dd3a535c-af5f-4c76-b378-07a650b2adf5",
+		"publisherId": "33a1acf0-1fb4-44fb-96e2-904ea829527f",
+		"publisherDisplayName": "Ash Hitchcock"
+	}
+}

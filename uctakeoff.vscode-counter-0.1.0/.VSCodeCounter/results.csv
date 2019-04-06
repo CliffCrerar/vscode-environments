@@ -1,0 +1,17 @@
+filename, language, Properties, JSON, Markdown, TypeScript, comment, blank, total
+.gitattributes, Properties, 1, 0, 0, 0, 1, 2, 4
+CHANGELOG.md, Markdown, 0, 0, 5, 0, 0, 2, 7
+README.md, Markdown, 0, 0, 30, 0, 0, 22, 52
+package.json, JSON, 0, 94, 0, 0, 128, 0, 222
+package.nls.ja.json, JSON, 0, 18, 0, 0, 0, 0, 18
+package.nls.json, JSON, 0, 18, 0, 0, 0, 0, 18
+src\Gitignore.ts, TypeScript, 0, 0, 0, 62, 3, 5, 70
+src\LineCounter.ts, TypeScript, 0, 0, 0, 100, 5, 6, 111
+src\extension.ts, TypeScript, 0, 0, 0, 540, 48, 19, 607
+src\test\extension.test.ts, TypeScript, 0, 0, 0, 7, 11, 4, 22
+src\test\index.ts, TypeScript, 0, 0, 0, 6, 13, 3, 22
+tsconfig.json, JSON, 0, 19, 0, 0, 5, 0, 24
+tslint.json, JSON, 0, 15, 0, 0, 0, 0, 15
+vsc-extension-quickstart.md, Markdown, 0, 0, 28, 0, 0, 6, 34
+work\qiiita.md, Markdown, 0, 0, 58, 0, 0, 56, 114
+Total, -, 1, 164, 121, 715, 214, 125, 1340

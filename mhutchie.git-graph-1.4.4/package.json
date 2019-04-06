@@ -1,0 +1,165 @@
+{
+	"name": "git-graph",
+	"displayName": "Git Graph",
+	"version": "1.4.4",
+	"publisher": "mhutchie",
+	"author": {
+		"name": "Michael Hutchison",
+		"email": "mhutchie@16right.com"
+	},
+	"description": "View a Git Graph of your repository, and perform Git actions from the graph.",
+	"keywords": [
+		"git",
+		"graph",
+		"visualise",
+		"diff",
+		"action"
+	],
+	"categories": [
+		"Other"
+	],
+	"homepage": "https://github.com/mhutchie/vscode-git-graph",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mhutchie/vscode-git-graph.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mhutchie/vscode-git-graph/issues"
+	},
+	"license": "MIT",
+	"icon": "resources/icon.png",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"category": "Git Graph",
+				"command": "git-graph.view",
+				"title": "View Git Graph (git log)"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Git Graph",
+			"properties": {
+				"git-graph.autoCenterCommitDetailsView": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically center the commit details view when it is opened."
+				},
+				"git-graph.dateFormat": {
+					"type": "string",
+					"enum": [
+						"Date & Time",
+						"Date Only",
+						"Relative"
+					],
+					"default": "Date & Time",
+					"description": "Specifies the date format to be used in the date column of Git Graph."
+				},
+				"git-graph.dateType": {
+					"type": "string",
+					"enum": [
+						"Author Date",
+						"Commit Date"
+					],
+					"default": "Author Date",
+					"description": "Specifies the date type to be displayed throughout Git Graph."
+				},
+				"git-graph.graphColours": {
+					"type": "array",
+					"items": {
+						"type": "string",
+						"description": "Colour (HEX or RGB)",
+						"pattern": "^\\s*(#[0-9a-fA-F]{6}|#[0-9a-fA-F]{8}|rgb[a]?\\s*\\(\\d{1,3},\\s*\\d{1,3},\\s*\\d{1,3}\\))\\s*$"
+					},
+					"default": [
+						"#0085d9",
+						"#d9008f",
+						"#00d90a",
+						"#d98500",
+						"#a300d9",
+						"#ff0000",
+						"#00d9cc",
+						"#e138e8",
+						"#85d900",
+						"#dc5b23",
+						"#6f24d6",
+						"#ffcc00"
+					],
+					"description": "Specifies the colours used on the graph."
+				},
+				"git-graph.graphStyle": {
+					"type": "string",
+					"enum": [
+						"rounded",
+						"angular"
+					],
+					"default": "rounded",
+					"description": "Specifies the style of the graph."
+				},
+				"git-graph.initialLoadCommits": {
+					"type": "number",
+					"default": 300,
+					"description": "Specifies the number of commits to initially load."
+				},
+				"git-graph.loadMoreCommits": {
+					"type": "number",
+					"default": 75,
+					"description": "Specifies the number of commits to load when the \"Load More Commits\" button is pressed (only shown when more commits are available)."
+				},
+				"git-graph.showCurrentBranchByDefault": {
+					"type": "boolean",
+					"default": false,
+					"description": "Show the current branch by default when Git Graph is opened. Default: false (show all branches)"
+				},
+				"git-graph.showStatusBarItem": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show a Status Bar item which opens Git Graph when clicked."
+				},
+				"git-graph.showUncommittedChanges": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show uncommitted changes (set to false to decrease load time on large repositories)."
+				},
+				"git-graph.tabIconColourTheme": {
+					"type": "string",
+					"enum": [
+						"colour",
+						"grey"
+					],
+					"default": "colour",
+					"description": "Specifies the colour theme of the icon displayed on the Git Graph tab."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"clean": "node ./.vscode/clean.js",
+		"compile": "npm run clean && npm run compile-src && npm run compile-web",
+		"compile-src": "tsc -p ./src",
+		"compile-web": "tsc -p ./web && uglifyjs ./media/dropdown.js ./media/graph.js ./media/main.js --mangle --output ./media/out.min.js",
+		"compile-web-debug": "tsc -p ./web && uglifyjs ./media/dropdown.js ./media/graph.js ./media/main.js -b --output ./media/out.min.js",
+		"package": "npm run clean && vsce package",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/node": "^8.10.25",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"uglify-js": "^3.4.9",
+		"vscode": "^1.1.28"
+	},
+	"__metadata": {
+		"id": "438221f8-1107-4ccd-a6fe-f3b7fe0856b7",
+		"publisherId": "996496dc-099f-469d-b89c-0d7713179365",
+		"publisherDisplayName": "mhutchie"
+	}
+}

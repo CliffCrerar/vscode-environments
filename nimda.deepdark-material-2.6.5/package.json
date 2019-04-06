@@ -1,0 +1,69 @@
+{
+	"name": "deepdark-material",
+	"displayName": "Deepdark Material Theme",
+	"description": "Clean real dark material theme for Visual Studio Code Editor",
+	"version": "2.6.5",
+	"publisher": "Nimda",
+	"engines": {
+		"vscode": "*"
+	},
+	"homepage": "https://github.com/ozkanonur/vscode-deepdark-material/blob/master/README.md",
+	"license": "MIT",
+	"categories": [
+		"Themes"
+	],
+	"icon": "assets/logo.png",
+	"keywords": [
+		"deepdark",
+		"darkgrey",
+		"dark",
+		"material",
+		"black",
+		"theme"
+	],
+	"galleryBanner": {
+		"color": "#080808",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ozkanonur/vscode-deepdark-material"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Deepdark Material Theme | Default Version",
+				"uiTheme": "vs-dark",
+				"path": "./themes/default-deepdark-material.json"
+			},
+			{
+				"label": "Deepdark Material Theme | Full Black Version",
+				"uiTheme": "vs-dark",
+				"path": "./themes/fullblack-deepdark-material.json"
+			}
+		]
+	},
+	"scripts": {
+		"format:fix": "eslint --fix '*.{js,json}' 'themes/*.{js,json}'",
+		"test": "npm run test:js && npm run test:json && npm run test:md && npm run format:fix",
+		"test:js": "eslint '*.js' 'themes/*.js'",
+		"test:json": "eslint '*.json' 'themes/*.json'",
+		"test:md": "remark 'README.md'"
+	},
+	"devDependencies": {
+		"babel-eslint": "8.2.5",
+		"eslint": "4.19.1",
+		"eslint-config-arcticicestudio-base": "0.3.0",
+		"eslint-plugin-import": "2.13.0",
+		"eslint-plugin-json": "1.4.0",
+		"eslint-plugin-prettier": "2.6.1",
+		"prettier": "1.13.7",
+		"remark-cli": "6.0.1",
+		"remark-preset-lint-arcticicestudio": "0.1.0"
+	},
+	"__metadata": {
+		"id": "d1b33efe-8957-4d14-9ef6-e043fdbe9079",
+		"publisherId": "4d614a70-f7df-4afa-b5d5-918bc0cfe0ff",
+		"publisherDisplayName": "Nimda"
+	}
+}

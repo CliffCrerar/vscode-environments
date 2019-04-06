@@ -1,0 +1,129 @@
+Arguments: 
+  /Users/jameshessin/.config/yarn/global/node_modules/node/bin/node /Users/jameshessin/.yarn/bin/yarn.js vscode:prepublish
+
+PATH: 
+  /Users/jameshessin/.yarn/bin:/Users/jameshessin/.config/yarn/global/node_modules/.bin:/Users/jameshessin/.nvm/versions/node/v9.5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/love.app/Contents/MacOS/
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+      "name": "node-module-intellisense",
+      "displayName": "Node.js Modules Intellisense (with Coffee)",
+      "description": "Autocompletes Node.js modules in import statements",
+      "version": "1.6.0",
+      "publisher": "jhessin",
+      "repository": {
+          "type": "git",
+          "url": "https://github.com/jhessin/vscode-node-module-intellisense.git"
+      },
+      "license": "MIT",
+      "bugs": {
+          "url": "https://github.com/leizongmin/vscode-node-module-intellisense/issues"
+      },
+      "homepage": "https://github.com/jhessin/vscode-node-module-intellisense.git#readme",
+      "engines": {
+          "vscode": "^1.5.0"
+      },
+      "categories": [
+          "Other",
+          "Languages"
+      ],
+      "activationEvents": [
+          "onLanguage:javascript",
+          "onLanguage:javascriptreact",
+          "onLanguage:typescript",
+          "onLanguage:typescriptreact",
+          "onLanguage:html",
+          "onLanguage:coffeescript"
+      ],
+      "main": "./out/src/extension",
+      "icon": "images/icon.png",
+      "contributes": {
+          "configuration": {
+              "type": "object",
+              "title": "node-module-intellisense",
+              "properties": {
+                  "node-module-intellisense.scanBuiltinModules": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Scans builtin modules as well"
+                  },
+                  "node-module-intellisense.scanDevDependencies": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Scans devDependencies as well"
+                  },
+                  "node-module-intellisense.scanFileModules": {
+                      "type": "boolean",
+                      "default": true,
+                      "description": "Scans file modules as well"
+                  },
+                  "node-module-intellisense.autoStripExtensions": {
+                      "type": "array",
+                      "default": [
+                          ".js",
+                          ".jsx",
+                          ".ts",
+                          ".d.ts",
+                          ".tsx"
+                      ],
+                      "description": "Auto strip module extensions"
+                  },
+                  "node-module-intellisense.modulePaths": {
+                      "type": "array",
+                      "default": [],
+                      "description": "Module Paths to scan. Use ${workspaceRoot} for workspace lookup."
+                  }
+              }
+          }
+      },
+      "scripts": {
+          "clean": "rm -rf out",
+          "vscode:prepublish": "npm run clean && tsc -p ./",
+          "compile": "npm run clean && tsc -watch -p ./",
+          "postinstall": "node ./node_modules/vscode/bin/install"
+      },
+      "devDependencies": {
+          "@types/mocha": "^2.2.44",
+          "@types/node": "^6.0.93",
+          "@types/resolve": "0.0.4",
+          "mocha": "^2.3.3",
+          "typescript": "^2.6.2",
+          "vscode": "^1.1.10"
+      },
+      "dependencies": {},
+      "__metadata": {
+          "id": "1bb92b2c-526c-4bfd-bb38-5bae1b278c89",
+          "publisherId": "leizongmin.node-module-intellisense",
+          "publisherDisplayName": "leizongmin"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 2
+  Command: sh
+  Arguments: -c npm run clean && tsc -p ./
+  Directory: /Users/jameshessin/.vscode/extensions/vscode-node-module-intellisense
+  Output:
+  
+      at ProcessTermError.MessageError (/Users/jameshessin/.yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/Users/jameshessin/.yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/Users/jameshessin/.yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:160:13)
+      at maybeClose (internal/child_process.js:943:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)

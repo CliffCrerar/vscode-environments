@@ -1,0 +1,42 @@
+{
+	"name": "vscode-snippets",
+	"displayName": "vscode-snippets",
+	"description": "my vscode snippets, for js/jsx/ts/tsx",
+	"version": "0.0.1",
+	"publisher": "myhere",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/myhere/vscode-snippets.git"
+	},
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "05ece378-1ee0-4791-8570-71a991504b84",
+		"publisherId": "c570ed55-f803-42c6-8a80-5cc9fcf7a534",
+		"publisherDisplayName": "myhere"
+	}
+}

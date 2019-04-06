@@ -1,0 +1,127 @@
+{
+	"name": "vscode-javascript-booster",
+	"displayName": "JavaScript Booster",
+	"description": "Boost your productivity with advanced JavaScript refactorings and commands",
+	"icon": "resources/icon.png",
+	"version": "0.10.2",
+	"publisher": "sburg",
+	"author": "Stepan Burguchev <me@sburg.net>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xsburg/vscode-javascript-booster.git"
+	},
+	"bugs": {
+		"url": "https://github.com/xsburg/vscode-javascript-booster/issues"
+	},
+	"engines": {
+		"vscode": "^1.24.0",
+		"node": ">=8.0.0",
+		"npm": ">=5.6.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"keywords": [
+		"javascript",
+		"typescript",
+		"refactoring"
+	],
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"clean": "rimraf out",
+		"vscode:prepublish": "cd .. && npm run compile",
+		"compile": "npm run clean && tsc -p ./ && cpx ./tests/__simple-workspace__/**/* ./out/tests/__simple-workspace__",
+		"watch": "tsc -watch -p ./",
+		"test": "cd .. && npm run compile && cd client && CODE_TESTS_PATH=${PWD}/out/tests node ./node_modules/vscode/bin/test"
+	},
+	"main": "./out/src/extension",
+	"activationEvents": [
+		"onLanguage:javascript",
+		"onLanguage:javascriptreact",
+		"onLanguage:typescript",
+		"onLanguage:typescriptreact",
+		"onCommand:javascriptBooster.executeCodeMod",
+		"onCommand:javascriptBooster.reloadCodeMods",
+		"onCommand:javascriptBooster.extendSelection",
+		"onCommand:javascriptBooster.shrinkSelection"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "javascriptBooster.executeCodeMod",
+				"title": "Run Global Code Action",
+				"category": "JS Booster"
+			},
+			{
+				"command": "javascriptBooster.reloadCodeMods",
+				"title": "Reload Code Actions",
+				"category": "JS Booster"
+			},
+			{
+				"command": "javascriptBooster.extendSelection",
+				"title": "Extend selection",
+				"category": "JS Booster"
+			},
+			{
+				"command": "javascriptBooster.shrinkSelection",
+				"title": "Shrink selection",
+				"category": "JS Booster"
+			}
+		],
+		"configuration": [
+			{
+				"title": "JavaScript Booster",
+				"properties": {
+					"javascriptBooster.codemodDir": {
+						"type": "string",
+						"default": "codemods",
+						"description": "Specifies the directory containing workspace related code actions."
+					},
+					"javascriptBooster.smartExtendFallbackCommand": {
+						"type": "string",
+						"default": "editor.action.smartSelect.grow",
+						"description": "Specifies the fallback command that should be executed if the file is not supported by smart selection."
+					},
+					"javascriptBooster.smartShrinkFallbackCommand": {
+						"type": "string",
+						"default": "editor.action.smartSelect.shrink",
+						"description": "Specifies the fallback command that should be executed if the file is not supported by smart selection."
+					}
+				}
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/fs-extra": "5.0.1",
+		"@types/lodash": "4.14.104",
+		"@types/glob": "5.0.35",
+		"@types/mocha": "2.2.42",
+		"@types/node": "7.0.43",
+		"cpx": "1.5.0",
+		"decache": "4.4.0",
+		"glob": "7.1.2",
+		"istanbul": "0.4.5",
+		"react": "16.2.0",
+		"remap-istanbul": "0.11.0",
+		"rimraf": "2.6.2",
+		"tslint": "5.9.1",
+		"tslint-config-prettier": "1.10.0",
+		"tslint-react": "3.5.1",
+		"typescript": "2.7.2",
+		"coveralls": "3.0.2",
+		"prettier": "1.10.2",
+		"vscode": "1.1.18"
+	},
+	"dependencies": {
+		"fs-extra": "5.0.0",
+		"lodash": "4.17.5",
+		"vscode-languageclient": "4.1.3"
+	},
+	"__metadata": {
+		"id": "3a1fe682-5a7a-4953-9ba9-77529a973d04",
+		"publisherId": "5e9ad6b5-1efd-4127-bd3c-d850373e4a88",
+		"publisherDisplayName": "Stephan Burguchev"
+	}
+}
