@@ -1,0 +1,392 @@
+[
+	{
+		"publisher": "30-seconds",
+		"name": "30-seconds-of-code",
+		"version": "1.0.0"
+	},
+	{
+		"publisher": "aaron-bond",
+		"name": "better-comments",
+		"version": "2.0.3"
+	},
+	{
+		"publisher": "abdullahceylan",
+		"name": "vscode-react-component-generator",
+		"version": "0.0.3"
+	},
+	{
+		"publisher": "abusaidm",
+		"name": "html-snippets",
+		"version": "0.2.1"
+	},
+	{
+		"publisher": "ahmadawais",
+		"name": "shades-of-purple",
+		"version": "4.16.0"
+	},
+	{
+		"publisher": "alefragnani",
+		"name": "bookmarks",
+		"version": "10.4.2"
+	},
+	{
+		"publisher": "archety",
+		"name": "material-icons",
+		"version": "0.2.0"
+	},
+	{
+		"publisher": "ashhitch",
+		"name": "vs-code-css-comments",
+		"version": "1.0.5"
+	},
+	{
+		"publisher": "auchenberg",
+		"name": "vscode-browser-preview",
+		"version": "0.4.0"
+	},
+	{
+		"publisher": "avraammavridis",
+		"name": "vsc-react-documentation",
+		"version": "1.2.1"
+	},
+	{
+		"publisher": "christian-kohler",
+		"name": "npm-intellisense",
+		"version": "1.3.0"
+	},
+	{
+		"publisher": "christian-kohler",
+		"name": "path-intellisense",
+		"version": "1.4.2"
+	},
+	{
+		"publisher": "coenraads",
+		"name": "bracket-pair-colorizer",
+		"version": "1.0.61"
+	},
+	{
+		"publisher": "dbaeumer",
+		"name": "vscode-eslint",
+		"version": "1.8.2"
+	},
+	{
+		"publisher": "donjayamanne",
+		"name": "githistory",
+		"version": "0.4.6"
+	},
+	{
+		"publisher": "dsznajder",
+		"name": "es7-react-js-snippets",
+		"version": "2.2.1"
+	},
+	{
+		"publisher": "eamodio",
+		"name": "gitlens",
+		"version": "9.5.1"
+	},
+	{
+		"publisher": "eamodio",
+		"name": "gitlens",
+		"version": "9.6.0"
+	},
+	{
+		"publisher": "ecmel",
+		"name": "vscode-html-css",
+		"version": "0.2.0"
+	},
+	{
+		"publisher": "editorconfig",
+		"name": "editorconfig",
+		"version": "0.13.0"
+	},
+	{
+		"publisher": "eg2",
+		"name": "vscode-npm-script",
+		"version": "0.3.5"
+	},
+	{
+		"publisher": "equinusocio",
+		"name": "vsc-material-theme",
+		"version": "2.8.2"
+	},
+	{
+		"publisher": "esbenp",
+		"name": "prettier-vscode",
+		"version": "1.8.1"
+	},
+	{
+		"publisher": "formulahendry",
+		"name": "auto-rename-tag",
+		"version": "0.0.15"
+	},
+	{
+		"publisher": "gencer",
+		"name": "html-slim-scss-css-class-completion",
+		"version": "1.5.14"
+	},
+	{
+		"publisher": "glen-84",
+		"name": "sass-lint",
+		"version": "1.0.5"
+	},
+	{
+		"publisher": "gogocrow",
+		"name": "jsx-beautify",
+		"version": "0.0.5"
+	},
+	{
+		"publisher": "gottfired",
+		"name": "css2react",
+		"version": "0.0.6"
+	},
+	{
+		"publisher": "htwx",
+		"name": "json-and-jsonc",
+		"version": "1.0.1"
+	},
+	{
+		"publisher": "humao",
+		"name": "rest-client",
+		"version": "0.21.2"
+	},
+	{
+		"publisher": "ibm",
+		"name": "output-colorizer",
+		"version": "0.1.2"
+	},
+	{
+		"publisher": "iipal",
+		"name": "vscode-light-tweaked-remake",
+		"version": "0.1.3"
+	},
+	{
+		"publisher": "jasonnutter",
+		"name": "search-node-modules",
+		"version": "1.3.0"
+	},
+	{
+		"publisher": "jaspernorth",
+		"name": "vscode-pigments",
+		"version": "1.0.6"
+	},
+	{
+		"publisher": "joelday",
+		"name": "docthis",
+		"version": "0.7.1"
+	},
+	{
+		"publisher": "kdcro101",
+		"name": "favorites",
+		"version": "2.4.5"
+	},
+	{
+		"publisher": "kisstkondoros",
+		"name": "csstriggers",
+		"version": "0.10.0"
+	},
+	{
+		"publisher": "kisstkondoros",
+		"name": "vscode-codemetrics",
+		"version": "1.18.0"
+	},
+	{
+		"publisher": "mccarter",
+		"name": "start-git-bash",
+		"version": "1.2.1"
+	},
+	{
+		"publisher": "mgmcdermott",
+		"name": "vscode-language-babel",
+		"version": "0.0.22"
+	},
+	{
+		"publisher": "mhutchie",
+		"name": "git-graph",
+		"version": "1.4.4"
+	},
+	{
+		"publisher": "michelemelluso",
+		"name": "code-beautifier",
+		"version": "2.2.1"
+	},
+	{
+		"publisher": "mikestead",
+		"name": "dotenv",
+		"version": "1.0.1"
+	},
+	{
+		"publisher": "mkaufman",
+		"name": "htmlhint",
+		"version": "0.6.0"
+	},
+	{
+		"publisher": "mrmlnc",
+		"name": "vscode-scss",
+		"version": "0.6.2"
+	},
+	{
+		"publisher": "ms-vsts",
+		"name": "team",
+		"version": "1.149.2"
+	},
+	{
+		"publisher": "msjsdiag",
+		"name": "debugger-for-chrome",
+		"version": "4.11.3"
+	},
+	{
+		"publisher": "nimda",
+		"name": "deepdark-material",
+		"version": "2.6.5"
+	},
+	{
+		"publisher": "oderwat",
+		"name": "indent-rainbow",
+		"version": "7.4.0"
+	},
+	{
+		"publisher": "ofhumanbondage",
+		"name": "react-proptypes-intellisense",
+		"version": "1.0.3"
+	},
+	{
+		"publisher": "ohansemmanuel",
+		"name": "css-grid-snippets",
+		"version": "0.0.5"
+	},
+	{
+		"publisher": "orepor",
+		"name": "color-tabs-vscode-ext",
+		"version": "0.5.1"
+	},
+	{
+		"publisher": "p-de-jong",
+		"name": "vscode-html-scss",
+		"version": "0.0.42"
+	},
+	{
+		"publisher": "pkief",
+		"name": "material-icon-theme",
+		"version": "3.7.0"
+	},
+	{
+		"publisher": "pnp",
+		"name": "polacode",
+		"version": "0.2.2"
+	},
+	{
+		"publisher": "pranaygp",
+		"name": "vscode-css-peek",
+		"version": "2.2.0"
+	},
+	{
+		"publisher": "ritwickdey",
+		"name": "liveserver",
+		"version": "5.5.1"
+	},
+	{
+		"publisher": "roblourens",
+		"name": "npm-link-status",
+		"version": "0.0.3"
+	},
+	{
+		"publisher": "sburg",
+		"name": "vscode-javascript-booster",
+		"version": "0.10.2"
+	},
+	{
+		"publisher": "seeker-dk",
+		"name": "node-modules-viewer",
+		"version": "0.0.3"
+	},
+	{
+		"publisher": "sibiraj-s",
+		"name": "vscode-scss-formatter",
+		"version": "1.4.1"
+	},
+	{
+		"publisher": "skyran",
+		"name": "js-jsx-snippets",
+		"version": "0.3.0"
+	},
+	{
+		"publisher": "sporiley",
+		"name": "css-auto-prefix",
+		"version": "0.1.7"
+	},
+	{
+		"publisher": "steoates",
+		"name": "autoimport",
+		"version": "1.5.3"
+	},
+	{
+		"publisher": "streetsidesoftware",
+		"name": "code-spell-checker",
+		"version": "1.6.10"
+	},
+	{
+		"publisher": "sword",
+		"name": "vscode-material-ui-snippets",
+		"version": "1.0.1"
+	},
+	{
+		"publisher": "thekalinga",
+		"name": "bootstrap4-vscode",
+		"version": "6.1.0"
+	},
+	{
+		"publisher": "tombonnike",
+		"name": "vscode-status-bar-format-toggle",
+		"version": "1.5.0"
+	},
+	{
+		"publisher": "vincaslt",
+		"name": "highlight-matching-tag",
+		"version": "0.9.1"
+	},
+	{
+		"publisher": "wallabyjs",
+		"name": "quokka-vscode",
+		"version": "1.0.205"
+	},
+	{
+		"publisher": "wayou",
+		"name": "vscode-todo-highlight",
+		"version": "1.0.4"
+	},
+	{
+		"publisher": "whtouche",
+		"name": "vscode-js-console-utils",
+		"version": "0.7.0"
+	},
+	{
+		"publisher": "wiggin77",
+		"name": "codedox",
+		"version": "1.3.0"
+	},
+	{
+		"publisher": "wix",
+		"name": "vscode-import-cost",
+		"version": "2.12.0"
+	},
+	{
+		"publisher": "wmira",
+		"name": "react-playground-vscode",
+		"version": "0.0.11"
+	},
+	{
+		"publisher": "wwm",
+		"name": "better-align",
+		"version": "1.1.6"
+	},
+	{
+		"publisher": "xabikos",
+		"name": "javascriptsnippets",
+		"version": "1.7.2"
+	},
+	{
+		"publisher": "zaczero",
+		"name": "bootstrap-v4-snippets",
+		"version": "0.2.1"
+	}
+]

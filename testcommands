@@ -1,0 +1,2 @@
+./vsext.sh --generate-list /Users/cliffordcrerar/.vscode/react
+./vsext.sh --install-ext-list

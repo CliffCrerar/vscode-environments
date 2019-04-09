@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/CliffCrerar/vscode-environments/issues"
   },
-  "homepage": "https://github.com/CliffCrerar/vscode-environments#readme"
+  "homepage": "https://github.com/CliffCrerar/vscode-environments#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
