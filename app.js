@@ -36,10 +36,18 @@ console.log(args);
   // Run function
   argsPassed.includes("--generate-list") && generateExtensionList(thisHomedir);
   argsPassed.includes("--install-ext-list") && installExtensions();
+  argsPassed.includes("--H") || argsPassed.includes("-h") && help();
+
+  function help() {
+    console.log(`
+    HELP ME!
+    `)
+  }
+
 
   function installExtensions() {
     const extList = JSON.parse(
-      fs.readFileSync(dirToWrite + "/extlist_generated_09_Apr_2019-033907.json")
+      fs.readFileSync(dirToWrite + "/extlist_generated_09_Apr_2019-034449.json")
     );
     log(`Installing ${extList.length} vscode extensions`);
     //console.log(extList);

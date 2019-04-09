@@ -4,7 +4,7 @@ const spawn = require("child_process").spawnSync,
 
 var stdOut;
 var stdErr;
-module.exports = function(extList, dir) {
+module.exports = function (extList, dir) {
   const extInstallationFormat = formatForInstall(extList);
   let instCnt = extInstallationFormat.length,
     errors = 0,
@@ -14,7 +14,7 @@ module.exports = function(extList, dir) {
   runChildProcessCommand("--extensions-dir", dir, null, null, instMeta);
   extInstallationFormat.forEach((ext, idx) => {
     runChildProcessCommand(
-      "--uninstall-extension",
+      "--install-extension",
       ext,
       idx,
       instCnt,
