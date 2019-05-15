@@ -1,2 +1,3 @@
-node_modules/
+Manager-App/node_modules/
 .DS_Store
+Ext-Preview-list/*

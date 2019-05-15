@@ -1,8 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "VSCODE-ENV-CONTROLLER",
+			"name": "ROOT",
 			"path": "/Users/cliffordcrerar/letsplay/vscode-environments"
+		},
+		{
+			"name": "MANAGER APP",
+			"path": "/Users/cliffordcrerar/letsplay/vscode-environments/Manager-App"
 		},
 		// {
 		// 	"name": "LOCAL FILES",
@@ -15,7 +19,11 @@
 		// {
 		// 	"name": "VSCODE Source files",
 		// 	"path": "/Applications/Visual Studio Code.app/Contents"
-		// }
+		// },
+		{
+			"name": "Extension Preview",
+			"path": "/Users/cliffordcrerar/letsplay/vscode-environments/Manager-App"
+		}
 	],
 	"settings": {
 		"jsFileHeader.Author": "Clifford Crerar",
@@ -70,6 +78,15 @@
 		"editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
 		"editor.fontLigatures": true,
 		"editor.fontSize": 14,
-		"workbench.colorCustomizations": {}
+		"workbench.colorCustomizations": {},
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Ext-Preview-list": true,
+			"**/Manager-App": true
+		}
 	}
 }
