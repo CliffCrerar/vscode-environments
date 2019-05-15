@@ -1,1 +1,0 @@
-code --extensions-dir $1
