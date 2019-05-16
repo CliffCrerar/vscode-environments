@@ -1,0 +1,36 @@
+{
+	"name": "darker-plus-material-red",
+	"displayName": "Darker+ Material Red",
+	"description": "Its a mix of default Dark+, Material and a lot of red",
+	"version": "1.0.2",
+	"publisher": "chireia",
+	"author": {
+		"name": "Rodrigo Chireia"
+	},
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.25.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Darker+ Material Red",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Dark++ Material Red-color-theme.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chireia/vsc-darker-plus-material-red"
+	},
+	"homepage": "https://github.com/chireia/vsc-darker-plus-material-red",
+	"__metadata": {
+		"id": "a1c62223-7e64-4a5d-b4bf-04494176df91",
+		"publisherId": "1269a033-5380-4738-85cf-d3f149d3efc7",
+		"publisherDisplayName": "chireia"
+	}
+}

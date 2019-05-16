@@ -1,0 +1,5 @@
+int main() { // TODO herllo! 
+    int x = 0;
+    Log_( "Start: x = %i", x );
+    return 1;
+}

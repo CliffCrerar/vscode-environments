@@ -1,0 +1,69 @@
+{
+	"name": "material-ui",
+	"publisher": "ArunagiriTM",
+	"displayName": "Material ui Snippets",
+	"description": "Material ui Snippets for React by Arunagiri TM",
+	"icon": "images/material-ui-logo.png",
+	"galleryBanner": {
+		"color": "#0273D4",
+		"theme": "dark"
+	},
+	"license": "SEE LICENSE IN LICENSE.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tmarun/vscode-material-ui-snippets.git"
+	},
+	"keywords": [
+		"mui",
+		"material",
+		"material-ui",
+		"material ui"
+	],
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.9.0"
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"main": "./out/src/extension",
+	"categories": [
+		"Snippets",
+		"Other"
+	],
+	"activationEvents": [],
+	"contributes": {
+		"commands": [
+			{}
+		],
+		"jsonValidation": [
+			{
+				"fileMatch": "manifest.json",
+				"url": "http://json.schemastore.org/web-manifest"
+			}
+		],
+		"snippets": [
+			{
+				"language": "jsx",
+				"path": "./snippets/jsx.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vscode": "^1.0.0",
+		"typescript": "^2.1.5",
+		"@types/node": ""
+	},
+	"dependencies": {},
+	"__metadata": {
+		"id": "898104fb-2ff8-46e2-ab95-98dc04b3b298",
+		"publisherId": "5f452801-f8bd-4359-9899-5fbce14a5935",
+		"publisherDisplayName": "Arunagiri"
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"name": "react-playground-vscode",
+	"displayName": "React Playground",
+	"description": "React Components Playground and Live Preview",
+	"version": "0.0.11",
+	"publisher": "wmira",
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wmira/react-playground-vscode"
+	},
+	"author": "Warren Mira",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.openPlayground"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.openPlayground",
+				"title": "React Playground"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"eslint": "^3.6.0",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"dependencies": {
+		"babel-core": "^6.24.1",
+		"babel-loader": "^6.4.1",
+		"babel-preset-env": "^1.3.3",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"css-loader": "^0.28.1",
+		"react": "^15.5.3",
+		"react-dom": "^15.5.3",
+		"react-playground-kit": "^15.0.1",
+		"style-loader": "^0.17.0",
+		"webpack": "^2.3.3",
+		"webpack-dev-server": "^2.4.2"
+	},
+	"icon": "icon.png",
+	"__metadata": {
+		"id": "28f296e8-269b-46c8-a783-ea2a248178cb",
+		"publisherId": "7e8ebe7e-4d5f-46ef-999b-e801bf63660d",
+		"publisherDisplayName": "Warren Mira"
+	}
+}

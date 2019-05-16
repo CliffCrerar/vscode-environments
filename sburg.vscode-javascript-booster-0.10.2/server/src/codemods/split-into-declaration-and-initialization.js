@@ -1,0 +1,50 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const codeMod = (fileInfo, api, options) => {
+    const j = api.jscodeshift;
+    const ast = fileInfo.ast;
+    const target = options.target;
+    const path = target.thisOrClosest(j.VariableDeclaration).firstPath();
+    if (path.node.kind === 'const') {
+        path.node.kind = 'let';
+    }
+    const assignments = [];
+    path.node.declarations.forEach(d => {
+        if (j.VariableDeclarator.check(d) && d.init) {
+            assignments.push(j.expressionStatement(j.assignmentExpression('=', d.id, d.init)));
+            d.init = null;
+        }
+    });
+    assignments.reverse().forEach(a => {
+        path.insertAfter(a);
+    });
+    const resultText = ast.toSource();
+    return resultText;
+};
+codeMod.canRun = (fileInfo, api, options) => {
+    const j = api.jscodeshift;
+    const ast = fileInfo.ast;
+    const target = options.target;
+    let testPath = target.firstPath();
+    while (testPath && testPath.parent) {
+        if (j.VariableDeclarator.check(testPath.parent.node) &&
+            testPath.parent.node.init === testPath.node) {
+            // if parent.init === testPath the cursor is inside `init` => we don't want it to trigger.
+            return false;
+        }
+        if (j.VariableDeclaration.check(testPath.node)) {
+            break;
+        }
+        testPath = testPath.parent;
+    }
+    const path = target.thisOrClosest(j.VariableDeclaration).firstPath();
+    return Boolean(path &&
+        !j.ExportNamedDeclaration.check(path.parent.node) &&
+        path.node.declarations.some(d => Boolean(j.VariableDeclarator.check(d) && d.init)));
+};
+codeMod.scope = 'cursor';
+codeMod.title = 'Split into declaration and initialization';
+codeMod.description = '';
+codeMod.detail = '';
+module.exports = codeMod;
+//# sourceMappingURL=split-into-declaration-and-initialization.js.map

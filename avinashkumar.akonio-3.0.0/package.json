@@ -1,0 +1,28 @@
+{
+	"name": "akonio",
+	"displayName": "Akonio-Material-Theme",
+	"description": "Dark Theme for Dark days",
+	"icon": "images/logo.png",
+	"version": "3.0.0",
+	"publisher": "AvinashKumar",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Akonio",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Akonio-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "2ff8b17c-2fa3-497d-98b0-762e8aae44fc",
+		"publisherId": "4a8f7a59-7c55-4647-b263-b0afa1407b2f",
+		"publisherDisplayName": "Avinash Kumar"
+	}
+}

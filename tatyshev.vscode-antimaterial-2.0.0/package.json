@@ -1,0 +1,64 @@
+{
+	"name": "vscode-antimaterial",
+	"description": "Antimaterial theme for Visual Studio Code",
+	"displayName": "Antimaterial Theme",
+	"icon": "images/logo.png",
+	"version": "2.0.0",
+	"author": "Ruslan Tatyshev <ruslan.tatyshev@gmail.com>",
+	"homepage": "https://github.com/tatyshev/vscode-antimaterial",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tatyshev/vscode-antimaterial.git"
+	},
+	"license": "MIT",
+	"scripts": {
+		"build": "node scripts/build.js",
+		"watch": "npm-watch",
+		"package": "vsce package --out package.vsix",
+		"code:install": "npm run package && code --install-extension package.vsix"
+	},
+	"devDependencies": {
+		"npm-watch": "^0.3.0",
+		"tinycolor2": "^1.4.1",
+		"vsce": "^1.39.0"
+	},
+	"watch": {
+		"build": "sources/**/*.js"
+	},
+	"publisher": "tatyshev",
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Antimaterial",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Antimaterial.json"
+			},
+			{
+				"label": "Antimaterial - Monokai",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Antimaterial Monokai.json"
+			},
+			{
+				"label": "Antimaterial - Dracula",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Antimaterial Dracula.json"
+			},
+			{
+				"label": "Antimaterial - Calamity",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Antimaterial Calamity.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "a6735505-72e1-4b1a-ae30-5a5de787b7dd",
+		"publisherId": "f66de76a-b390-47bd-8e96-6b8784b543cf",
+		"publisherDisplayName": "tatyshev"
+	}
+}
