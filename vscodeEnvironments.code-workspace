@@ -38,6 +38,7 @@
 			"**/.DS_Store": true,
 			"**/Ext-Preview-list": true,
 			"**/Manager-App": true
-		}
+		},
+		"git.ignoreLimitWarning": true
 	}
 }
