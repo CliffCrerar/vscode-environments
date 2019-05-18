@@ -1,0 +1,47 @@
+{
+	"name": "netbeans-light-theme",
+	"displayName": "NetBeans Light Theme",
+	"description": "Default light theme used in NetBeans IDE.",
+	"version": "2.0.2",
+	"publisher": "obrejla",
+	"homepage": "https://github.com/obrejla/vscode-netbeans-light-theme",
+	"license": "See license in LICENSE file.",
+	"icon": "images/nb-icon.png",
+	"galleryBanner": {
+		"color": "#446CB3",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/obrejla/vscode-netbeans-light-theme.git"
+	},
+	"bugs": {
+		"url": "https://github.com/obrejla/vscode-netbeans-light-theme/issues"
+	},
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"netbeans",
+		"vscode",
+		"theme",
+		"light"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "NetBeans Light Theme",
+				"uiTheme": "vs",
+				"path": "./themes/NetBeansLight.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "de040f22-8a86-45da-9cfe-d4f4c0c8fdc0",
+		"publisherId": "9548a2c1-dac9-4dac-a4bb-de98a927ab49",
+		"publisherDisplayName": "Ondrej Brejla"
+	}
+}
