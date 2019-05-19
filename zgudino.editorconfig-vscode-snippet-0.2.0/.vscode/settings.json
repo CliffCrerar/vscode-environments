@@ -1,0 +1,8 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnType": true,
+  "editor.wrappingColumn": 0,
+  "markdown.styles": [
+    "./github-markdown.min.css"
+  ]
+}
