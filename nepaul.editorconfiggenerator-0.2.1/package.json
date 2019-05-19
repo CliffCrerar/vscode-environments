@@ -1,0 +1,43 @@
+{
+	"name": "editorconfiggenerator",
+	"displayName": "EditorConfigGenerator",
+	"description": "",
+	"version": "0.2.1",
+	"icon": "editorconfig-icon.png",
+	"publisher": "nepaul",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.generateEditorConfig"
+	],
+	"main": "./src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.generateEditorConfig",
+				"title": "GenerateEditorConfig"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"eslint": "^3.6.0",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "c6faa72e-b327-47a3-919d-e85cc60c99f6",
+		"publisherId": "817e2182-cead-4ec9-bb1f-a08b7f9918a9",
+		"publisherDisplayName": "nepaul"
+	}
+}

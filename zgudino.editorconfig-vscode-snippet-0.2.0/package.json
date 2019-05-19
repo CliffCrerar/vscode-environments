@@ -1,0 +1,40 @@
+{
+	"name": "editorconfig-vscode-snippet",
+	"displayName": "EditorConfig VS Code Snippet",
+	"description": "Snippet brings settings boilerplate most commonly used to your .editorconfig file.",
+	"publisher": "zgudino",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/conwaystore/editorconfig-vscode-snippet.git"
+	},
+	"keywords": [
+		"editorconfig",
+		"config",
+		"code editor",
+		"ide"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"version": "0.2.0",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "ini",
+				"path": "./snippets/ini.json"
+			},
+			{
+				"language": "properties",
+				"path": "./snippets/ini.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "dc16888f-8660-4ff4-bdfb-b259d8c3e8a5",
+		"publisherId": "05937212-3570-4a14-a1f3-c799ecd4a7fc",
+		"publisherDisplayName": "Zahir Gudiño"
+	}
+}
