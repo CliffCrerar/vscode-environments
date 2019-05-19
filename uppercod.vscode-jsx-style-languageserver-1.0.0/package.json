@@ -1,0 +1,55 @@
+{
+	"name": "vscode-jsx-style-languageserver",
+	"displayName": "Vscode jsx style language server",
+	"description": "Language server for jsx style",
+	"version": "1.0.0",
+	"license": "MIT",
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"publisher": "uppercod",
+	"engines": {
+		"vscode": "^1.8.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/atomicojs/vscode-jsx-style-languageserver"
+	},
+	"bugs": {
+		"url": "https://github.com/atomicojs/vscode-jsx-style-languageserver/issues"
+	},
+	"categories": [
+		"Languages",
+		"Linters"
+	],
+	"activationEvents": [
+		"onLanguage:javascriptreact",
+		"onLanguage:javascript",
+		"onLanguage:typescriptreact",
+		"onLanguage:typescript",
+		"onCommand:styledJsx.applyCodeAction"
+	],
+	"main": "./client/out/extension",
+	"scripts": {
+		"compile": "npm run compile:client && npm run compile:server",
+		"compile:client": "tsc -p ./client",
+		"compile:server": "tsc -p ./server",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"vscode:prepublish": "npm run compile"
+	},
+	"dependencies": {
+		"typescript": "^2.2.1",
+		"vscode-languageclient": "^3.5.0",
+		"vscode-nls": "^2.0.2"
+	},
+	"devDependencies": {
+		"@types/node": "^9.3.0",
+		"vscode": "^1.1.33"
+	},
+	"__metadata": {
+		"id": "2b8be08c-09fe-45a0-b7c8-4df5b056742d",
+		"publisherId": "7c28906e-2fb2-44e5-ab87-0adcedcd3000",
+		"publisherDisplayName": "uppercod"
+	}
+}
