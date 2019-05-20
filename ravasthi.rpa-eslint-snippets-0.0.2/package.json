@@ -1,0 +1,26 @@
+{
+	"name": "rpa-eslint-snippets",
+	"displayName": "Richa's ESLint Snippets",
+	"description": "",
+	"version": "0.0.2",
+	"publisher": "ravasthi",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "dcf93f67-a0a0-41b5-bee3-6ed8f9b3f283",
+		"publisherId": "085d00be-e6da-4522-b424-bd78b9f54943",
+		"publisherDisplayName": "Richa Avasthi"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"eldnl": {
+		"prefix": "eldnl",
+		"body": "// eslint-disable-next-line ${1:rule}$0",
+		"description": "eslint-disable-next-line",
+		"scope": "source.js"
+	},
+	"eld": {
+		"prefix": "eld",
+		"body": "/* eslint-disable ${1:rule} */$0",
+		"description": "eslint-disable",
+		"scope": "source.js"
+	},
+	"ele": {
+		"prefix": "ele",
+		"body": "/* eslint-enable ${1:rule} */$0",
+		"description": "eslint-enable",
+		"scope": "source.js"
+	}
+}
