@@ -1,0 +1,361 @@
+{
+	"name": "text-marker",
+	"displayName": "Text Marker (Highlighter)",
+	"description": "Select text in your code and mark all matches. The highlight colour is configurable",
+	"version": "1.11.0",
+	"publisher": "ryu1kn",
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"icon": "images/text-marker.png",
+	"bugs": {
+		"url": "https://github.com/ryu1kn/vscode-text-marker/issues"
+	},
+	"homepage": "https://github.com/ryu1kn/vscode-text-marker/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ryu1kn/vscode-text-marker.git"
+	},
+	"engines": {
+		"vscode": "^1.7.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"mark",
+		"marker",
+		"match",
+		"highlight",
+		"search"
+	],
+	"telemetryKey": "99489808-a33c-4235-af6d-04f95a652ead",
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Text Marker (Highlighter) configurations",
+			"properties": {
+				"textmarker.highlightColors": {
+					"description": "List of colors to be used to highlight the selected text",
+					"type": "array",
+					"items": {
+						"type": "string"
+					},
+					"default": [
+						"darkgoldenrod",
+						"darkmagenta",
+						"darkolivegreen",
+						"darkslateblue",
+						"darkslategray",
+						"darkviolet",
+						"darkblue",
+						"darkturquoise",
+						"darkgray",
+						"darkkhaki",
+						"darkorange",
+						"darksalmon",
+						"darkseagreen"
+					]
+				},
+				"textmarker.defaultHighlightColor": {
+					"description": "Color to be used once all colors listed in `textmarker.highlightColors` are used",
+					"type": "string",
+					"default": "gray"
+				},
+				"textmarker.defaultHighlightOpacity": {
+					"description": "Opacity to be used when one is not given in the highlight color",
+					"type": "number",
+					"default": 0.7,
+					"minimum": 0,
+					"maximum": 1
+				},
+				"textmarker.enableIgnoreCase": {
+					"description": "Enable ignore case mode on startup",
+					"type": "boolean",
+					"default": false
+				},
+				"textmarker.enableWholeMatch": {
+					"description": "Enable whole match mode on startup",
+					"type": "boolean",
+					"default": false
+				},
+				"textmarker.useHighlightColorOnRuler": {
+					"description": "Use the highlight colour on the ruler instead of the default colour",
+					"type": "boolean",
+					"default": true
+				},
+				"textmarker.autoSelectDistinctiveTextColor": {
+					"description": "Text colour will be chosen to be distinctive from the background highlight colour",
+					"type": "boolean",
+					"default": false
+				},
+				"textmarker.hideStatusBarItems": {
+					"description": "Hide buttons on the status bar",
+					"type": "boolean",
+					"default": false
+				},
+				"textmarker.delayForRefreshingHighlight": {
+					"description": "Number of milliseconds to wait before refreshing the highlights on editor contents change. null for no refresh",
+					"type": [
+						"number",
+						"null"
+					],
+					"default": 300
+				},
+				"textmarker.commandsOnContextMenu": {
+					"description": "Commands appear on the context menu",
+					"type": "object",
+					"properties": {
+						"highlightUsingRegex": {
+							"type": "boolean"
+						},
+						"toggleHighlight": {
+							"type": "boolean"
+						},
+						"unhighlight": {
+							"type": "boolean"
+						},
+						"toggleCaseSensitivity": {
+							"type": "boolean"
+						},
+						"toggleWholeMatch": {
+							"type": "boolean"
+						},
+						"clearAllHighlight": {
+							"type": "boolean"
+						},
+						"saveAllHighlights": {
+							"type": "boolean"
+						},
+						"updateHighlight": {
+							"type": "boolean"
+						},
+						"goToNextHighlight": {
+							"type": "boolean"
+						},
+						"goToPreviousHighlight": {
+							"type": "boolean"
+						}
+					},
+					"default": {
+						"highlightUsingRegex": false,
+						"toggleHighlight": true,
+						"unhighlight": false,
+						"toggleCaseSensitivity": false,
+						"toggleWholeMatch": false,
+						"clearAllHighlight": false,
+						"saveAllHighlights": false,
+						"updateHighlight": true,
+						"goToNextHighlight": true,
+						"goToPreviousHighlight": true
+					},
+					"additionalProperties": false
+				},
+				"textmarker.savedHighlights": {
+					"description": "Highlights that get applied when opening editor",
+					"type": "array",
+					"default": [],
+					"items": {
+						"type": "object",
+						"properties": {
+							"pattern": {
+								"type": "object",
+								"properties": {
+									"type": {
+										"enum": [
+											"string",
+											"regex"
+										]
+									},
+									"expression": {
+										"type": "string"
+									},
+									"ignoreCase": {
+										"type": "boolean"
+									},
+									"wholeMatch": {
+										"type": "boolean"
+									}
+								},
+								"required": [
+									"type",
+									"expression",
+									"ignoreCase",
+									"wholeMatch"
+								]
+							},
+							"color": {
+								"type": "string"
+							}
+						},
+						"required": [
+							"pattern"
+						]
+					}
+				},
+				"textmarker.enableTelemetry": {
+					"description": "Allow usage data to be collected",
+					"type": "boolean",
+					"default": true
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "textmarker.highlightUsingRegex",
+				"title": "Highlight Text Using Regex",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.toggleHighlight",
+				"title": "Toggle Highlight",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.unhighlight",
+				"title": "Unhighlight Text",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.toggleCaseSensitivity",
+				"title": "Toggle Case Sensitivity",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.toggleModeForCaseSensitivity",
+				"title": "Toggle Mode for Case Sensitivity",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.toggleWholeMatch",
+				"title": "Toggle Whole/Partial Match",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.toggleModeForWholeMatch",
+				"title": "Toggle Mode for Whole/Partial Match",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.clearAllHighlight",
+				"title": "Clear All Highlights",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.saveAllHighlights",
+				"title": "Save All Highlights",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.updateHighlight",
+				"title": "Update Highlight",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.goToNextHighlight",
+				"title": "Go to Next Same Highlight",
+				"category": "TextMarker"
+			},
+			{
+				"command": "textmarker.goToPreviousHighlight",
+				"title": "Go to Previous Same Highlight",
+				"category": "TextMarker"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "textmarker.toggleHighlight",
+					"group": "2_textmarker@1",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.toggleHighlight"
+				},
+				{
+					"command": "textmarker.updateHighlight",
+					"group": "2_textmarker@2",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.updateHighlight"
+				},
+				{
+					"command": "textmarker.goToNextHighlight",
+					"group": "2_textmarker@3",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.goToNextHighlight"
+				},
+				{
+					"command": "textmarker.goToPreviousHighlight",
+					"group": "2_textmarker@4",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.goToPreviousHighlight"
+				},
+				{
+					"command": "textmarker.highlightUsingRegex",
+					"group": "2_textmarker@5",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.highlightUsingRegex"
+				},
+				{
+					"command": "textmarker.unhighlight",
+					"group": "2_textmarker@6",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.unhighlight"
+				},
+				{
+					"command": "textmarker.toggleCaseSensitivity",
+					"group": "2_textmarker@7",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.toggleCaseSensitivity"
+				},
+				{
+					"command": "textmarker.toggleWholeMatch",
+					"group": "2_textmarker@8",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.toggleWholeMatch"
+				},
+				{
+					"command": "textmarker.clearAllHighlight",
+					"group": "2_textmarker@9",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.clearAllHighlight"
+				},
+				{
+					"command": "textmarker.saveAllHighlights",
+					"group": "2_textmarker@10",
+					"when": "editorTextFocus && config.textmarker.commandsOnContextMenu.saveAllHighlights"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"vscode:postpublish": "./tag-release.sh",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"coverage": "nyc yarn test",
+		"compile": "tsc -p ./",
+		"lint": "tslint -p .",
+		"check": "yarn run compile && yarn run lint && yarn test",
+		"watch": "tsc -watch -p ./",
+		"test": "mocha --opts ./mocha-opts/cli-all-test-mocha.opts",
+		"unit-test": "mocha --opts ./mocha-opts/cli-unit-test-mocha.opts",
+		"acceptance-test": "mocha --opts ./mocha-opts/cli-acceptance-test-mocha.opts",
+		"test-mode": "mocha --opts ./mocha-opts/cli-unit-test-mocha.opts --watch"
+	},
+	"devDependencies": {
+		"@types/mocha": "^5.2.5",
+		"@types/node": "^7.0.67",
+		"codeclimate-test-reporter": "^0.5.1",
+		"mocha": "^5.2.0",
+		"nyc": "^13.1.0",
+		"testdouble": "^3.9.1",
+		"ts-node": "^7.0.1",
+		"tslint": "^5.11.0",
+		"typescript": "^3.2.2",
+		"vscode": "^1.1.26"
+	},
+	"dependencies": {
+		"color-name": "1.1.4",
+		"color-rgba": "2.1.0",
+		"fp-ts": "1.12.1",
+		"lodash.isnumber": "3.0.3",
+		"uuid": "3.3.2",
+		"vscode-extension-telemetry": "0.0.22"
+	},
+	"__metadata": {
+		"id": "ab840a62-e128-4f36-8587-2e52f4eecc06",
+		"publisherId": "78c9c61d-8fc2-48eb-bf5e-7dd8b068702c",
+		"publisherDisplayName": "Ryuichi Inagaki"
+	}
+}

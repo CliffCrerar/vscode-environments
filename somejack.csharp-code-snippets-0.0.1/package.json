@@ -1,0 +1,47 @@
+{
+	"name": "csharp-code-snippets",
+	"displayName": "C# Code Snippets",
+	"description": "C# Code Snippets for Visual Studio Code",
+	"icon": "images/csharp-code-snippets.png",
+	"version": "0.0.1",
+	"author": "Somejack",
+	"publisher": "Somejack",
+	"license": "SEE LICENSE",
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/somejack/csharp-code-snippets"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"keywords": [
+		"C#",
+		"CSharp",
+		"Languages",
+		"Snippets",
+		".NET"
+	],
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "csharp",
+				"path": "./snippets/csharp.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vsce": "^1.52.0"
+	},
+	"scripts": {
+		"pub": "vsce publish"
+	},
+	"__metadata": {
+		"id": "0634bd58-db17-4af6-bd42-9eee94348506",
+		"publisherId": "d2bcfe75-6d9e-452e-8cc3-a09597549336",
+		"publisherDisplayName": "Somejack"
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"name": "supersharp",
+	"displayName": "Super Sharp (C# extensions)",
+	"description": "Some handy refactoring extensions for C#",
+	"version": "0.1.4",
+	"publisher": "craigthomas",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Other",
+		"Extension Packs"
+	],
+	"icon": "icon.png",
+	"keywords": [
+		"C#",
+		"CSharp",
+		"Refactoring",
+		"Refactor",
+		"Move class",
+		"Move interface"
+	],
+	"activationEvents": [
+		"onLanguage:csharp",
+		"onCommand:supersharp.moveTypeToFile"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "supersharp.moveTypeToFile",
+				"title": "Move type to file"
+			},
+			{
+				"command": "supersharp.injectDependency",
+				"title": "Add dependency to constructor..."
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6",
+		"@types/node": "^7.0.43",
+		"@types/mocha": "^2.2.42"
+	},
+	"__metadata": {
+		"id": "b77fdb35-f82d-4854-8205-a2783978a809",
+		"publisherId": "fd9abdd2-0ca1-47b7-b4fc-06ff3a5b0cce",
+		"publisherDisplayName": "craigthomas"
+	}
+}

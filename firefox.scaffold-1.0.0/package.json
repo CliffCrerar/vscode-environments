@@ -1,0 +1,43 @@
+{
+	"name": "scaffold",
+	"displayName": "ASP.NET Core Scaffolding",
+	"description": "A Visual Studio Code ASP.NET Core Scaffolding Tool",
+	"version": "1.0.0",
+	"publisher": "firefox",
+	"icon": "images/scaffold.png",
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.scaffold"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.scaffold",
+				"title": "ASP.NET Core Scaffolding"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"eslint": "^3.6.0",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"__metadata": {
+		"id": "cc680956-6ea2-442f-aa05-b91061b4611c",
+		"publisherId": "8fab7384-38ae-4b52-9d69-b8e835307d2e",
+		"publisherDisplayName": "Mohammed Yehia"
+	}
+}

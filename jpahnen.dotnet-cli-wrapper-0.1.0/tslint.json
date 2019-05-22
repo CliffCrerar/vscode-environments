@@ -1,0 +1,17 @@
+{
+   "extends": "tslint:latest",
+   "rules": {
+      "interface-name": false,
+      "max-line-length": [ true, 140 ],
+      "eofline": false,
+      "no-console": false,
+      "trailing-comma": false,
+      "object-literal-sort-keys": false,
+      "arrow-parens": false,
+      "max-classes-per-file": false,
+      "quotemark": false,
+      "prefer-const": false,
+      "no-empty": false,
+      "no-submodule-imports": false
+   }
+}

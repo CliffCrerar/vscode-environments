@@ -1,0 +1,308 @@
+{
+    "$comment": "DO NOT EDIT - This file was built from dist/grammars/arm-expression-string.tmLanguage.json",
+    "name": "ARM Template",
+    "scopeName": "source.tle.arm",
+    "uuid": "3ADA43CD-2258-4907-8477-169A7FDDF216",
+    "$preprocessComment1": "Items in the preprocess section get replaced during gulp build-grammars",
+    "$preprocessComment2": "The 'builtin' key/value are special - they're created during build from our function metadata",
+    "$preprocessComment3": "Currently you need to run 'build grammars' after changing this file",
+    "preprocess": {
+        "builtin": "(?:(?i)add|and|array|base64|base64ToJson|base64ToString|bool|coalesce|concat|contains|copyIndex|createArray|dataUri|dataUriToString|utcNow|deployment|div|empty|endsWith|equals|first|float|format|greater|greaterOrEquals|guid|if|indexOf|int|intersection|json|last|lastIndexOf|length|less|lessOrEquals|listAccountSas|listAdminKeys|listKeys|listPackage|listConnectionStrings|listCredentials|listCallbackUrl|listSecrets|listServiceSas|max|min|mod|mul|newGuid|not|or|padLeft|parameters|providers|range|reference|replace|resourceGroup|resourceId|skip|split|startsWith|string|sub|subscription|substring|take|toLower|toUpper|trim|union|uniqueString|uri|uriComponent|uriComponentToString|variables)",
+        "idchar": "[_$[:alnum:]]",
+        "id": "(?:[_$[:alpha:]][_$[:alnum:]]*)",
+        "ns-userfunc": "(?:((?:[_$[:alpha:]][_$[:alnum:]]*))\\s*(\\.)\\s*((?:[_$[:alpha:]][_$[:alnum:]]*)))",
+        "logical": "(?:if|and|or|not)",
+        "scope-expression-start": "support.function.expression.begin.tle.arm",
+        "scope-expression-end": "support.function.expression.end.tle.arm",
+        "scope-builtin": "support.function.builtin.tle.arm",
+        "scope-logical": "keyword.control.logical.tle.arm",
+        "scope-parameters": "support.type.parameters.tle.arm",
+        "scope-parameter": "support.type.parameters.parameter-name.tle.arm",
+        "scope-variables": "variable.language.variables.tle.arm",
+        "scope-variable": "variable.language.variables.variable-name.tle.arm",
+        "scope-unknownfunction": "meta.unrecognized-identifier.tle.arm",
+        "scope-usernamespace": "entity.name.tag.usernamespace.tle.arm",
+        "scope-usernamespaceandfunction-dot": "punctuation.accessor.userfunction.tle.arm",
+        "scope-userfunction": "entity.name.tag.userfunction.tle.arm",
+        "scope-parentheses-funccall": "meta.brace.round.tle.arm",
+        "scope-escapedapostrophe": "constant.character.escape.single.tle.arm",
+        "scope-json-escape-chars": "constant.character.escape.backslash.tle.arm",
+        "scope-string-contents": "string.quoted.single.tle.arm",
+        "scope-string-start": "punctuation.definition.string.begin.tle.arm",
+        "scope-string-end": "punctuation.definition.string.end.tle.arm",
+        "scope-funcargs-separator": "punctuation.separator.comma.tle.arm",
+        "scope-number": "constant.numeric.tle.arm",
+        "scope-propaccess-dot": "punctuation.accessor.property.tle.arm",
+        "scope-propaccess-propname": "variable.entity.property.tle.arm",
+        "scope-arrayaccess-brackets": "meta.brace.square.tle.arm"
+    },
+    "patterns": [
+        {
+            "include": "#expressionstring"
+        }
+    ],
+    "repository": {
+        "expressionstring": {
+            "name": "meta.expression.tle.arm",
+            "begin": "\"\\[(?!\\[)",
+            "$beginComment": "A string that starts with [[ is not an expression",
+            "end": "\\]\"",
+            "beginCaptures": {
+                "0": {
+                    "name": "support.function.expression.begin.tle.arm"
+                }
+            },
+            "endCaptures": {
+                "0": {
+                    "name": "support.function.expression.end.tle.arm"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "#expression"
+                },
+                {
+                    "name": "invalid.illegal.expected-expression.tle.arm",
+                    "match": "[^\\s]"
+                }
+            ]
+        },
+        "expression": {
+            "patterns": [
+                {
+                    "include": "#string"
+                },
+                {
+                    "include": "#number"
+                },
+                {
+                    "include": "#parameters-ref-with-string-literal"
+                },
+                {
+                    "include": "#variables-ref-with-string-literal"
+                },
+                {
+                    "include": "#functionname"
+                },
+                {
+                    "include": "#functioncall"
+                },
+                {
+                    "include": "#propertyaccess"
+                },
+                {
+                    "include": "#arrayaccess"
+                }
+            ]
+        },
+        "number": {
+            "name": "constant.numeric.tle.arm",
+            "match": "[+-]?[0-9]+(\\.[0-9]+)?([Ee][+-]?[0-9]+)?"
+        },
+        "string": {
+            "name": "string.quoted.single.tle.arm",
+            "begin": "[']",
+            "beginCaptures": {
+                "0": {
+                    "$comment": "Apostrophe that starts a string",
+                    "name": "punctuation.definition.string.begin.tle.arm"
+                }
+            },
+            "end": "['](?!['])",
+            "endCaptures": {
+                "0": {
+                    "$comment": "Apostrophe that ends a string",
+                    "name": "punctuation.definition.string.end.tle.arm"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "#stringcontent"
+                }
+            ]
+        },
+        "stringcontent": {
+            "patterns": [
+                {
+                    "$comment": "Escaped JSON string characters",
+                    "match": "(?x)                # turn on extended mode\n  \\\\                # a literal backslash\n  (?:               # ...followed by...\n    [\"\\\\/bfnrt]     # one of these characters\n    |               # ...or...\n    u               # a u\n    [0-9a-fA-F]{4}) # and four hex digits",
+                    "name": "constant.character.escape.backslash.tle.arm"
+                },
+                {
+                    "$comment": "Escaped apostrophe (interpreted by ARM backend)",
+                    "name": "constant.character.escape.single.tle.arm",
+                    "match": "['][']"
+                },
+                {
+                    "match": "\\\\.",
+                    "name": "invalid.illegal.unrecognized-string-escape.tle.arm"
+                }
+            ]
+        },
+        "parameters-ref-with-string-literal": {
+            "$comment1": "When we have 'parameters' with a string literal (instead of an expression), we want to colorize the parameter name along with 'parameters'",
+            "$comment2": "When its parameter is an expression, it will be handled by functionname/functioncall",
+            "name": "meta.parameters-reference.tle.arm",
+            "match": "(?x) \\s* (parameters) \\s* (\\() (' [^']* ') (\\))",
+            "captures": {
+                "1": {
+                    "$comment": "parameters",
+                    "name": "support.type.parameters.tle.arm"
+                },
+                "2": {
+                    "$comment": "Opening paren",
+                    "name": "meta.brace.round.tle.arm"
+                },
+                "3": {
+                    "$comment": "Parameter name in single quotes",
+                    "name": "support.type.parameters.parameter-name.tle.arm"
+                },
+                "4": {
+                    "$comment": "Closing paren",
+                    "name": "meta.brace.round.tle.arm"
+                }
+            }
+        },
+        "variables-ref-with-string-literal": {
+            "$comment1": "When we have 'variables' with a string literal (instead of an expression), we want to colorize the variable name along with 'variables'",
+            "$comment2": "When its parameter is an expression, it will be handled by functionname/functioncall",
+            "name": "meta.variables-reference.tle.arm",
+            "match": "(?x) \\s* (variables) \\s* (\\() (' [^']* ') (\\))",
+            "captures": {
+                "1": {
+                    "$comment": "variables",
+                    "name": "variable.language.variables.tle.arm"
+                },
+                "2": {
+                    "$comment": "Opening paren",
+                    "name": "meta.brace.round.tle.arm"
+                },
+                "3": {
+                    "$comment": "variable name in single quotes",
+                    "name": "variable.language.variables.variable-name.tle.arm"
+                },
+                "4": {
+                    "$comment": "Closing paren",
+                    "name": "meta.brace.round.tle.arm"
+                }
+            }
+        },
+        "functionname": {
+            "match": "(?x) \\s* (?: (?:((?:[_$[:alpha:]][_$[:alnum:]]*))\\s*(\\.)\\s*((?:[_$[:alpha:]][_$[:alnum:]]*))) | (parameters) | (variables) | ((?:if|and|or|not)) | ((?:(?i)add|and|array|base64|base64ToJson|base64ToString|bool|coalesce|concat|contains|copyIndex|createArray|dataUri|dataUriToString|utcNow|deployment|div|empty|endsWith|equals|first|float|format|greater|greaterOrEquals|guid|if|indexOf|int|intersection|json|last|lastIndexOf|length|less|lessOrEquals|listAccountSas|listAdminKeys|listKeys|listPackage|listConnectionStrings|listCredentials|listCallbackUrl|listSecrets|listServiceSas|max|min|mod|mul|newGuid|not|or|padLeft|parameters|providers|range|reference|replace|resourceGroup|resourceId|skip|split|startsWith|string|sub|subscription|substring|take|toLower|toUpper|trim|union|uniqueString|uri|uriComponent|uriComponentToString|variables)) | ((?:[_$[:alpha:]][_$[:alnum:]]*)) ) (?![_$[:alnum:]] (?# Make sure we don't match a well-known name like 'add' inside something like 'add2'))",
+            "captures": {
+                "1": {
+                    "$comment": "user namespace (capturing group inside ns-userfunc)",
+                    "name": "entity.name.tag.usernamespace.tle.arm"
+                },
+                "2": {
+                    "$comment": "dot (capturing group inside ns-userfunc)",
+                    "name": "punctuation.accessor.userfunction.tle.arm"
+                },
+                "3": {
+                    "$comment": "user function name (capturing group inside ns-userfunc)",
+                    "name": "entity.name.tag.userfunction.tle.arm"
+                },
+                "4": {
+                    "$comment": "parameters",
+                    "name": "support.type.parameters.tle.arm"
+                },
+                "5": {
+                    "$comment": "variables",
+                    "name": "variable.language.variables.tle.arm"
+                },
+                "6": {
+                    "$comment": "logical functions",
+                    "name": "keyword.control.logical.tle.arm"
+                },
+                "7": {
+                    "$comment": "built-in function name",
+                    "name": "support.function.builtin.tle.arm"
+                },
+                "8": {
+                    "$comment": "other function name",
+                    "name": "meta.unrecognized-identifier.tle.arm"
+                }
+            }
+        },
+        "functioncall": {
+            "$comment": "This matches just the parentheses and arguments of a function call",
+            "name": "meta.function-call.tle.arm",
+            "begin": "(?x) \\s* (\\() \\s*",
+            "end": "\\s*\\)",
+            "beginCaptures": {
+                "1": {
+                    "name": "meta.brace.round.tle.arm"
+                }
+            },
+            "endCaptures": {
+                "0": {
+                    "$comment": "closing paren",
+                    "name": "meta.brace.round.tle.arm"
+                }
+            },
+            "patterns": [
+                {
+                    "include": "#functionargs"
+                }
+            ]
+        },
+        "functionargs": {
+            "name": "meta.function-arguments.tle.arm",
+            "begin": "\\G\\s*",
+            "end": "\\s*(?=\\))",
+            "patterns": [
+                {
+                    "include": "#expression"
+                },
+                {
+                    "name": "punctuation.separator.comma.tle.arm",
+                    "match": ","
+                },
+                {
+                    "match": "[^\\s,)]",
+                    "name": "invalid.illegal.expected-comma.tle.arm"
+                }
+            ]
+        },
+        "propertyaccess": {
+            "name": "meta.property-access.tle.arm",
+            "match": "(?x) (?<= ^ | (?: [_$[:alnum:])\\]] )) (?# if preceded by end paren/bracket/word or beginning of line)  \\s*  (?<dot>\\.) \\s* (?<propertyname>(?:[_$[:alpha:]][_$[:alnum:]]*))",
+            "captures": {
+                "1": {
+                    "name": "punctuation.accessor.property.tle.arm"
+                },
+                "2": {
+                    "name": "variable.entity.property.tle.arm"
+                }
+            }
+        },
+        "arrayaccess": {
+            "patterns": [
+                {
+                    "match": "\\s*\\[\\s*\\]",
+                    "name": "invalid.illegal.empty-array-access.tle.arm"
+                },
+                {
+                    "name": "meta.array-access.tle.arm",
+                    "begin": "(?x) (?<= ^ | (?: [_$[:alnum:])\\]] )) (?# if preceded by end paren/bracket/word or beginning of line)  \\s*  (?<openbracket>\\[)",
+                    "end": "\\s*(])",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "meta.brace.square.tle.arm"
+                        }
+                    },
+                    "endCaptures": {
+                        "1": {
+                            "name": "meta.brace.square.tle.arm"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#expression"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "Iteration title": {
+        "prefix": "iteration",
+        "body": [
+            "IT#"
+        ],
+        "description": "Iteration marker"
+    },
+    "User story title": {
+        "prefix": "user story",
+        "body": [
+            "US#"
+        ],
+        "description": "User Story marker"
+    },
+    "Task": {
+        "prefix": "new task",
+        "body": [
+            "- ${1:title} - ${2:estimation}h"
+        ],
+        "description": "Task"
+    }
+}

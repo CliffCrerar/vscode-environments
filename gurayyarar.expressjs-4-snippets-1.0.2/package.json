@@ -1,0 +1,70 @@
+{
+	"name": "expressjs-4-snippets",
+	"displayName": "ExpressJs 4 Snippets",
+	"description": "Just start use with e4 keys of ExpressJs 4 snippets.",
+	"version": "1.0.2",
+	"publisher": "gurayyarar",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gurayyarar/expressjs4-snippets"
+	},
+	"bugs": {
+		"url": "https://github.com/gurayyarar/expressjs4-snippets/issues"
+	},
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"icon": "images/icon.png",
+	"keywords": [
+		"express",
+		"expressjs",
+		"snippet",
+		"nodejs",
+		"api"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/application.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/examples.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/handlers.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/middleware.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/module.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/request.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/response.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript/router.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "b3ee7bef-f700-4fb5-84a7-d81a9ba7e4db",
+		"publisherId": "95de5e23-b380-4476-a68a-fc6cc73abdf0",
+		"publisherDisplayName": "Güray Yarar"
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"name": "cshtml",
+	"displayName": "HTML (C#)",
+	"description": "HTML with embedded C#",
+	"version": "0.1.3",
+	"author": {
+		"name": "Michael",
+		"email": "michael@fireside21.com"
+	},
+	"publisher": "fireside21",
+	"homepage": "https://github.com/fireside21/vscode-cshtml/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/fireside21/vscode-cshtml/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fireside21/vscode-cshtml.git"
+	},
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"icon": "images/icon-cshtml.png",
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "cshtml",
+				"aliases": [
+					"HTML (C#)",
+					"HTML with embedded C#",
+					"ASP.NET",
+					"aspx",
+					"cshtml",
+					"Master Page"
+				],
+				"extensions": [
+					".aspx",
+					".ascx",
+					".asax",
+					".cshtml",
+					".master"
+				],
+				"firstLine": "^\\s*<%@",
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "cshtml",
+				"scopeName": "text.html.cshtml",
+				"path": "./syntaxes/cshtml.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "cshtml",
+				"path": "./snippets/cshtml.snippets.json"
+			}
+		]
+	},
+	"scripts": {
+		"pack": "vsce package",
+		"pub": "vsce publish"
+	},
+	"__metadata": {
+		"id": "24fc5c70-edac-4484-9c8f-3feb012e40db",
+		"publisherId": "cdc665a6-921e-4d7c-a163-e5b816fc3073",
+		"publisherDisplayName": "Fireside21"
+	}
+}
