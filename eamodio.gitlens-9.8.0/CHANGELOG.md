@@ -4,13 +4,40 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [9.8.0] - 2019-05-22
+
+## Added
+
+- Adds a new _Compare Current Branch with &lt;branch, tag, or ref&gt;_ node to each repository in the _Repositories_ view &mdash; closes [#293](https://github.com/eamodio/vscode-gitlens/issues/293)
+  - **Compare Current Branch with &lt;branch, tag, or ref&gt;** &mdash; optionally shows a comparison of the current branch to a user-selected reference
+    - **\* Commits** &mdash; lists the commits between the compared revisions
+      - Expands to provide the message, author, date, and change indicator of each revision (commit)
+        - Each revision (commit) expands to list its set of changed files, complete with status indicators for adds, changes, renames, and deletes
+          - An inline toolbar provides quick access to the _Open File_, _Copy Commit ID to Clipboard_ (`alt-click` for _Copy Commit Message to Clipboard_), and _Open File on Remote_ (if available) commands
+          - A context menu provides access to more common file revision commands
+    - **\* Files Changed** &mdash; lists all of the files changed between the compared revisions
+- Adds a _Show a comparison of the current branch to a user-selected reference_ (`gitlens.views.repositories.showBranchComparison`) setting to specify whether to show a comparison of the current branch to a user-selected reference in the _Repositories_ view
+- Adds a `gitlens.advanced.useSymmetricDifferenceNotation` setting to specify whether to use the symmetric difference (three-dot) notation or the range (two-dot) notation for comparisions &mdash; closes [#330](https://github.com/eamodio/vscode-gitlens/issues/330)
+- Adds a _Copy Remote Url to Clipboard_ command to commit quick pick menus
+
+## Changed
+
+- Changes _Pull_ and _Pull Repositories_ commands to just fetch the repository if the current branch has no tracking branch
+
+## Fixed
+
+- Fixes [#734](https://github.com/eamodio/vscode-gitlens/issues/734) - Not working with VS Code Remote - SSH extension
+- Fixes [#739](https://github.com/eamodio/vscode-gitlens/issues/739) - Breadcrumbs don't work on file revisions
+- Fixes [#750](https://github.com/eamodio/vscode-gitlens/issues/750) - Open file on GitHub does not include directory path
+- Fixes an issue with the _Open Revision_ command in the quick pick menus not working properly
+
 ## [9.7.4] - 2019-05-15
 
 ## Added
 
 - Adds a new experimental _Incoming Activity_ node to each repository in the _Repositories_ view (enabled via `"gitlens.insiders": true`) &mdash; closes [#735](https://github.com/eamodio/vscode-gitlens/issues/735)
   - **Incoming Activity** &mdash; lists the recent incoming activity (merges and pulls) to your local repository
-    - Provides the activity command, branch (if available), and date
+    - Provides the command, branch (if available), and date of each activity
       - A context menu provides access to the _Refresh_ command
       - Each activity expands to list the commits added by the command
         - An inline toolbar provides quick access to the _Compare with HEAD_ (`alt-click` for _Compare with Working Tree_), _Copy Commit ID to Clipboard_ (`alt-click` for _Copy Commit Message to Clipboard_), and _Open Commit on Remote_ (if available) commands
@@ -2879,6 +2906,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Initial release but still heavily a work in progress.
 
+[9.8.0]: https://github.com/eamodio/vscode-gitlens/compare/v9.7.4...eamodio:v9.8.0
 [9.7.4]: https://github.com/eamodio/vscode-gitlens/compare/v9.7.3...eamodio:v9.7.4
 [9.7.3]: https://github.com/eamodio/vscode-gitlens/compare/v9.7.2...eamodio:v9.7.3
 [9.7.2]: https://github.com/eamodio/vscode-gitlens/compare/v9.7.1...eamodio:v9.7.2

@@ -2,7 +2,7 @@
 	"name": "gitlens",
 	"displayName": "GitLens — Git supercharged",
 	"description": "Supercharge the Git capabilities built into Visual Studio Code — Visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more",
-	"version": "9.7.4",
+	"version": "9.8.0",
 	"author": {
 		"name": "Eric Amodio",
 		"email": "eamodio@gmail.com"
@@ -1519,6 +1519,12 @@
 					"markdownDescription": "Specifies where to show the _Repositories_ view",
 					"scope": "window"
 				},
+				"gitlens.views.repositories.showBranchComparison": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Specifies whether to show a comparison of the current branch to a user-selected reference in the _Repositories_ view",
+					"scope": "window"
+				},
 				"gitlens.views.repositories.showTrackingBranch": {
 					"type": "boolean",
 					"default": true,
@@ -1745,6 +1751,12 @@
 					"type": "boolean",
 					"default": true,
 					"markdownDescription": "Specifies whether to enable GitLens telemetry (even if enabled still abides by the overall `#telemetry.enableTelemetry#` setting",
+					"scope": "window"
+				},
+				"gitlens.advanced.useSymmetricDifferenceNotation": {
+					"type": "boolean",
+					"default": true,
+					"markdownDescription": "Specifies whether to use the symmetric difference (three-dot) notation or the range (two-dot) notation for comparisions. See the [Git docs](https://git-scm.com/docs/gitrevisions#_dotted_range_notations)",
 					"scope": "window"
 				}
 			}
@@ -5185,7 +5197,7 @@
 		"css-loader": "2.1.1",
 		"eslint": "5.16.0",
 		"eslint-cli": "1.1.1",
-		"eslint-config-prettier": "4.2.0",
+		"eslint-config-prettier": "4.3.0",
 		"eslint-loader": "2.1.2",
 		"eslint-plugin-import": "2.17.2",
 		"eslint-plugin-prettiest": "0.0.1",
@@ -5198,12 +5210,12 @@
 		"prettier": "1.17.1",
 		"prettier-eslint": "8.8.2",
 		"sass-loader": "7.1.0",
-		"terser-webpack-plugin": "1.2.3",
-		"ts-loader": "6.0.0",
-		"typescript": "3.4.5",
+		"terser-webpack-plugin": "1.2.4",
+		"ts-loader": "6.0.1",
+		"typescript": "3.5.0-rc",
 		"vsce": "1.61.0",
 		"vscode": "1.1.34",
-		"webpack": "4.31.0",
+		"webpack": "4.32.0",
 		"webpack-cli": "3.3.2",
 		"webpack-bundle-analyzer": "3.3.2"
 	},
