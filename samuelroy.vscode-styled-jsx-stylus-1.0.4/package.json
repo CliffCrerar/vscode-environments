@@ -1,0 +1,55 @@
+{
+	"name": "vscode-styled-jsx-stylus",
+	"displayName": "vscode-styled-jsx-stylus",
+	"description": "Stylus syntax highlighting for styled-jsx",
+	"version": "1.0.4",
+	"publisher": "samuelroy",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/samuelroy/vscode-styled-jsx-stylus"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "source.stylus.jsx.styled",
+				"aliases": [
+					"Stylus (Styled JSX)"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "source.stylus.jsx.styled",
+				"scopeName": "source.stylus.jsx.styled",
+				"path": "./syntaxes/stylus.json"
+			},
+			{
+				"injectTo": [
+					"source.js",
+					"source.ts",
+					"source.jsx",
+					"source.js.jsx",
+					"source.tsx"
+				],
+				"scopeName": "styled-jsx",
+				"path": "./syntaxes/jsx-styled.json",
+				"embeddedLanguages": {
+					"source.css.scss": "css",
+					"meta.embedded.line.ts": "typescript"
+				}
+			}
+		]
+	},
+	"__metadata": {
+		"id": "f18d73f1-6f06-4574-91a9-1b1281659045",
+		"publisherId": "6989067d-3277-4a60-9f5a-b00ae7863a66",
+		"publisherDisplayName": "Samuel Roy"
+	}
+}
