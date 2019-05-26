@@ -39,6 +39,8 @@
 			"**/Ext-Preview-list": true,
 			"**/Manager-App": true
 		},
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"workbench.iconTheme": "vs-seti",
+		"editor.wordWrapColumn": 120
 	}
 }
