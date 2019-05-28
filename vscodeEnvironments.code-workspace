@@ -1,6 +1,7 @@
 {
 	"folders": [
 		{
+<<<<<<< HEAD
 			"name": "VSCODE-ENV-CONTROLLER",
 			"path": "../vscode-environments"
 		},
@@ -8,6 +9,15 @@
 			"name": "EXT-path",
 			"path": "C:/Users/Clifford.Crerar.SURTECH/.vscode/extensions"
 		}
+=======
+			"name": "ROOT",
+			"path": "/Users/cliffordcrerar/letsplay/vscode-environments"
+		},
+		{
+			"name": "MANAGER APP",
+			"path": "/Users/cliffordcrerar/letsplay/vscode-environments/Manager-App"
+		},
+>>>>>>> 9e37b7d7caf69a4e10921b66e17f6862a376b048
 		// {
 		// 	"name": "LOCAL FILES",
 		// 	"path": "/Users/cliffordcrerar/Library/Application Support/Code"
@@ -19,9 +29,18 @@
 		// {
 		// 	"name": "VSCODE Source files",
 		// 	"path": "/Applications/Visual Studio Code.app/Contents"
-		// }
+		// },
+		{
+			"name": "STAGING AREA",
+			"path": "./EXT-STAGE"
+		},
+		{
+			"name": "EXTENSION HOME",
+			"path": "/Users/cliffordcrerar/.vscode/extensions"
+		}
 	],
 	"settings": {
+<<<<<<< HEAD
 		"git.ignoreLimitWarning": true,
 		"editor.insertSpaces": false,
 		"editor.renderIndentGuides": true,
@@ -57,5 +76,19 @@
 		"workbench.settings.editor": "json",
 		"workbench.settings.openDefaultSettings": true,
 		"workbench.settings.useSplitJSON": true
+=======
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Ext-Preview-list": true,
+			"**/Manager-App": true
+		},
+		"git.ignoreLimitWarning": true,
+		"workbench.iconTheme": "vs-seti",
+		"editor.wordWrapColumn": 120
+>>>>>>> 9e37b7d7caf69a4e10921b66e17f6862a376b048
 	}
 }

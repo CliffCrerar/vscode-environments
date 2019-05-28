@@ -1,0 +1,470 @@
+[
+	{
+		"extNum": 3,
+		"publisher": "30-seconds",
+		"name": "30-seconds-of-code",
+		"version": "1.0.0"
+	},
+	{
+		"extNum": 5,
+		"publisher": "aaron-bond",
+		"name": "better-comments",
+		"version": "2.0.3"
+	},
+	{
+		"extNum": 6,
+		"publisher": "abdullahceylan",
+		"name": "vscode-react-component-generator",
+		"version": "0.0.3"
+	},
+	{
+		"extNum": 7,
+		"publisher": "abusaidm",
+		"name": "html-snippets",
+		"version": "0.2.1"
+	},
+	{
+		"extNum": 8,
+		"publisher": "ahmadawais",
+		"name": "shades-of-purple",
+		"version": "4.16.0"
+	},
+	{
+		"extNum": 9,
+		"publisher": "alefragnani",
+		"name": "bookmarks",
+		"version": "10.4.2"
+	},
+	{
+		"extNum": 10,
+		"publisher": "archety",
+		"name": "material-icons",
+		"version": "0.2.0"
+	},
+	{
+		"extNum": 11,
+		"publisher": "ashhitch",
+		"name": "vs-code-css-comments",
+		"version": "1.0.5"
+	},
+	{
+		"extNum": 12,
+		"publisher": "auchenberg",
+		"name": "vscode-browser-preview",
+		"version": "0.4.0"
+	},
+	{
+		"extNum": 13,
+		"publisher": "avraammavridis",
+		"name": "vsc-react-documentation",
+		"version": "1.2.1"
+	},
+	{
+		"extNum": 14,
+		"publisher": "christian-kohler",
+		"name": "npm-intellisense",
+		"version": "1.3.0"
+	},
+	{
+		"extNum": 15,
+		"publisher": "christian-kohler",
+		"name": "path-intellisense",
+		"version": "1.4.2"
+	},
+	{
+		"extNum": 16,
+		"publisher": "coenraads",
+		"name": "bracket-pair-colorizer",
+		"version": "1.0.61"
+	},
+	{
+		"extNum": 17,
+		"publisher": "dbaeumer",
+		"name": "vscode-eslint",
+		"version": "1.8.2"
+	},
+	{
+		"extNum": 18,
+		"publisher": "donjayamanne",
+		"name": "githistory",
+		"version": "0.4.6"
+	},
+	{
+		"extNum": 19,
+		"publisher": "dsznajder",
+		"name": "es7-react-js-snippets",
+		"version": "2.2.1"
+	},
+	{
+		"extNum": 20,
+		"publisher": "eamodio",
+		"name": "gitlens",
+		"version": "9.5.1"
+	},
+	{
+		"extNum": 21,
+		"publisher": "eamodio",
+		"name": "gitlens",
+		"version": "9.6.0"
+	},
+	{
+		"extNum": 22,
+		"publisher": "ecmel",
+		"name": "vscode-html-css",
+		"version": "0.2.0"
+	},
+	{
+		"extNum": 23,
+		"publisher": "editorconfig",
+		"name": "editorconfig",
+		"version": "0.13.0"
+	},
+	{
+		"extNum": 24,
+		"publisher": "eg2",
+		"name": "vscode-npm-script",
+		"version": "0.3.5"
+	},
+	{
+		"extNum": 25,
+		"publisher": "equinusocio",
+		"name": "vsc-material-theme",
+		"version": "2.8.2"
+	},
+	{
+		"extNum": 26,
+		"publisher": "esbenp",
+		"name": "prettier-vscode",
+		"version": "1.8.1"
+	},
+	{
+		"extNum": 27,
+		"publisher": "formulahendry",
+		"name": "auto-rename-tag",
+		"version": "0.0.15"
+	},
+	{
+		"extNum": 28,
+		"publisher": "gencer",
+		"name": "html-slim-scss-css-class-completion",
+		"version": "1.5.14"
+	},
+	{
+		"extNum": 29,
+		"publisher": "glen-84",
+		"name": "sass-lint",
+		"version": "1.0.5"
+	},
+	{
+		"extNum": 30,
+		"publisher": "gogocrow",
+		"name": "jsx-beautify",
+		"version": "0.0.5"
+	},
+	{
+		"extNum": 31,
+		"publisher": "gottfired",
+		"name": "css2react",
+		"version": "0.0.6"
+	},
+	{
+		"extNum": 32,
+		"publisher": "htwx",
+		"name": "json-and-jsonc",
+		"version": "1.0.1"
+	},
+	{
+		"extNum": 33,
+		"publisher": "humao",
+		"name": "rest-client",
+		"version": "0.21.2"
+	},
+	{
+		"extNum": 34,
+		"publisher": "ibm",
+		"name": "output-colorizer",
+		"version": "0.1.2"
+	},
+	{
+		"extNum": 35,
+		"publisher": "iipal",
+		"name": "vscode-light-tweaked-remake",
+		"version": "0.1.3"
+	},
+	{
+		"extNum": 36,
+		"publisher": "jasonnutter",
+		"name": "search-node-modules",
+		"version": "1.3.0"
+	},
+	{
+		"extNum": 37,
+		"publisher": "jaspernorth",
+		"name": "vscode-pigments",
+		"version": "1.0.6"
+	},
+	{
+		"extNum": 38,
+		"publisher": "joelday",
+		"name": "docthis",
+		"version": "0.7.1"
+	},
+	{
+		"extNum": 39,
+		"publisher": "kdcro101",
+		"name": "favorites",
+		"version": "2.4.5"
+	},
+	{
+		"extNum": 40,
+		"publisher": "kisstkondoros",
+		"name": "csstriggers",
+		"version": "0.10.0"
+	},
+	{
+		"extNum": 41,
+		"publisher": "kisstkondoros",
+		"name": "vscode-codemetrics",
+		"version": "1.18.0"
+	},
+	{
+		"extNum": 42,
+		"publisher": "mccarter",
+		"name": "start-git-bash",
+		"version": "1.2.1"
+	},
+	{
+		"extNum": 43,
+		"publisher": "mgmcdermott",
+		"name": "vscode-language-babel",
+		"version": "0.0.22"
+	},
+	{
+		"extNum": 44,
+		"publisher": "mhutchie",
+		"name": "git-graph",
+		"version": "1.4.4"
+	},
+	{
+		"extNum": 45,
+		"publisher": "michelemelluso",
+		"name": "code-beautifier",
+		"version": "2.2.1"
+	},
+	{
+		"extNum": 46,
+		"publisher": "mikestead",
+		"name": "dotenv",
+		"version": "1.0.1"
+	},
+	{
+		"extNum": 47,
+		"publisher": "mkaufman",
+		"name": "htmlhint",
+		"version": "0.6.0"
+	},
+	{
+		"extNum": 48,
+		"publisher": "mrmlnc",
+		"name": "vscode-scss",
+		"version": "0.6.2"
+	},
+	{
+		"extNum": 49,
+		"publisher": "ms-vsts",
+		"name": "team",
+		"version": "1.149.2"
+	},
+	{
+		"extNum": 50,
+		"publisher": "msjsdiag",
+		"name": "debugger-for-chrome",
+		"version": "4.11.3"
+	},
+	{
+		"extNum": 51,
+		"publisher": "nimda",
+		"name": "deepdark-material",
+		"version": "2.6.5"
+	},
+	{
+		"extNum": 52,
+		"publisher": "oderwat",
+		"name": "indent-rainbow",
+		"version": "7.4.0"
+	},
+	{
+		"extNum": 53,
+		"publisher": "ofhumanbondage",
+		"name": "react-proptypes-intellisense",
+		"version": "1.0.3"
+	},
+	{
+		"extNum": 54,
+		"publisher": "ohansemmanuel",
+		"name": "css-grid-snippets",
+		"version": "0.0.5"
+	},
+	{
+		"extNum": 55,
+		"publisher": "orepor",
+		"name": "color-tabs-vscode-ext",
+		"version": "0.5.1"
+	},
+	{
+		"extNum": 56,
+		"publisher": "p-de-jong",
+		"name": "vscode-html-scss",
+		"version": "0.0.42"
+	},
+	{
+		"extNum": 57,
+		"publisher": "pkief",
+		"name": "material-icon-theme",
+		"version": "3.7.0"
+	},
+	{
+		"extNum": 58,
+		"publisher": "pnp",
+		"name": "polacode",
+		"version": "0.2.2"
+	},
+	{
+		"extNum": 59,
+		"publisher": "pranaygp",
+		"name": "vscode-css-peek",
+		"version": "2.2.0"
+	},
+	{
+		"extNum": 60,
+		"publisher": "ritwickdey",
+		"name": "liveserver",
+		"version": "5.5.1"
+	},
+	{
+		"extNum": 61,
+		"publisher": "roblourens",
+		"name": "npm-link-status",
+		"version": "0.0.3"
+	},
+	{
+		"extNum": 62,
+		"publisher": "sburg",
+		"name": "vscode-javascript-booster",
+		"version": "0.10.2"
+	},
+	{
+		"extNum": 63,
+		"publisher": "seeker-dk",
+		"name": "node-modules-viewer",
+		"version": "0.0.3"
+	},
+	{
+		"extNum": 64,
+		"publisher": "sibiraj-s",
+		"name": "vscode-scss-formatter",
+		"version": "1.4.1"
+	},
+	{
+		"extNum": 65,
+		"publisher": "skyran",
+		"name": "js-jsx-snippets",
+		"version": "0.3.0"
+	},
+	{
+		"extNum": 66,
+		"publisher": "sporiley",
+		"name": "css-auto-prefix",
+		"version": "0.1.7"
+	},
+	{
+		"extNum": 67,
+		"publisher": "steoates",
+		"name": "autoimport",
+		"version": "1.5.3"
+	},
+	{
+		"extNum": 68,
+		"publisher": "streetsidesoftware",
+		"name": "code-spell-checker",
+		"version": "1.6.10"
+	},
+	{
+		"extNum": 69,
+		"publisher": "sword",
+		"name": "vscode-material-ui-snippets",
+		"version": "1.0.1"
+	},
+	{
+		"extNum": 70,
+		"publisher": "thekalinga",
+		"name": "bootstrap4-vscode",
+		"version": "6.1.0"
+	},
+	{
+		"extNum": 71,
+		"publisher": "tombonnike",
+		"name": "vscode-status-bar-format-toggle",
+		"version": "1.5.0"
+	},
+	{
+		"extNum": 72,
+		"publisher": "vincaslt",
+		"name": "highlight-matching-tag",
+		"version": "0.9.1"
+	},
+	{
+		"extNum": 73,
+		"publisher": "wallabyjs",
+		"name": "quokka-vscode",
+		"version": "1.0.205"
+	},
+	{
+		"extNum": 74,
+		"publisher": "wayou",
+		"name": "vscode-todo-highlight",
+		"version": "1.0.4"
+	},
+	{
+		"extNum": 75,
+		"publisher": "whtouche",
+		"name": "vscode-js-console-utils",
+		"version": "0.7.0"
+	},
+	{
+		"extNum": 76,
+		"publisher": "wiggin77",
+		"name": "codedox",
+		"version": "1.3.0"
+	},
+	{
+		"extNum": 77,
+		"publisher": "wix",
+		"name": "vscode-import-cost",
+		"version": "2.12.0"
+	},
+	{
+		"extNum": 78,
+		"publisher": "wmira",
+		"name": "react-playground-vscode",
+		"version": "0.0.11"
+	},
+	{
+		"extNum": 79,
+		"publisher": "wwm",
+		"name": "better-align",
+		"version": "1.1.6"
+	},
+	{
+		"extNum": 80,
+		"publisher": "xabikos",
+		"name": "javascriptsnippets",
+		"version": "1.7.2"
+	},
+	{
+		"extNum": 81,
+		"publisher": "zaczero",
+		"name": "bootstrap-v4-snippets",
+		"version": "0.2.1"
+	}
+]

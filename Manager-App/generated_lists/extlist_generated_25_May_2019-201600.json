@@ -1,0 +1,266 @@
+[
+    {
+        "extNum": 4,
+        "publisher": "abusaidm",
+        "name": "html-snippets",
+        "version": "0.2.1"
+    },
+    {
+        "extNum": 5,
+        "publisher": "aeschli",
+        "name": "vscode-css-formatter",
+        "version": "1.0.1"
+    },
+    {
+        "extNum": 6,
+        "publisher": "akamud",
+        "name": "vscode-javascript-snippet-pack",
+        "version": "0.1.5"
+    },
+    {
+        "extNum": 7,
+        "publisher": "arjunkomath",
+        "name": "js-file-header",
+        "version": "0.1.3"
+    },
+    {
+        "extNum": 8,
+        "publisher": "be5invis",
+        "name": "vscode-custom-css",
+        "version": "3.0.4"
+    },
+    {
+        "extNum": 10,
+        "publisher": "blanu",
+        "name": "vscode-styled-jsx",
+        "version": "1.5.0"
+    },
+    {
+        "extNum": 11,
+        "publisher": "christian-kohler",
+        "name": "path-intellisense",
+        "version": "1.4.2"
+    },
+    {
+        "extNum": 12,
+        "publisher": "dbaeumer",
+        "name": "vscode-eslint",
+        "version": "1.9.0"
+    },
+    {
+        "extNum": 13,
+        "publisher": "dzannotti",
+        "name": "vscode-babel-coloring",
+        "version": "0.0.4"
+    },
+    {
+        "extNum": 14,
+        "publisher": "eamodio",
+        "name": "gitlens",
+        "version": "9.8.0"
+    },
+    {
+        "extNum": 15,
+        "publisher": "ecmel",
+        "name": "vscode-html-css",
+        "version": "0.2.0"
+    },
+    {
+        "extNum": 16,
+        "publisher": "editorconfig",
+        "name": "editorconfig",
+        "version": "0.13.0"
+    },
+    {
+        "extNum": 17,
+        "publisher": "eg2",
+        "name": "vscode-npm-script",
+        "version": "0.3.7"
+    },
+    {
+        "extNum": 18,
+        "publisher": "formulahendry",
+        "name": "auto-close-tag",
+        "version": "0.5.6"
+    },
+    {
+        "extNum": 19,
+        "publisher": "formulahendry",
+        "name": "auto-rename-tag",
+        "version": "0.0.15"
+    },
+    {
+        "extNum": 20,
+        "publisher": "foxundermoon",
+        "name": "next-js",
+        "version": "0.0.2"
+    },
+    {
+        "extNum": 21,
+        "publisher": "jeremyrajan",
+        "name": "react-component",
+        "version": "1.0.2"
+    },
+    {
+        "extNum": 22,
+        "publisher": "lonefy",
+        "name": "vscode-js-css-html-formatter",
+        "version": "0.2.3"
+    },
+    {
+        "extNum": 23,
+        "publisher": "mgmcdermott",
+        "name": "vscode-language-babel",
+        "version": "0.0.22"
+    },
+    {
+        "extNum": 24,
+        "publisher": "miramac",
+        "name": "vscode-exec-node",
+        "version": "0.5.1"
+    },
+    {
+        "extNum": 25,
+        "publisher": "ms-vscode",
+        "name": "azure-account",
+        "version": "0.8.4"
+    },
+    {
+        "extNum": 26,
+        "publisher": "msjsdiag",
+        "name": "debugger-for-chrome",
+        "version": "4.11.3"
+    },
+    {
+        "extNum": 27,
+        "publisher": "ofhumanbondage",
+        "name": "react-proptypes-intellisense",
+        "version": "1.0.3"
+    },
+    {
+        "extNum": 28,
+        "publisher": "paulmolluzzo",
+        "name": "convert-css-in-js",
+        "version": "1.1.3"
+    },
+    {
+        "extNum": 29,
+        "publisher": "ph1p",
+        "name": "zeit-co-vscode-schemas",
+        "version": "0.0.6"
+    },
+    {
+        "extNum": 30,
+        "publisher": "pkief",
+        "name": "material-icon-theme",
+        "version": "3.7.0"
+    },
+    {
+        "extNum": 31,
+        "publisher": "plibither8",
+        "name": "remove-comments",
+        "version": "1.2.2"
+    },
+    {
+        "extNum": 32,
+        "publisher": "pranaygp",
+        "name": "vscode-css-peek",
+        "version": "2.2.0"
+    },
+    {
+        "extNum": 33,
+        "publisher": "ryotamannari",
+        "name": "babel-plugin-react-css-modules-autocomplete",
+        "version": "1.1.1"
+    },
+    {
+        "extNum": 34,
+        "publisher": "samuelroy",
+        "name": "vscode-styled-jsx-stylus",
+        "version": "1.0.4"
+    },
+    {
+        "extNum": 35,
+        "publisher": "shd101wyy",
+        "name": "markdown-preview-enhanced",
+        "version": "0.3.13"
+    },
+    {
+        "extNum": 36,
+        "publisher": "sidthesloth",
+        "name": "html5-boilerplate",
+        "version": "1.0.3"
+    },
+    {
+        "extNum": 37,
+        "publisher": "skyran",
+        "name": "js-jsx-snippets",
+        "version": "0.3.0"
+    },
+    {
+        "extNum": 38,
+        "publisher": "sporiley",
+        "name": "css-auto-prefix",
+        "version": "0.1.7"
+    },
+    {
+        "extNum": 39,
+        "publisher": "steoates",
+        "name": "autoimport",
+        "version": "1.5.3"
+    },
+    {
+        "extNum": 40,
+        "publisher": "streetsidesoftware",
+        "name": "code-spell-checker",
+        "version": "1.7.10"
+    },
+    {
+        "extNum": 41,
+        "publisher": "vincaslt",
+        "name": "highlight-matching-tag",
+        "version": "0.9.1"
+    },
+    {
+        "extNum": 42,
+        "publisher": "visioncan",
+        "name": "vscode-jss-snippets",
+        "version": "0.2.2"
+    },
+    {
+        "extNum": 43,
+        "publisher": "visualstudioexptteam",
+        "name": "vscodeintellicode",
+        "version": "1.1.6"
+    },
+    {
+        "extNum": 44,
+        "publisher": "waderyan",
+        "name": "babelrc",
+        "version": "1.0.0"
+    },
+    {
+        "extNum": 45,
+        "publisher": "whtouche",
+        "name": "vscode-js-console-utils",
+        "version": "0.7.0"
+    },
+    {
+        "extNum": 46,
+        "publisher": "xabikos",
+        "name": "javascriptsnippets",
+        "version": "1.7.2"
+    },
+    {
+        "extNum": 47,
+        "publisher": "yzhang",
+        "name": "markdown-all-in-one",
+        "version": "2.3.1"
+    },
+    {
+        "extNum": 48,
+        "publisher": "zignd",
+        "name": "html-css-class-completion",
+        "version": "1.19.0"
+    }
+]
