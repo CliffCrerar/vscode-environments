@@ -1,0 +1,152 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"mui-Typograpy": {
+		"prefix": "mui-Typography-import",
+		"body": ["import Typography from '@material-ui/core/Typography';"],
+		"description": "Typography Import"
+	},
+	"mui-Paper": {
+		"prefix": "mui-Paper-import",
+		"body": ["import Paper from '@material-ui/core/Paper';"],
+		"description": "Paper Import"
+	},
+	"mui-Button": {
+		"prefix": "mui-Button-import",
+		"body": ["import Button from '@material-ui/core/Button';"],
+		"description": "Button Import"
+	},
+	"mui-Divider": {
+		"prefix": "mui-Divider-import",
+		"body": ["import Divider from '@material-ui/core/Divider';"],
+		"description": "Divider Import"
+	},
+	"mui-AppBar": {
+		"prefix": "mui-AppBar-import",
+		"body": ["import AppBar from '@material-ui/core/AppBar';"],
+		"description": " Import AppBar"
+	},
+	"mui-Toolbar": {
+		"prefix": "mui-Toolbar-import",
+		"body": ["import Toolbar from '@material-ui/core/Toolbar';"],
+		"description": " Import Toolbar"
+	},
+	"mui-withTheme": {
+		"prefix": "mui-withTheme-import",
+		"body": ["import { withTheme } from '@material-ui/core/styles';"],
+		"description": " Import withTheme"
+	},
+	"mui-Modal": {
+		"prefix": "mui-Modal-import",
+		"body": ["import Modal from '@material-ui/core/Modal';"],
+		"description": " Import Modal"
+	},
+	"mui-TextField": {
+		"prefix": "mui-TextField-import",
+		"body": ["import TextField from '@material-ui/core/TextField'"],
+		"description": " Import TextField"
+	},
+	"mui-BottomNavigation": {
+		"prefix": "mui-BottomNavigation-import",
+		"body": [
+			"import BottomNavigation from '@material-ui/core/BottomNavigation';"
+		],
+		"description": " Import BottomNavigation"
+	},
+	"mui-BottomNavigationAction": {
+		"prefix": "mui-BottomNavigationAction-import",
+		"body": [
+			"import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';"
+		],
+		"description": " Import BottomNavigationAction"
+	},
+	"mui-Fab": {
+		"prefix": "mui-Fab-import",
+		"body": ["import Fab from '@material-ui/core/Fab';"],
+		"description": " Import Fab"
+	},
+	"mui-ButtonBase": {
+		"prefix": "mui-ButtonBase-import",
+		"body": ["import ButtonBase from '@material-ui/core/ButtonBase'"],
+		"description": " Import ButtonBase"
+	},
+	"mui-IconButton": {
+		"prefix": "mui-IconButton-import",
+		"body": ["import IconButton from '@material-ui/core/IconButton';"],
+		"description": " Import IconButton"
+	},
+	"mui-SvgIcon": {
+		"prefix": "mui-SvgIcon-import",
+		"body": ["import SvgIcon from '@material-ui/core/SvgIcon';"],
+		"description": " Import SvgIcon"
+	},
+	"mui-List": {
+		"prefix": "mui-List-import",
+		"body": ["import List from '@material-ui/core/List';"],
+		"description": " Import List"
+	},
+	"mui-ListItem": {
+		"prefix": "mui-ListItem",
+		"body": ["import ListItem from '@material-ui/core/ListItem';"],
+		"description": " Import ListItem"
+	},
+	"mui-ListItemText": {
+		"prefix": "mui-ListItemText-import",
+		"body": ["import ListItemText from '@material-ui/core/ListItemText';"],
+		"description": " Import ListItemText"
+	},
+	"mui-ListItemIcon": {
+		"prefix": "mui-ListItemIcon-import",
+		"body": ["import ListItemIcon from '@material-ui/core/ListItemIcon';"],
+		"description": " Import ListItemIcon"
+	},
+	"mui-Card": {
+		"prefix": "mui-Card-import",
+		"body": ["import Card from '@material-ui/core/Card';"],
+		"description": " Import Card"
+	},
+	"mui-CardHeader": {
+		"prefix": "mui-CardHeader-import",
+		"body": ["import Card from '@material-ui/core/CardHeader';"],
+		"description": " Import CardHeader"
+	},
+	"mui-CardContent": {
+		"prefix": "mui-CardContent-import",
+		"body": ["import Card from '@material-ui/core/CardContent';"],
+		"description": " Import CardContent"
+	},
+	"mui-CardMedia": {
+		"prefix": "mui-CardMedia-import",
+		"body": ["import Card from '@material-ui/core/CardMedia';"],
+		"description": " Import CardMedia"
+	},
+	"mui-CardAction": {
+		"prefix": "mui-CardAction-import",
+		"body": ["import Card from '@material-ui/core/CardAction';"],
+		"description": " Import CardAction"
+	},
+	"mui-CardActionArea": {
+		"prefix": "mui-CardActionArea-import",
+		"body": ["import Card from '@material-ui/core/CardActionArea';"],
+		"description": " Import CardActionArea"
+	},
+	"mui-Avatar": {
+		"prefix": "mui-Avatar-import",
+		"body": ["import Avatar from '@material-ui/core/Avatar';"],
+		"description": " Import Avatar"
+	}
+}

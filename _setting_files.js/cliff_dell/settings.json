@@ -1,0 +1,433 @@
+{
+	"window.zoomLevel": 0,
+	"editor.fontLigatures": true,
+	"editor.fontWeight": "normal",
+	"editor.lineHeight": 20,
+	"asciidecorator.defaultFont": "ANSI Shadow",
+	"editor.tokenColorCustomizations": {
+		"comments": "#11d100af"
+	},
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"editor.autoIndent": true,
+	"editor.foldingStrategy": "indentation",
+	"editor.highlightActiveIndentGuide": true,
+	"editor.wrappingIndent": "indent",
+	"editor.glyphMargin": true,
+	"editor.useTabStops": true,
+	"editor.formatOnSave": true,
+	"editor.tabCompletion": "onlySnippets",
+	"editor.renderControlCharacters": true,
+	"editor.renderWhitespace": "all",
+	"git.autofetch": true,
+	"files.autoSave": "onFocusChange",
+	"files.trimTrailingWhitespace": true,
+	"git.enableSmartCommit": true,
+	"html.format.enable": true,
+	"html.format.indentInnerHtml": true,
+	"git.confirmSync": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"sync.quietSync": false,
+	"sync.removeExtensions": true,
+	"sync.syncExtensions": true,
+	"sync.autoDownload": false,
+	"sync.autoUpload": false,
+	"sync.forceDownload": false,
+	"workbench.editor.openSideBySideDirection": "down",
+	"terminal.integrated.rendererType": "dom",
+	"breadcrumbs.enabled": true,
+	"files.associations": {
+		"*.sql": "sql",
+		"*.html": "html",
+		"*.ts": "typescript",
+		"*.psql": "postgres"
+	},
+	"editor.wordWrap": "on",
+	"css-auto-prefix.enabled": true,
+	"css-auto-prefix.prefixes": {
+		"transform": [
+			"webkit",
+			"moz",
+			"ms",
+			"o"
+		],
+		"transition": [
+			"webkit",
+			"moz",
+			"ms",
+			"o"
+		],
+		"border-radius": [
+			"webkit",
+			"moz",
+			"ms",
+			"o"
+		],
+		"animation": [
+			"webkit"
+		],
+		"box-reflect": [
+			"webkit"
+		],
+		"filter": [
+			"webkit"
+		],
+		"font-feature-settings": [
+			"webkit",
+			"moz"
+		],
+		"backface-visibility": [
+			"webkit"
+		],
+		"box-decoration-break": [
+			"webkit"
+		],
+		"hyphens": [
+			"webkit",
+			"moz",
+			"ms"
+		],
+		"marquee-direction": [
+			"webkit"
+		],
+		"marquee-play-count": [
+			"webkit"
+		],
+		"marquee-speed": [
+			"webkit"
+		],
+		"marquee-style": [
+			"webkit"
+		],
+		"text-combine-upright": [
+			"webkit",
+			"moz",
+			"ms"
+		],
+		"text-decoration-color": [
+			"moz"
+		],
+		"text-decoration-line": [
+			"moz"
+		],
+		"text-decoration-style": [
+			"moz"
+		],
+		"text-orientation": [
+			"webkit"
+		],
+		"writing-mode": [
+			"webkit",
+			"ms"
+		]
+	},
+	"html.format.maxPreserveNewLines": null,
+	"material-icon-theme.folders.color": "#2c3e50",
+	"htmlhint.enable": true,
+	"htmlhint.documentSelector": [
+		"html",
+		"htm",
+		"component.html"
+	],
+	"html.trace.server": "messages",
+	"javascript.preferences.quoteStyle": "single",
+	"codemetrics.basics.EnabledForHTML": true,
+	"css.trace.server": "messages",
+	"html.format.wrapAttributes": "auto",
+	"diffEditor.renderIndicators": true,
+	"editor.colorDecorators": true,
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.smoothScrolling": true,
+	"editor.find.autoFindInSelection": true,
+	"editor.selectionHighlight": true,
+	"editor.showFoldingControls": "mouseover",
+	"editor.trimAutoWhitespace": true,
+	"html.suggest.html5": true,
+	"editor.insertSpaces": false,
+	"javascript.format.insertSpaceAfterCommaDelimiter": true,
+	"npm.enableScriptExplorer": true,
+	"npm.autoDetect": "on",
+	"npm.scriptExplorerAction": "open",
+	"typescript.tsserver.log": "normal",
+	"css.lint.argumentsInColorFunction": "warning",
+	"javascript.format.enable": true,
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.format.insertSpaceAfterConstructor": true,
+	"emmet.triggerExpansionOnTab": true,
+	"json.format.enable": true,
+	"json.trace.server": "messages",
+	"editor.largeFileOptimizations": false,
+	"npm-intellisense.recursivePackageJsonLookup": true,
+	"workbench.editor.showIcons": true,
+	"workbench.editor.showTabs": true,
+	"workbench.settings.editor": "json",
+	"workbench.statusBar.visible": true,
+	"workbench.view.alwaysShowHeaderActions": true,
+	"workbench.quickOpen.closeOnFocusLost": true,
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.list.openMode": "singleClick",
+	"workbench.editor.centeredLayoutAutoResize": true,
+	"workbench.activityBar.visible": true,
+	"workbench.tips.enabled": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"files.autoGuessEncoding": true,
+	"files.encoding": "utf8",
+	"editor.wordWrapColumn": 100,
+	"editor.parameterHints.enabled": true,
+	"materialTheme.accent": "Orange",
+	"workbench.colorCustomizations": {
+		"activityBarBadge.background": "#FF7042",
+		"list.activeSelectionForeground": "#FF7042",
+		"list.inactiveSelectionForeground": "#FF7042",
+		"list.highlightForeground": "#FF7042",
+		"scrollbarSlider.activeBackground": "#FF704250",
+		"editorSuggestWidget.highlightForeground": "#FF7042",
+		"textLink.foreground": "#FF7042",
+		"progressBar.background": "#FF7042",
+		"pickerGroup.foreground": "#FF7042",
+		"tab.activeBorder": "#FF7042",
+		"notificationLink.foreground": "#FF7042",
+		"editorWidget.resizeBorder": "#FF7042",
+		"editorWidget.border": "#FF7042",
+		"settings.modifiedItemIndicator": "#FF7042",
+		"settings.headerForeground": "#FF7042",
+		"panelTitle.activeBorder": "#FF7042",
+		"breadcrumb.activeSelectionForeground": "#FF7042",
+		"menu.selectionForeground": "#FF7042",
+		"menubar.selectionForeground": "#FF7042"
+	},
+	"editor.renderLineHighlight": "gutter",
+	"html.format.wrapLineLength": 120,
+	"codemetrics.basics.CodeLensEnabled": false,
+	"editor.codeLens": false,
+	"typescript.implementationsCodeLens.enabled": false,
+	"zenMode.hideTabs": false,
+	"zenMode.hideActivityBar": false,
+	"zenMode.centerLayout": false,
+	"editor.copyWithSyntaxHighlighting": false,
+	"editor.cursorBlinking": "phase",
+	"css.fileExtensions": [
+		"css",
+		"scss"
+	],
+	"npm.validate.enable": true,
+	"css_peek.activeLanguages": [
+		"html",
+		"ejs",
+		"erb",
+		"php",
+		"javascriptreact",
+		"typescriptreact",
+		"typescript",
+		"javascript"
+	],
+	"css_peek.enable": true,
+	"css_peek.exclude": [
+		"node_modules",
+		"bower_components"
+	],
+	"css_peek.searchFileExtensions": [
+		".css",
+		".scss",
+		".less"
+	],
+	"asciidecorator.enable": true,
+	"editor.cursorWidth": 6,
+	"jsFileHeader.Author": "< author name here >",
+	"stylelint.enable": true,
+	"git.enabled": true,
+	"git.fetchOnPull": false,
+	"gitlens.codeLens.enabled": true,
+	"gitlens.recentChanges.highlight.locations": [
+		"gutter",
+		"line",
+		"overview"
+	],
+	"todohighlight.exclude": [
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/dist/**",
+		"**/build/**",
+		"**/.vscode/**",
+		"**/.github/**",
+		"**/_output/**",
+		"**/*.min.*",
+		"**/*.map",
+		"**/.next/**"
+	],
+	"gitlens.statusBar.enabled": true,
+	"gitlens.blame.compact": true,
+	"gitlens.blame.avatars": true,
+	"gitlens.advanced.telemetry.enabled": true,
+	"gitlens.blame.highlight.locations": [
+		"line"
+	],
+	"gitlens.codeLens.includeSingleLineSymbols": true,
+	"gitlens.codeLens.recentChange.enabled": true,
+	"gitlens.codeLens.scopes": [
+		"containers"
+	],
+	"gitlens.currentLine.scrollable": true,
+	"gitlens.modes": {
+		"zen": {
+			"name": "Zen",
+			"statusBarItemName": "Zen",
+			"description": "for a zen-like experience, disables many visual features",
+			"codeLens": false,
+			"currentLine": false,
+			"hovers": false,
+			"statusBar": false
+		},
+		"review": {
+			"name": "Review",
+			"statusBarItemName": "Reviewing",
+			"description": "for reviewing code, enables many visual features",
+			"codeLens": true,
+			"currentLine": true,
+			"hovers": true
+		}
+	},
+	"gitlens.outputLevel": "errors",
+	"gitlens.settings.mode": "simple",
+	"gitlens.statusBar.format": "${authorAgoOrDate}",
+	"gitlens.hovers.annotations.changes": true,
+	"gitlens.hovers.annotations.enabled": true,
+	"gitlens.hovers.annotations.over": "annotation",
+	"gitlens.blame.heatmap.location": "left",
+	"bracketPairColorizer.rulerPosition": "Full",
+	"bracketPairColorizer.scopeLineCSS": [
+		"borderStyle : solid",
+		"borderWidth : 1px",
+		"borderColor : {color}; opacity: 0.5"
+	],
+	"bracketPairColorizer.showBracketsInRuler": true,
+	"csstriggers.defaultEngine": "blink",
+	"csstriggers.showDecoration": true,
+	"csstriggers.showExtendedInformation": true,
+	"csstriggers.showLegend": true,
+	"codemetrics.basics.DecorationModeEnabled": false,
+	"codemetrics.basics.DiagnosticsEnabled": true,
+	"codemetrics.basics.EnabledForJSX": true,
+	"codemetrics.basics.EnabledForLua": true,
+	"codemetrics.basics.EnabledForTS": true,
+	"codemetrics.basics.EnabledForTSX": true,
+	"codemetrics.basics.EnabledForVue": true,
+	"path-intellisense.absolutePathToWorkspace": false,
+	"path-intellisense.showHiddenFiles": true,
+	"merge-conflict.codeLens.enabled": true,
+	"merge-conflict.decorators.enabled": true,
+	"importCost.bundleSizeDecoration": "both",
+	"gitlens.currentLine.enabled": true,
+	"gitlens.hovers.enabled": true,
+	"gitlens.blame.highlight.enabled": true,
+	"gitlens.hovers.annotations.details": true,
+	"gitlens.hovers.currentLine.details": true,
+	"gitlens.hovers.currentLine.enabled": true,
+	"gitlens.hovers.currentLine.over": "annotation",
+	"gitlens.liveshare.allowGuestAccess": true,
+	"gitlens.mode.statusBar.enabled": true,
+	"gitlens.views.compare.enabled": true,
+	"gitlens.views.lineHistory.enabled": true,
+	"git-autoconfig.configList": [
+		{
+			"user.email": "cliff.crerar@gmail.com",
+			"user.name": "CliffCrerar"
+		},
+		{
+			"user.email": "jason.lunderstedt@gmail.com",
+			"user.name": "SavageLion"
+		},
+		{
+			"user.email": "jasonl@surtech.co.za",
+			"user.name": "Jason"
+		},
+		{
+			"user.email": "cliffordc@acl.co.za",
+			"user.name": "Cliff-cqs"
+		}
+	],
+	"docthis.includeDescriptionTag": true,
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"backgroundColor": "transparent"
+		},
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"backgroundColor": "transparent"
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"backgroundColor": "transparent"
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"backgroundColor": "transparent"
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"backgroundColor": "transparent"
+		}
+	],
+	"editor.quickSuggestions": {
+		"other": true,
+		"comments": true,
+		"strings": false
+	},
+	"better-comments.multilineComments": true,
+	"better-comments.highlightPlainText": true,
+	"comment-ts.todoComments": true,
+	"comment-ts.scoped": true,
+	"comment-ts.replaceComments": true,
+	"comment-ts.parseNames": true,
+	"comment-ts.includeAuthorTag": true,
+	"comment-ts.includeDescriptionTag": true,
+	"typescript.suggestionActions.enabled": true,
+	"docthis.authorName": "< NAME >",
+	"docthis.includeAuthorTag": true,
+	"gitlens.advanced.messages": {
+		"suppressShowKeyBindingsNotice": true
+	},
+	"team.showWelcomeMessage": false,
+	"workbench.settings.useSplitJSON": true,
+	"workbench.settings.openDefaultSettings": true,
+	"sync.askGistName": true,
+	"workbench.startupEditor": "newUntitledFile",
+	"sync.gist": "",
+	"scss.suggestVariables": false,
+	"editor.suggest.snippetsPreventQuickSuggestions": true,
+	"emmet.showSuggestionsAsSnippets": false,
+	"terminal.integrated.fontFamily": "Menlo,Consolas",
+	"search.actionsPosition": "auto",
+	"search.collapseResults": "alwaysExpand",
+	"search.quickOpen.includeHistory": true,
+	"search.useReplacePreview": true,
+	"gitProjectManager.searchInsideProjects": true,
+	"search.showLineNumbers": true,
+	"search.smartCase": true,
+	"editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"[postgres]": {},
+	"workbench.colorTheme": "Deepdark Material Theme | Full Black Version",
+	"cSpell.userWords": [
+		"crerar"
+	]
+}
+/**
+	"powershell.codeFolding.enable": false,
+	"powershell.codeFormatting.alignPropertyValuePairs": false,
+	"powershell.powerShellExePath": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+*/
