@@ -3,7 +3,7 @@
 	"displayName": "Better Comments",
 	"icon": "icon.png",
 	"description": "Improve your code commenting by annotating with alert, informational, TODOs, and more!",
-	"version": "2.0.3",
+	"version": "2.0.5",
 	"publisher": "aaron-bond",
 	"author": {
 		"name": "Aaron Bond"
@@ -21,13 +21,16 @@
 	"engines": {
 		"vscode": "^1.8.1"
 	},
+	"extensionKind": "ui",
 	"activationEvents": [
 		"onLanguage:ada",
 		"onLanguage:al",
+		"onLanguage:apex",
 		"onLanguage:asciidoc",
 		"onLanguage:bibtex",
 		"onLanguage:c",
 		"onLanguage:clojure",
+		"onLanguage:cfml",
 		"onLanguage:COBOL",
 		"onLanguage:coffeescript",
 		"onLanguage:cpp",
@@ -38,11 +41,13 @@
 		"onLanguage:diagram",
 		"onLanguage:dockerfile",
 		"onLanguage:elixir",
+		"onLanguage:elm",
 		"onLanguage:erlang",
 		"onLanguage:flax",
 		"onLanguage:fsharp",
 		"onLanguage:fortran-modern",
 		"onLanguage:gdscript",
+		"onLanguage:genstat",
 		"onLanguage:go",
 		"onLanguage:graphql",
 		"onLanguage:groovy",
@@ -61,6 +66,7 @@
 		"onLanguage:lisp",
 		"onLanguage:lua",
 		"onLanguage:makefile",
+		"onLanguage:markdown",
 		"onLanguage:matlab",
 		"onLanguage:nim",
 		"onLanguage:objective-c",
@@ -166,11 +172,11 @@
 		}
 	},
 	"devDependencies": {
-		"typescript": "^2.6.1",
-		"vsce": "^1.48.0",
-		"vscode": "^1.1.0",
-		"@types/node": "^8.0.0",
-		"tslint": "^5.10.0"
+		"typescript": "3.4.5",
+		"vsce": "^1.61.0",
+		"vscode": "^1.1.34",
+		"@types/node": "^12.0.1",
+		"tslint": "^5.16.0"
 	},
 	"__metadata": {
 		"id": "7a0110bb-231a-4598-aa1b-0769ea46d28b",

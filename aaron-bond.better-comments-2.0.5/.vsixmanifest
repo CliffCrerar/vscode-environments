@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="better-comments" Version="2.0.3" Publisher="aaron-bond"/>
+    <Identity Language="en-US" Id="better-comments" Version="2.0.5" Publisher="aaron-bond"/>
     <DisplayName>Better Comments</DisplayName>
     <Description xml:space="preserve">Improve your code commenting by annotating with alert, informational, TODOs, and more!</Description>
-    <Tags>ada,al,asciidoc,bibtex,c,clojure,COBOL,coffeescript,cpp,csharp,css,d,dart,diagram,dockerfile,elixir,erlang,flax,fsharp,fortran-modern,gdscript,go,graphql,groovy,haskell,html,haxe,hive-sql,kotlin,java,javascript,javascriptreact,jsonc,julia,latex,less,lisp,lua,makefile,matlab,nim,objective-c,objective-cpp,objectpascal,pascal,perl,perl6,pig,plaintext,plsql,php,powershell,puppet,python,r,racket,ruby,rust,scala,sas,sass,scss,shaderlab,shellscript,sql,stata,stylus,swift,tcl,terraform,twig,typescript,typescriptreact,vb,verilog,vue,yaml</Tags>
+    <Tags>ada,al,apex,asciidoc,bibtex,c,clojure,cfml,COBOL,coffeescript,cpp,csharp,css,d,dart,diagram,dockerfile,elixir,elm,erlang,flax,fsharp,fortran-modern,gdscript,genstat,go,graphql,groovy,haskell,html,haxe,hive-sql,kotlin,java,javascript,javascriptreact,jsonc,julia,latex,less,lisp,lua,makefile,markdown,matlab,nim,objective-c,objective-cpp,objectpascal,pascal,perl,perl6,pig,plaintext,plsql,php,powershell,puppet,python,r,racket,ruby,rust,scala,sas,sass,scss,shaderlab,shellscript,sql,stata,stylus,swift,tcl,terraform,twig,typescript,typescriptreact,vb,verilog,vue,yaml</Tags>
     <Categories>Formatters</Categories>
     <GalleryFlags>Public</GalleryFlags>
     <Badges></Badges>
     <Properties>
       <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.8.1" />
       <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
       
         <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/aaron-bond/better-comments" />
         <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/aaron-bond/better-comments" />
