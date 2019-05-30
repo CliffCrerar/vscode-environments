@@ -1,0 +1,31 @@
+{
+	"name": "aws-sdk-snippets",
+	"displayName": "aws-sdk snippets pack for node js",
+	"description": "Code snippets for aws-sdk library",
+	"version": "1.0.0",
+	"publisher": "frhtylcn",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ylcnfrht/vscode-aws-sdk-snippet-pack"
+	},
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.28.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/aws-sdk.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "17b03b16-0c80-4d80-954d-27773dade00e",
+		"publisherId": "343aed50-1887-40b4-aa69-bba6e5bb5dd1",
+		"publisherDisplayName": "Ferhat Yalçın"
+	}
+}
