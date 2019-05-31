@@ -1,0 +1,268 @@
+{
+  "AppModule": {
+    "prefix": "ag-AppModule",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { BrowserModule } from '@angular/platform-browser';",
+      "import { ${appComponentName} } from './${path}/${fileName}.component';",
+      "$0",
+      "@NgModule({",
+      "\timports: [ BrowserModule ],",
+      "\tdeclarations: [ ${appComponentName} ],",
+      "\tbootstrap:    [ ${appComponentName} ]",
+      "})",
+      "export class AppModule { }"
+    ],
+    "description": "Angular root app module (@NgModule) snippet"
+  },
+
+  "AppFeatureModule": {
+    "prefix": "ag-AppFeatureModule",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "",
+      "import { ${featureName}RoutingModule } from './${path}/${fileName}.module';",
+      "$0",
+      "@NgModule({",
+      "\timports: [ ${featureName}RoutingModule ],",
+      "\tdeclarations: [  ],",
+      "})",
+      "export class ${featureName}Module { }"
+    ],
+    "description": "Angular app feature module (@NgModule) snippet with routing module import"
+  },
+
+  "AppFeatureRoutingModule": {
+    "prefix": "ag-AppFeatureRoutingModule",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { RouterModule, Routes } from '@angular/router';",
+      "",
+      "import { ${featureName}Component } from './${path}/${fileName}.component';",
+      "",
+      "const routes: Routes = ",
+      "\t{ path: '${routePath}', component: ${featureName}Component }$0",
+      "];",
+      "",
+      "@NgModule({",
+      "\timports: [ RouterModule.forChild(routes) ],",
+      "\texports: [ RouterModule ]",
+      "})",
+      "export class ${featureName}RoutingModule {",
+      "}"
+    ],
+    "description": "Angular app feature routing module (@NgModule with RouterModule import) snippet"
+  },
+
+  "Routes": {
+    "prefix": "ag-Routes",
+    "body": [
+      "import { RouterModule, Routes } from '@angular/router';",
+      "",
+      "const routes: Routes = [",
+      "\t{ path: '${routePath}', component: ${Component} },$0",
+      "\t{ path: '**', pathMatch:'full', redirectTo: '${routePath}' }",
+      "];",
+      "",
+      "export const appRouting = RouterModule.forRoot(routes);"
+    ],
+    "description": "Angular root routes snippet"
+  },
+
+  "Route": {
+    "prefix": "ag-Route",
+    "body": [
+      "{ path: '${routePath}', component: ${Component} }$0"
+    ],
+    "description": "Angular route definition snippet"
+  },
+  
+  "Component": {
+    "prefix": "ag-Component",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${selector}',",
+      "\ttemplateUrl: '${fileName}.component.html'",
+      "})",
+      "export class ${ComponentName}Component implements OnInit {",
+      "$0",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { ",
+      "",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular component snippet"
+  }, 
+
+  "CanActivateRoutingGuard": {
+    "prefix": "ag-CanActivateRoutingGuard",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs';",
+      "",
+      "@Injectable()",
+      "export class CanActivateGuard implements CanActivate {",
+      "",
+      "\tcanActivate(",
+      "\t\troute: ActivatedRouteSnapshot,",
+      "\t\tstate: RouterStateSnapshot",
+      "\t) : Observable<boolean> | Promise<boolean> | boolean {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular CanActivate Routing Guard"
+  }, 
+  
+  "CanDeactivateRoutingGuard": {
+    "prefix": "ag-CanDeactivateRoutingGuard",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs';",
+      "",
+      "import { ${ComponentToGuard} } from '${filePath}.component';",
+      "",
+      "@Injectable()",
+      "export class CanDeactivateGuard implements CanDeactivate<${ComponentToGuard}> {",
+      "",
+      "\tcanDeactivate(",
+      "\t\tcomponent: ${ComponentToGuard},",
+      "\t\troute: ActivatedRouteSnapshot,",
+      "\t\tstate: RouterStateSnapshot",
+      "\t) : Observable<boolean> | Promise<boolean> | boolean {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular CanDeactivate Routing Guard"
+  }, 
+  
+  "Service": {
+    "prefix": "ag-Service",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "",
+      "@Injectable()",
+      "export class ${ServiceName}Service {",
+      "\t$0",
+      "\tconstructor() { }",
+      "",
+      "}"
+    ],
+    "description": "Angular service snippet"
+  },
+ 
+  "HttpClientService": {
+    "prefix": "ag-HttpClientService",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { HttpClient } from '@angular/common/http';",
+      "",
+      "import { Observable } from 'rxjs/Observable';",
+      "import { map, catchError } from 'rxjs/operators;",
+      "",
+      "@Injectable()",
+      "export class ${ServiceName}Service {",
+      "\t$0",
+      "\tconstructor(private http: HttpClient) { }",
+      "",
+      "}"
+    ],
+    "description": "Angular HttpClient service snippet"
+  },
+
+  "Pipe": {
+    "prefix": "ag-Pipe",
+    "body": [
+      "import { Pipe, PipeTransform } from '@angular/core';",
+      "",
+      "@Pipe({",
+      "\tname: '${name}'",
+      "})",
+      "export class ${PipeName}Pipe implements PipeTransform {",
+      "",
+      "\ttransform(value: ${valueType}, arg?: ${argType}) {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular pipe snippet"
+  },
+    
+  "Subscribe": {
+    "prefix": "ag-Subscribe",
+    "body": [
+      "\t\tthis.${serviceName}.${functionName}",
+      "\t\t\t.subscribe(${paramName} => {",
+      "\t\t\t\t$0",
+      "\t\t});"
+    ],
+    "description": "Angular observable subscribe snippet"
+  },
+
+  "Subscription": {
+    "prefix": "ag-Subscription",
+    "body": [
+      "${propertyName}: Subscription;"
+    ],
+    "description": "RxJS subscription property"
+  },
+
+  "HttpConcatMap": {
+    "prefix": "ag-ConcatMap",
+    "body": [
+      "this.${service1Name}.${service11FunctionName}(${service1FunctionParam}: ${service1FunctionParamType}).pipe(",
+      "\tconcatMap(",
+        "\t\t${service1FunctionReturnValueName} => this.${service2Name}.${service2FunctionName}(${service2FunctionParam}: ${service2FunctionParamType}),",
+        "\t\t(${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}) => ({${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}})",
+      "\t)",
+      ")",
+      ".subscribe(({${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}}) => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "RxJS concatMap snippet for multiple calls to functions that return observables (useful for multiple Http calls or when dealing with multiple observables)"
+  },
+  
+  "Input": {
+    "prefix": "ag-InputProperty",
+    "body": [
+      "@Input() public ${propertyName}: ${propertyType};"
+    ],
+    "description": "Angular @Input property snippet (import Input from @angular/core to use)"
+  },
+
+  "InputGetSet": {
+    "prefix": "ag-InputGetSet",
+    "body": [
+      "private _${propertyName}: ${propertyType};",
+      "@Input() public get ${propertyName}() {",
+      "\treturn this._${propertyName};",
+      "}",
+      "",
+      "public set ${propertyName}(val: ${propertyType}) { ",
+      "\tthis._${propertyName} = val;",
+      "}"
+    ],
+    "description": "Angular @Input property with get/set snippet (import Input from @angular/core to use)"
+  },
+  
+  "Output": {
+    "prefix": "ag-OutputEvent",
+    "body": [
+      "@Output() public ${eventName} = new EventEmitter<${eventDataType}>();"
+    ],
+    "description": "Angular @Output event snippet (import Output and EventEmitter from @angular/core to use)"
+  }
+
+}
