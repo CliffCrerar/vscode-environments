@@ -1,6 +1,0 @@
-{
-  "extends": "@knisterpeter/standard-tslint",
-  "rules": {
-    "await-promise": [true, "Thenable"]
-  }
-}
