@@ -1,0 +1,146 @@
+{
+	"name": "angular-explorer",
+	"displayName": "Angular Explorer",
+	"description": "Explorer for Angular files with quick open function",
+	"icon": "img/logo.png",
+	"version": "0.0.4",
+	"publisher": "carlowenig",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/carlowenig/angular-explorer"
+	},
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"workspaceContains:**/.angular-cli.json",
+		"workspaceContains:**/node_modules/@angular/core/package.json"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "angularExplorer.openScript",
+				"title": "Open Script-File (.ts)"
+			},
+			{
+				"command": "angularExplorer.openTemplate",
+				"title": "Open Template-File (.html)"
+			},
+			{
+				"command": "angularExplorer.openStyles",
+				"title": "Open Style-File(s) (.css/.scss)"
+			},
+			{
+				"command": "angularExplorer.openSpec",
+				"title": "Open Spec-File (.spec.ts)"
+			},
+			{
+				"command": "angularExplorer.refreshExplorer",
+				"title": "Refresh",
+				"icon": "/img/ic_refresh.svg"
+			}
+		],
+		"views": {
+			"explorer": [
+				{
+					"id": "angularExplorer",
+					"name": "Angular Explorer",
+					"when": "isAngularProject"
+				}
+			]
+		},
+		"menus": {
+			"view/item/context": [
+				{
+					"when": "viewItem == ngObject.module",
+					"command": "angularExplorer.openScript",
+					"group": "open@1"
+				},
+				{
+					"when": "viewItem == ngObject.component",
+					"command": "angularExplorer.openScript",
+					"group": "open@1"
+				},
+				{
+					"when": "viewItem == ngObject.component",
+					"command": "angularExplorer.openTemplate",
+					"group": "open@2"
+				},
+				{
+					"when": "viewItem == ngObject.component",
+					"command": "angularExplorer.openStyles",
+					"group": "open@3"
+				},
+				{
+					"when": "viewItem == ngObject.component",
+					"command": "angularExplorer.openSpec",
+					"group": "open@4"
+				},
+				{
+					"when": "viewItem == ngObject.service",
+					"command": "angularExplorer.openScript",
+					"group": "open@1"
+				},
+				{
+					"when": "viewItem == ngObject.service",
+					"command": "angularExplorer.openSpec",
+					"group": "open@2"
+				}
+			],
+			"view/title": [
+				{
+					"when": "view == angularExplorer",
+					"command": "angularExplorer.refreshExplorer",
+					"group": "navigation"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "AngularExplorer Configuration",
+			"properties": {
+				"angularExplorer.icons": {
+					"type": "string",
+					"enum": [
+						"inbuilt",
+						"default",
+						"none"
+					],
+					"default": "inbuilt",
+					"description": "inbuilt: Use the inbuilt icons\ndefault: Use the default icons of the script files\nnone: Don't show any icons"
+				},
+				"angularExplorer.searchLocations": {
+					"type": "array",
+					"default": [
+						"src"
+					],
+					"description": "The directories in which AngularExplorer will search for Angular files. If you want to speed up the search process you can change this to the directories where your Angular files are stored. To select the root path of your workspace set it to \"*\"."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^7.0.60",
+		"tslint": "^5.8.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.6"
+	},
+	"__metadata": {
+		"id": "63e3c779-0206-4b2b-aa57-d8d007c66dcd",
+		"publisherId": "4489cc53-7c51-41ba-9b7c-17ee9e07cd7e",
+		"publisherDisplayName": "Carlo Wenig"
+	}
+}
