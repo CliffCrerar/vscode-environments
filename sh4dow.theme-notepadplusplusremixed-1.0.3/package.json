@@ -1,0 +1,38 @@
+{
+	"name": "theme-notepadplusplusremixed",
+	"displayName": "NotepadPlusPlus Remixed Theme",
+	"description": "This is not an exact replica of the Notepad++ default theme. JS/HTML/Python colors were used as a base but were partly combined and modified a bit.",
+	"icon": "icon.png",
+	"version": "1.0.3",
+	"publisher": "sh4dow",
+	"homepage": "https://github.com/s-h-a-d-o-w/NotepadPlusPlus-Remixed-Theme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/s-h-a-d-o-w/NotepadPlusPlus-Remixed-Theme.git"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"notepad plus plus",
+		"notepad++",
+		"theme"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "NotepadPlusPlus Remixed Theme",
+				"uiTheme": "vs",
+				"path": "./themes/NotepadPlusPlusRemixed.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5f67121f-c68c-4f5e-9a65-7693294ab0b7",
+		"publisherId": "601980df-634b-4022-834a-81597a540627",
+		"publisherDisplayName": "sh4dow"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"name": "theme-darkplusplusplus",
+	"displayName": "Dark+++ Theme",
+	"description": "An enhanced version of the Visual Studio Code default Dark+ theme.",
+	"version": "0.1.2",
+	"publisher": "lenconda",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/lenconda/vscode-theme-darkplusplusplus",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lenconda/vscode-theme-darkplusplusplus.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lenconda/vscode-theme-darkplusplusplus/issues"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Dark+++",
+				"uiTheme": "vs-dark",
+				"path": "./theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "273c9c44-d70b-4009-a843-4695e049cbbb",
+		"publisherId": "ff6f447c-e7a4-40db-8470-77e7d2b22f97",
+		"publisherDisplayName": "Peng Hanlin"
+	}
+}

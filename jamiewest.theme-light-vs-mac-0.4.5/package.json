@@ -1,0 +1,41 @@
+{
+	"name": "theme-light-vs-mac",
+	"displayName": "Visual Studio for Mac Light Theme",
+	"description": "Light theme design based on Visual Studio for Mac.",
+	"version": "0.4.5",
+	"publisher": "jamiewest",
+	"engines": {
+		"vscode": "^1.12.x"
+	},
+	"categories": [
+		"Themes"
+	],
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"bugs": {
+		"url": "https://github.com/jamiewest/vscode-themes/issues"
+	},
+	"homepage": "https://github.com/jamiewest/vscode-themes/blob/master/light-vs-mac/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jamiewest/vscode-themes.git"
+	},
+	"galleryBanner": {
+		"color": "#ECF0F1",
+		"theme": "light"
+	},
+	"icon": "icon.svg",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Light (Visual Studio for Mac)",
+				"uiTheme": "vs",
+				"path": "./themes/theme-light-vs-mac.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "75ebcc8a-b7a8-4aab-8261-76edbefbe3cc",
+		"publisherId": "161cafa4-4ce0-4931-90d7-aaf7c2c89d7f",
+		"publisherDisplayName": "jamiewest"
+	}
+}
