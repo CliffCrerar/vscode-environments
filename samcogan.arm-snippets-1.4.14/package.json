@@ -1,0 +1,48 @@
+{
+	"name": "arm-snippets",
+	"displayName": "Azure Resource Manager Snippets",
+	"description": "Snippets for creating Azure Resource Manger Templates",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"version": "1.4.14",
+	"publisher": "samcogan",
+	"icon": "images/logo.png",
+	"galleryBanner": {
+		"color": "#939290",
+		"theme": "dark"
+	},
+	"keywords": [
+		"Azure",
+		"ARM",
+		"Snippets",
+		"JSON"
+	],
+	"homepage": "https://samcogan.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sam-cogan/arm-snippets-vscode.git"
+	},
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Snippets",
+		"Azure"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "json",
+				"path": "./snippets/armsnippets.json"
+			},
+			{
+				"language": "jsonc",
+				"path": "./snippets/armsnippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "8125f8fe-5eb9-47bd-9d6b-73bfc52c1b48",
+		"publisherId": "5b0e729b-1668-403e-bcf2-7c8d3d4f3949",
+		"publisherDisplayName": "Sam Cogan"
+	}
+}

@@ -1,0 +1,7 @@
+#This is the output of code_to_json.py
+#This function simply converts code into json format
+
+"module.exports = function(context, mySbMsg) {",
+"    context.log('Node.js ServiceBus topic trigger function processed message', mySbMsg);",
+"    context.done();",
+"};",
