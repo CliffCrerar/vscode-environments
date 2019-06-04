@@ -1,0 +1,35 @@
+{
+    "con-switch-razor":{
+		"prefix": "@switch",
+		"body":[
+			"@switch (${1:switch_on})",
+			"{", 
+				"\t${0:default}:", 
+			"}"
+		],
+		"description": "switch: \n Code snippet for switch statement"
+	},
+
+	"con-if-razor":{
+		"prefix": "@if",
+		"body":[
+			"@if (${1:true})",
+			"{", 
+				"\t$0", 
+			"}"
+		],
+		"description": "if: \n Code snippet for if statement"
+	},
+
+	"con-ifelse-razor":{
+		"prefix": "@ifelse",
+		"body":[
+			"@if (${1:true})",
+			"{", 
+				"\t$2", 
+			"}",
+			"else", "{", "\t$0", "}"
+		],
+		"description": "if: \n Code snippet for ifelse statement"
+	},
+}

@@ -1,0 +1,35 @@
+{
+	"name": "html-snippets",
+	"displayName": "HTML Snippets",
+	"description": "Full HTML tags including HTML5 Snippets",
+	"version": "0.1.5",
+	"publisher": "wgenial",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wgenial/html-snippets.git"
+	},
+	"engines": {
+		"vscode": "^1.9.1"
+	},
+	"galleryBanner": {
+		"color": "#1E81C1",
+		"theme": "light"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "html",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "1c4d49c6-4056-41fd-8c58-1c7f3c9073ae",
+		"publisherId": "822477ac-f6ba-4bdc-bdc0-f2e7935f1ca6",
+		"publisherDisplayName": "wgenial"
+	}
+}

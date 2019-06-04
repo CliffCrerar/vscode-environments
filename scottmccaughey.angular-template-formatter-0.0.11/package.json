@@ -1,0 +1,91 @@
+{
+	"name": "angular-template-formatter",
+	"displayName": "Angular Template Formatter",
+	"description": "Auto-Format Angular HTML templates",
+	"version": "0.0.11",
+	"publisher": "scottmccaughey",
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/scottmccaughey/angular-template-formatter"
+	},
+	"categories": [
+		"Formatters"
+	],
+	"icon": "icon.png",
+	"activationEvents": [
+		"onLanguage:html"
+	],
+	"main": "./out/src/extension",
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Angular Template Formatter",
+			"properties": {
+				"angular-template-formatter.indentWidth": {
+					"type": "number",
+					"default": 2,
+					"description": "Number of spaces to indent."
+				},
+				"angular-template-formatter.useSpaces": {
+					"type": "boolean",
+					"default": true,
+					"description": "Use spaces or tabs for indentation (False will ignore indentWidth)."
+				},
+				"angular-template-formatter.closeTagSameLine": {
+					"type": "boolean",
+					"default": true,
+					"description": "Never place the closing tag '>' on a new line."
+				},
+				"angular-template-formatter.skipContents": {
+					"type": "array",
+					"default": [
+						"p",
+						"li",
+						"span",
+						"em",
+						"strong",
+						"i",
+						"b",
+						"h1",
+						"h2",
+						"h3",
+						"h4",
+						"h5",
+						"h6"
+					],
+					"description": "HTML tags whose contents the formatter should ignore."
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"vscode": "^1.0.0",
+		"typescript": "^2.0.3",
+		"mocha": "^2.3.3",
+		"@types/jasmine": "^2.5.38",
+		"@types/node": "6.0.46",
+		"@types/commander": "2.9.0",
+		"commander": "2.9.0",
+		"jasmine": "^2.5.2"
+	},
+	"dependencies": {
+		"@angular/compiler": "4.1.1",
+		"zone.js": "0.8.4",
+		"rxjs": "^5.0",
+		"@angular/core": "4.1.1"
+	},
+	"__metadata": {
+		"id": "97c0f3db-3e98-4363-b928-4a2fb2f926f2",
+		"publisherId": "7229d36c-e1ce-4538-839c-5592dc48ab8c",
+		"publisherDisplayName": "Scott McCaughey"
+	}
+}

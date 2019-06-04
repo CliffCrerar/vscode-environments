@@ -1,0 +1,91 @@
+{
+	"name": "Visual Studio Light Theme (2017)",
+	"type": "light",
+	"colors": {
+		// Activity Bar
+		"activityBar.background": "#eeeef2",
+		"activityBar.foreground": "#007acc",
+		"activityBar.border": "#cccedb",
+		"activityBar.inactiveForeground": "#8ea6b6",
+
+		// Editor
+		"editor.background": "#ffffff",
+		"editor.foreground": "#000000",
+		"editor.selectionBackground": "#0078d775",
+		"editor.inactiveSelectionBackground": "#bfcddb75",
+		"editor.lineHighlightBorder": "#eaeaf2",
+		"editor.findMatchBackground": "#949f84",
+		"editor.findMatchHighlightBackground": "#f6b94d",
+		"editorLineNumber.foreground": "#2b91af",
+		"editorLineNumber.activeForeground": "#2b91af",
+		"editorCursor.foreground": "#7a7a7c",
+		"editorBracketMatch.background": "#e2e6d6",
+		"editorBracketMatch.border": "#00000000",
+		"editorGroupHeader.noTabsBackground": "#eeeef2",
+		"editorGroupHeader.tabsBackground": "#eeeef2",
+		"editorGroupHeader.tabsBorder": "#cccedb",
+		"editorGroup.border": "#cccedb",
+		"editorGroup.dropBackground": "#add6ff",
+
+		// Inputs
+		"input.foreground": "#000000",
+		"input.border": "#00000000",
+		"input.placeholderForeground": "#717171",
+		"inputValidation.errorForeground": "#ffffff",
+		"inputValidation.errorBorder": "#e51400",
+
+		// Menu
+		"menubar.selectionBorder": "#00000000",
+		"menubar.selectionForeground": "#000000",
+		"menubar.selectionBackground": "#c9def5",
+		"menu.foreground": "#000000",
+		"menu.background": "#F6F6F6",
+		"menu.selectionForeground": "#000000",
+		"menu.selectionBackground": "#c9def5",
+
+		// Scrollbar
+		"scrollbarSlider.background": "#c2c3c9",
+		"scrollbarSlider.activeBackground": "#5b5b5b",
+		"scrollbarSlider.hoverBackground": "#686868",
+
+		// Sidebar
+		"sideBar.background": "#f5f5f5",
+		"sideBar.foreground": "#000000",
+		"sideBar.border": "#cccedb",
+		"sideBarTitle.foreground": "#000000",
+		"sideBarSectionHeader.foreground": "#ffffff",
+		"sideBarSectionHeader.background": "#007acc",
+		"sideBarSectionHeader.border": "#00000000",
+
+		// Status Bar
+		"statusBar.background": "#007acc",
+		"statusBar.debuggingBackground": "#ca5100",
+		"statusBar.noFolderBackground": "#68217a",
+
+		// Tabs
+		"tab.activeForeground": "#ffffff",
+		"tab.activeBackground": "#007acc",
+		"tab.activeBorder": "#007acc",
+		"tab.hoverBackground": "#1c97ea",
+		"tab.inactiveForeground": "#000000",
+		"tab.inactiveBackground": "#00000000",
+		"tab.border": "#00000000",
+		"tab.unfocusedActiveForeground": "#bee5ff",
+		"tab.unfocusedInactiveForeground": "#000000",
+		"tab.unfocusedHoverBackground": "#1c97ea",
+
+		// Terminal
+		"terminal.background": "#ffffff",
+		"terminal.border": "#cccedb",
+		"terminal.foreground": "#0c0c0c",
+		"terminalCursor.background": "#ffffff",
+		"terminalCursor.foreground": "#0c0c0c",
+
+		// Titlebar
+		"titleBar.activeForeground": "#000000",
+		"titleBar.activeBackground": "#eeeef2",
+		"titleBar.inactiveBackground": "#eeeef2",
+		"titleBar.border": "#cccedb"
+	},
+	"tokenColors": "./Visual Studio.tmTheme"
+}

@@ -1,0 +1,45 @@
+{
+    "loop-foreach-razor":{
+		"prefix": "@foreach",
+		"body": [
+			"@foreach (var ${1:item} in ${2:collection})",
+			"{", 
+				"\t$0", 
+			"}"
+		],
+		"description": "foreach: \n Code snippet for foreach statement"
+	},
+
+	"loop-for-razor":{
+		"prefix": "@for",
+		"body":[
+			"@for (int ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++)",
+			"{", 
+				"\t$0", 
+			"}"
+		],
+		"description": "for: \n Code snippet for 'for' statement"
+	},
+
+	"loop-while-razor":{
+		"prefix": "@while",
+		"body":[
+			"@while (${1:true})",
+			"{", 
+				"\t$0", 
+			"}"
+		],
+		"description": "while: \n Code snippet for 'while' loop"
+	},
+
+	"loop-do-razor":{
+		"prefix": "@do",
+		"body":[
+			"@do",
+			"{", 
+				"\t$0", 
+			"} while (${2:true});"
+		],
+		"description": "do...while: \n Code snippet for do...while loop"
+	}
+}

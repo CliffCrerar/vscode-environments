@@ -1,0 +1,58 @@
+{
+	"name": "dotnetexplorer",
+	"displayName": "Dotnet CLI Explorer",
+	"description": "A cheatsheet for .NET Core CLI. Find the right commands you need without digging through the web.",
+	"version": "1.0.0",
+	"publisher": "mfery",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"icon": "media/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/michaelfery/dotnetexplorer-vsce"
+	},
+	"bugs": {
+		"url": "https://github.com/michaelfery/dotnetexplorer-vsce/issues"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		".Net",
+		"dotnet",
+		"cli",
+		"cheatsheet"
+	],
+	"activationEvents": [
+		"onCommand:dotnetexplorer.search"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "dotnetexplorer.search",
+				"title": "Dotnet CLI Explorer : Find a command"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^8.10.25",
+		"tslint": "^5.8.0",
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.30"
+	},
+	"__metadata": {
+		"id": "a8670b36-cfdb-4245-b6f6-d8a44c1c00fb",
+		"publisherId": "1da2c6d3-d77f-4a22-b7c1-b2838ea7b8bd",
+		"publisherDisplayName": "Michaël Fery"
+	}
+}

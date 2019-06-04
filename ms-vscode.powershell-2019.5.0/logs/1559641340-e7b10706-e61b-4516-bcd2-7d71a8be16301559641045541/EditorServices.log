@@ -1,0 +1,96 @@
+2019-06-04 11:42:31.986 [NORMAL] tid:8 in 'StartLogging' C:\PowerShellEditorServices\src\PowerShellEditorServices.Host\EditorServicesHost.cs: line 183
+    
+    PowerShell Editor Services Host v1.12.1.0 starting (PID 6575
+    
+      Host application details:
+    
+        Name:      Visual Studio Code Host
+        Version:   2019.5.0
+        ProfileId: Microsoft.VSCode
+        Arch:      X64
+    
+      Operating system details:
+    
+        Version: Darwin 18.5.0 Darwin Kernel Version 18.5.0: Mon Mar 11 20:40:32 PDT 2019; root:xnu-4903.251.3~3/RELEASE_X86_64
+        Arch:    X64
+    
+      Build information:
+    
+        Version: <development-build>
+        Origin:  <development>
+        Date:    2019-05-28T17:56:01
+    
+
+2019-06-04 11:42:32.047 [NORMAL] tid:8 in 'StartLanguageService' C:\PowerShellEditorServices\src\PowerShellEditorServices.Host\EditorServicesHost.cs: line 202
+    Language service started, type = NamedPipe, endpoint =  InOut pipe: PSES_ovnzmbnv.wb3
+
+2019-06-04 11:42:32.058 [NORMAL] tid:8 in 'StartDebugService' C:\PowerShellEditorServices\src\PowerShellEditorServices.Host\EditorServicesHost.cs: line 279
+    Debug service started, type = NamedPipe, endpoint =  InOut pipe: PSES_2kedlwj2.pzk
+
+2019-06-04 11:42:32.921 [NORMAL] tid:4 in 'Initialize' C:\PowerShellEditorServices\src\PowerShellEditorServices\Session\PowerShellContext.cs: line 221
+    PowerShell runtime version: 6.2.0, edition: Core
+
+2019-06-04 11:42:33.623 [ERROR] tid:22 in 'ExecuteCommand' C:\PowerShellEditorServices\src\PowerShellEditorServices\Session\PowerShellContext.cs: line 565
+    Execution of the following command(s) completed with errors:
+    
+        Import-Module /Users/cliffordcrerar/.vscode/extensions/ms-vscode.powershell-2019.5.0/modules/PowerShellEditorServices/bin/Core/..\..\Commands/PowerShellEditorServices.Commands.psd1
+    
+    
+
+2019-06-04 11:42:33.734 [NORMAL] tid:16 in 'Register' C:\PowerShellEditorServices\src\PowerShellEditorServices.VSCode\ComponentRegistration.cs: line 36
+    PowerShell Editor Services VS Code module loaded.
+
+2019-06-04 11:57:50.244 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 11:58:17.516 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 11:58:30.945 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 11:58:40.430 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 11:58:43.736 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 11:58:50.226 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:00:15.972 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:00:50.919 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:01:28.265 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:01:47.633 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:03:14.809 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:04:03.067 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:07:51.935 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:08:03.698 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:08:03.825 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:08:03.928 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:08:04.031 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+
+2019-06-04 12:08:04.139 [WARNING] tid:26 in 'DispatchMessage' C:\PowerShellEditorServices\src\PowerShellEditorServices.Protocol\MessageProtocol\MessageDispatcher.cs: line 147
+    MessageDispatcher: No handler registered for Event type '$/setTraceNotification'
+

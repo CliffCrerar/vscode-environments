@@ -1,0 +1,127 @@
+{
+	"name": "azurerm-vscode-tools",
+	"displayName": "Azure Resource Manager Tools",
+	"description": "Template language support for Azure Resource Manager JSON files.",
+	"version": "0.6.0",
+	"publisher": "msazurermtools",
+	"categories": [
+		"Azure",
+		"Programming Languages",
+		"Linters"
+	],
+	"keywords": [
+		"ARM",
+		"Azure",
+		"Resource Manager",
+		"Template",
+		"Deployment"
+	],
+	"repository": {
+		"url": "https://github.com/Microsoft/vscode-azurearmtools.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Microsoft/vscode-azurearmtools/issues"
+	},
+	"galleryBanner": {
+		"color": "E7F1FA",
+		"theme": "light"
+	},
+	"homepage": "https://github.com/Microsoft/vscode-azurearmtools/blob/master/README.md",
+	"license": "SEE LICENSE IN LICENSE.md",
+	"icon": "images/AzureRMTools128x128.png",
+	"aiKey": "AIF-d9b70cd4-b9f9-4d70-929b-a071c400b217",
+	"engines": {
+		"vscode": "^1.26.0"
+	},
+	"preview": true,
+	"activationEvents": [
+		"onLanguage:json",
+		"onLanguage:jsonc"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"injectTo": [
+					"source.json"
+				],
+				"scopeName": "detect-arm.injection.json.comments",
+				"path": "dist/grammars/detect-arm.injection.tmLanguage.json"
+			},
+			{
+				"scopeName": "source.json.arm",
+				"path": "dist/grammars/JSONC.arm.tmLanguage.json"
+			},
+			{
+				"scopeName": "source.tle.arm",
+				"path": "dist/grammars/arm-expression-string.tmLanguage.json"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Azure Resource Manager Tools Configuration Settings",
+			"properties": {}
+		},
+		"views": {
+			"explorer": [
+				{
+					"id": "json-outline",
+					"name": "ARM Template Outline",
+					"when": "showArmJsonView"
+				}
+			]
+		}
+	},
+	"main": "main",
+	"scripts": {
+		"vscode:prepublish": "npm run webpack-prod",
+		"compile": "tsc -watch -p ./",
+		"build": "npm run build-grammars && tsc -p ./",
+		"package": "vsce package",
+		"lint": "tslint --project tsconfig.json -t verbose",
+		"lint-fix": "tslint --project tsconfig.json -t verbose --fix",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"pretest": "npm run build && npm run webpack-prod",
+		"pretest-dev": "npm run build && npm run webpack",
+		"test": "gulp test",
+		"all": "npm i && npm run lint && npm test",
+		"webpack": "gulp webpack-dev",
+		"webpack-prod": "gulp webpack-prod",
+		"webpack-profile": "webpack --profile --json --mode production > webpack-stats.json && echo Use http://webpack.github.io/analyse to analyze the stats",
+		"build-grammars": "gulp build-grammars",
+		"watch-grammars": "gulp watch-grammars",
+		"watch": "gulp watch"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^5.0.5",
+		"@types/mocha": "^2.2.41",
+		"@types/node": "^8.0.17",
+		"@types/opn": "^5.1.0",
+		"gulp": "^4.0.0",
+		"gulp-cli": "^2.1.0",
+		"istanbul": "^0.4.5",
+		"mocha": "^5.2.0",
+		"mocha-junit-reporter": "^1.18.0",
+		"mocha-multi-reporters": "^1.1.7",
+		"remap-istanbul": "^0.8.4",
+		"ts-node": "^7.0.1",
+		"tslint": "^5.13.0",
+		"tslint-microsoft-contrib": "5.0.3",
+		"typescript": "^3.3.3333",
+		"vsce": "^1.57.1",
+		"vscode": "^1.1.30",
+		"vscode-azureextensiondev": "0.1.8",
+		"webpack": "4.28.1",
+		"webpack-cli": "^3.1.2"
+	},
+	"dependencies": {
+		"fs-extra": "^7.0.1",
+		"moment": "^2.24.0",
+		"opn": "^5.4.0",
+		"vscode-azureextensionui": "^0.23.2"
+	},
+	"__metadata": {
+		"id": "6bbbdb2c-957f-4af7-8257-6f5e68e15bad",
+		"publisherId": "b952570d-390a-4f17-83c5-6018637ba7ea",
+		"publisherDisplayName": "Microsoft"
+	}
+}

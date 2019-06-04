@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.272" tests="14" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-05-28T18:56:23" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="CustomViews tests" timestamp="2019-05-28T18:56:23" tests="4" file="C:\vscode-powershell\out\test\features\CustomViews.test.js" failures="0" time="0">
+    <testcase name="CustomViews tests Can create an HtmlContentView and get its content - Basic" time="0" classname="Can create an HtmlContentView and get its content - Basic">
+    </testcase>
+    <testcase name="CustomViews tests Can create an HtmlContentView and get its content - With JavaScript file" time="0" classname="Can create an HtmlContentView and get its content - With JavaScript file">
+    </testcase>
+    <testcase name="CustomViews tests Can create an HtmlContentView and get its content - With 2 JavaScript files in two different locations" time="0" classname="Can create an HtmlContentView and get its content - With 2 JavaScript files in two different locations">
+    </testcase>
+    <testcase name="CustomViews tests Can create an HtmlContentView and get its content - With JavaScript and CSS file" time="0" classname="Can create an HtmlContentView and get its content - With JavaScript and CSS file">
+    </testcase>
+  </testsuite>
+  <testsuite name="Platform module" timestamp="2019-05-28T18:56:23" tests="0" file="C:\vscode-powershell\out\test\platform.test.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="64-bit Windows, 64-bit VS Code" timestamp="2019-05-28T18:56:23" tests="3" file="C:\vscode-powershell\out\test\platform.test.js" failures="0" time="0">
+    <testcase name="Platform module 64-bit Windows, 64-bit VS Code returns correct default path" time="0" classname="returns correct default path">
+    </testcase>
+    <testcase name="Platform module 64-bit Windows, 64-bit VS Code correctly enumerates available Windows PowerShell paths" time="0" classname="correctly enumerates available Windows PowerShell paths">
+    </testcase>
+    <testcase name="Platform module 64-bit Windows, 64-bit VS Code fixes incorrect Windows PowerShell Sys* path" time="0" classname="fixes incorrect Windows PowerShell Sys* path">
+    </testcase>
+  </testsuite>
+  <testsuite name="64-bit Windows, 32-bit VS Code" timestamp="2019-05-28T18:56:23" tests="3" file="C:\vscode-powershell\out\test\platform.test.js" failures="0" time="0">
+    <testcase name="Platform module 64-bit Windows, 32-bit VS Code returns correct default path" time="0" classname="returns correct default path">
+    </testcase>
+    <testcase name="Platform module 64-bit Windows, 32-bit VS Code correctly enumerates available Windows PowerShell paths" time="0" classname="correctly enumerates available Windows PowerShell paths">
+    </testcase>
+    <testcase name="Platform module 64-bit Windows, 32-bit VS Code fixes incorrect Windows PowerShell Sys* path" time="0" classname="fixes incorrect Windows PowerShell Sys* path">
+    </testcase>
+  </testsuite>
+  <testsuite name="32-bit Windows, 32-bit VS Code" timestamp="2019-05-28T18:56:23" tests="2" file="C:\vscode-powershell\out\test\platform.test.js" failures="0" time="0">
+    <testcase name="Platform module 32-bit Windows, 32-bit VS Code returns correct default path" time="0" classname="returns correct default path">
+    </testcase>
+    <testcase name="Platform module 32-bit Windows, 32-bit VS Code correctly enumerates available Windows PowerShell paths" time="0" classname="correctly enumerates available Windows PowerShell paths">
+    </testcase>
+  </testsuite>
+  <testsuite name="Settings module" timestamp="2019-05-28T18:56:23" tests="2" file="C:\vscode-powershell\out\test\settings.test.js" failures="0" time="0.272">
+    <testcase name="Settings module Settings load without error" time="0" classname="Settings load without error">
+    </testcase>
+    <testcase name="Settings module Settings update correctly" time="0.272" classname="Settings update correctly">
+    </testcase>
+  </testsuite>
+</testsuites>

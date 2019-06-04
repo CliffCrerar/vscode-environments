@@ -1,0 +1,137 @@
+{
+	"name": "vscode-vsproj",
+	"displayName": "VS Code .*proj",
+	"description": "Add/remove files in .*proj file to maintain compatibility with Visual Studio",
+	"version": "1.2.1",
+	"publisher": "jRichardeau",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"keywords": [
+		"njsproj",
+		"csproj",
+		"Visual Studio",
+		"multi-root ready"
+	],
+	"icon": "img/icon.png",
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.vsproj.add",
+				"title": "vsproj: Include in Project"
+			},
+			{
+				"command": "extension.vsproj.remove",
+				"title": "vsproj: Remove from Project"
+			},
+			{
+				"command": "extension.vsproj.output",
+				"title": "vsproj: Show Output"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "vsproj configuration",
+			"properties": {
+				"vsproj.enabled": {
+					"type": "boolean",
+					"default": true,
+					"description": "Turn this extension on or off."
+				},
+				"vsproj.projExtension": {
+					"type": "string",
+					"default": "njsproj",
+					"description": "VS project file to watch and update"
+				},
+				"vsproj.encoding": {
+					"type": "string",
+					"default": "ascii",
+					"description": "VS project file encoding"
+				},
+				"vsproj.itemType": {
+					"type": [
+						"string",
+						"object"
+					],
+					"default": {
+						"*": "Content",
+						".js": "Compile",
+						".ts": "TypeScriptCompile"
+					},
+					"description": "Type of XML element to put in the vsproj file."
+				},
+				"vsproj.includeRegex": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": ".*",
+					"description": "A regular expression to include file paths by."
+				},
+				"vsproj.excludeRegex": {
+					"type": [
+						"string",
+						"null"
+					],
+					"default": "node_modules",
+					"description": "A regular expression to exclude file paths by."
+				}
+			}
+		},
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.vsproj.add",
+					"group": "1_modification"
+				},
+				{
+					"command": "extension.vsproj.remove",
+					"group": "1_modification"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"package": "vsce package"
+	},
+	"devDependencies": {
+		"@types/chai": "^3.4.34",
+		"@types/mocha": "^2.2.32",
+		"@types/mock-fs": "^3.6.30",
+		"@types/mz": "0.0.30",
+		"@types/node": "^6.0.40",
+		"@types/sinon": "^1.16.31",
+		"chai": "^3.5.0",
+		"mocha": "^2.3.3",
+		"mock-fs": "^4.5.0",
+		"sinon": "^1.17.6",
+		"typescript": "^2.0.6",
+		"vscode": "^1.1.27"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jRichardeau/vscode-vsproj.git"
+	},
+	"dependencies": {
+		"@azz/elementtree": "^0.1.6",
+		"lodash.debounce": "^4.0.8",
+		"mz": "^2.4.0",
+		"strip-bom": "^3.0.0"
+	},
+	"__metadata": {
+		"id": "2ce0fd9c-3fba-498e-b2f2-4af1d2cb3653",
+		"publisherId": "082dfb3f-93fa-437a-a974-5350155c167b",
+		"publisherDisplayName": "Jérémie Richardeau"
+	}
+}

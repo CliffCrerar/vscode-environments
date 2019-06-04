@@ -1,0 +1,89 @@
+{
+    "functions" :{
+        "prefix": "bfunc",
+        "description": "Create a functions block.",
+        "body": ["@functions {",
+                 "    $1",
+                 "}"]
+    },
+    "parameter" :{
+        "prefix": "bpara",
+        "description": "Create a Parameter.",
+        "body": ["[Parameter] ${1:string} ${2:Name} { get; set; }"]
+    },
+    "cascadingparameter" :{
+        "prefix": "bcpara",
+        "description": "Create a Cascading Parameter.",
+        "body": ["[CascadingParameter] ${1:string} ${2:Name} { get; set; }"]
+    },
+    "page" :{
+        "prefix": "bpg",
+        "description": "Create a @page directive.",
+        "body": ["@page"]
+    },
+    "PageWithRoute" :{
+        "prefix": "bpgr",
+        "description": "Create a @page with the route directive.",
+        "body": ["@page \"/$1\" "]
+    },
+    "inject" :{
+        "prefix": "binj",
+        "description": "Create an @inject directive.",
+        "body": ["@inject"]
+    },
+    "injectHttp" :{
+        "prefix": "binjhttp",
+        "description": "Create an @inject directive with HttpClient.",
+        "body": ["@inject HttpClient Http"]
+    },
+    "inherits" :{
+        "prefix": "binh",
+        "description": "Create an @inherits directive.",
+        "body": ["@inherits $1"]
+    },
+    "foreach" :{
+        "prefix": "bforeach",
+        "description": "Create a foreach loop.",
+        "body": ["@foreach (var ${1:item} in ${2:items})",
+                 "{",
+                 "    $3",
+                 "}"
+        ]
+    },
+    "for" :{
+        "prefix": "bfor",
+        "description": "Create a foreach loop.",
+        "body": ["@for (int ${1:index} = 0; index < ${2:length}; index++)",
+                 "{",
+                 "    $3",
+                 "}"
+        ]
+    },
+    "if" :{
+        "prefix": "bif",
+        "description": "Create a @if statement.",
+        "body": ["@if (${1:true})",
+                 "{",
+                 "    $2",
+                 "}"
+        ]
+    },
+    "ifelse" :{
+        "prefix": "bife",
+        "description": "Create a @if and else statement.",
+        "body": ["@if (${1:true})",
+                 "{",
+                 "    $2",
+                 "}",
+                 "else",
+                 "{",
+                 "    $3",
+                 "}"
+        ]
+    },
+    "BlazorGetJsonAsync" :{
+        "prefix": "bgja",
+        "description": "GetJsonAsync",
+        "body": ["await ${1:Http}.GetJsonAsync<${2:string}>(\"${3:api/}\");"]
+    }
+}

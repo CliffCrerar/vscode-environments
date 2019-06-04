@@ -1,0 +1,54 @@
+{
+    "helper-View-Bag-razor":{
+		"prefix": "@ViewBag",
+		"body":[
+			"@ViewBag.${0:viewBagName}"
+		],
+		"description": "ViewBag: \n gets the view bag"	
+	},
+
+	"helper-View-Data-razor":{
+		"prefix": "@ViewData",
+		"body":[
+			"@ViewData[\"${0:viewDataName}\"]"
+		],
+		"description": "ViewData: \n Gets or sets a dictionary that contains data to pass between the controller and the view."		
+	},
+
+	"helper-renderbody-razor":{
+		"prefix": "@RenderBody",
+		"body":[
+			"@RenderBody()"
+		],
+		"description": "RenderBody: \n In a Razor layout page, renders the portion of a content page that is not within a named section."
+	},
+
+	"helper-model-view-razor":{
+		"prefix": "@model",
+		"body":[
+			"@model ${0:namespace_model}"
+		],
+		"description": "model: \n By including a @model statement at the top of the view template file, you can specify the type of object that the view expects."
+	},
+
+	"helper-render-section-razor":{
+		"prefix": "@RenderSection",
+		"body":[
+			"@RenderSection(${1:string name}, ${0:bool required})"
+		],
+		"description": "RenderSection: \n In layout pages, reders the content of the section named name."
+	},
+
+	"helper-section-razor":{
+		"prefix": "@section",
+		"body":[
+			"@section ${1:sectionName} {",
+				"\t${0}",
+			"}"
+		],
+		"description": "section: \n Individual views specify the content to be rendered within a section."
+	}
+
+
+	
+}

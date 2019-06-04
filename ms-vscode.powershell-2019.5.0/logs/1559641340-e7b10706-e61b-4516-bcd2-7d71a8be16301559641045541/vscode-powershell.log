@@ -1,0 +1,10 @@
+6/4/2019 11:42:20 AM [NORMAL] - Path specified by 'powerShellExePath' setting - '' - not found, reverting to default PowerShell path.
+6/4/2019 11:42:26 AM [NORMAL] - Language server starting --
+6/4/2019 11:42:27 AM [NORMAL] -     exe: /usr/local/bin/pwsh
+6/4/2019 11:42:27 AM [NORMAL] -     args: /Users/cliffordcrerar/.vscode/extensions/ms-vscode.powershell-2019.5.0/modules/PowerShellEditorServices/Start-EditorServices.ps1 -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '2019.5.0' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath '/Users/cliffordcrerar/.vscode/extensions/ms-vscode.powershell-2019.5.0/modules' -EnableConsoleRepl -LogLevel 'Normal' -LogPath '/Users/cliffordcrerar/.vscode/extensions/ms-vscode.powershell-2019.5.0/logs/1559641340-e7b10706-e61b-4516-bcd2-7d71a8be16301559641045541/EditorServices.log' -SessionDetailsPath '/Users/cliffordcrerar/.vscode/extensions/ms-vscode.powershell-2019.5.0/sessions/PSES-VSCode-6178-136858' -FeatureFlags @()
+6/4/2019 11:42:29 AM [NORMAL] - powershell.exe started, pid: 6575
+6/4/2019 11:42:32 AM [NORMAL] - Language server started.
+6/4/2019 11:42:32 AM [NORMAL] - {"debugServiceTransport":"NamedPipe","languageServiceTransport":"NamedPipe","languageServicePipeName":"/var/folders/8l/b0cx9p8508v4nk1cgz5zg2hh0000gn/T/CoreFxPipe_PSES_ovnzmbnv.wb3","status":"started","debugServicePipeName":"/var/folders/8l/b0cx9p8508v4nk1cgz5zg2hh0000gn/T/CoreFxPipe_PSES_2kedlwj2.pzk"}
+6/4/2019 11:42:32 AM [NORMAL] - Connecting to language service on pipe /var/folders/8l/b0cx9p8508v4nk1cgz5zg2hh0000gn/T/CoreFxPipe_PSES_ovnzmbnv.wb3...
+6/4/2019 11:42:32 AM [NORMAL] - Language service connected.
+6/4/2019 12:08:08 PM [NORMAL] - powershell.exe terminated or terminal UI was closed

@@ -1,0 +1,32 @@
+{
+	"name": "vs2017-light-theme",
+	"displayName": "Visual Studio 2017 Light Theme",
+	"publisher": "vfd",
+	"description": "Brings the Visual Studio 2017 light theme to Visual Studio Code!",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FireController1847/vscode-vs2017-light-theme.git"
+	},
+	"icon": "icon.png",
+	"version": "1.0.1",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Visual Studio Light Theme (2017)",
+				"uiTheme": "vs",
+				"path": "./themes/Visual Studio Light Theme (2017)-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "359dcaa9-b129-4ff7-8f94-8bcc80ab59b9",
+		"publisherId": "cb10e8fb-d02c-4221-bced-626cf78e6ef6",
+		"publisherDisplayName": "Visual Fire Development"
+	}
+}

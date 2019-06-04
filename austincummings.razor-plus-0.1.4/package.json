@@ -1,0 +1,37 @@
+{
+	"name": "razor-plus",
+	"displayName": "Razor+",
+	"description": "Improved Razor support for VS Code with a mind towards Blazor",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/austincummings/razor-plus.git"
+	},
+	"version": "0.1.4",
+	"publisher": "austincummings",
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Languages"
+	],
+	"keywords": [
+		"razor",
+		"C#",
+		"asp.net"
+	],
+	"contributes": {
+		"grammars": [
+			{
+				"language": "razor",
+				"scopeName": "text.html.cshtml",
+				"path": "./syntaxes/cshtml.tmLanguage.json"
+			}
+		]
+	},
+	"scripts": {},
+	"__metadata": {
+		"id": "77aa46a2-f495-4398-bd85-bb964c9f429b",
+		"publisherId": "86a4bfcb-288f-4ceb-a84e-4ae1b31967b0",
+		"publisherDisplayName": "Austin Cummings"
+	}
+}

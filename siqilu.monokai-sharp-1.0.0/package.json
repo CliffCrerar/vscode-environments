@@ -1,0 +1,32 @@
+{
+	"name": "monokai-sharp",
+	"displayName": "Monokai Sharp",
+	"description": "Monokai for C#",
+	"version": "1.0.0",
+	"publisher": "SiqiLu",
+	"icon": "Kolibre-Credit-Logo-Square.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SiqiLu/monokai-sharp.git"
+	},
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Monokai Sharp",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Monokai Sharp-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "e7e52a6f-18ee-44ad-84ff-6f89b9ebf9f0",
+		"publisherId": "4eadb3ad-679c-4bd6-a13f-0c45176f9bdc",
+		"publisherDisplayName": "Siqi Lu"
+	}
+}

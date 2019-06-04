@@ -1,0 +1,48 @@
+{
+	"name": "razor-snippets-for-asp-net-core",
+	"displayName": "Razor Snippets",
+	"description": "Razor Snippets for Asp.Net Core",
+	"version": "0.0.3",
+	"publisher": "aledev29",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"Asp.Net Core",
+		"C#",
+		"Razor"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/alexandreserradev/razor-snippets-for-aspnet-core"
+	},
+	"icon": "img/razor2.png",
+	"contributes": {
+		"snippets": [
+			{
+				"language": "razor",
+				"path": "./snippets/conditional.json"
+			},
+			{
+				"language": "razor",
+				"path": "./snippets/helpers.json"
+			},
+			{
+				"language": "razor",
+				"path": "./snippets/loop.json"
+			},
+			{
+				"language": "razor",
+				"path": "./snippets/others.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "50699a99-cc76-4060-a2d2-b927d831e9fa",
+		"publisherId": "5aeff3c0-81ef-4399-a296-03a68ed00829",
+		"publisherDisplayName": "Alexandre Serra"
+	}
+}

@@ -1,0 +1,61 @@
+{
+	"name": "asp-net-core-snippet-pack",
+	"displayName": ".NET Core Snippet Pack",
+	"description": "A snippet pack for .NET Core.",
+	"publisher": "adrianwilczynski",
+	"version": "1.17.0",
+	"icon": "logo.png",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"Snippets",
+		"Snippet",
+		"ASP.NET Core",
+		".NET Core",
+		".NET",
+		"C#",
+		"CSharp",
+		"Razor"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "csharp",
+				"path": "./snippets/csharp.json"
+			},
+			{
+				"language": "aspnetcorerazor",
+				"path": "./snippets/razor.json"
+			},
+			{
+				"language": "razor",
+				"path": "./snippets/razor.json"
+			},
+			{
+				"language": "json",
+				"path": "./snippets/appsettings.json"
+			},
+			{
+				"language": "xml",
+				"path": "./snippets/csproj.json"
+			},
+			{
+				"language": "msbuild",
+				"path": "./snippets/csproj.json"
+			},
+			{
+				"language": "plaintext",
+				"path": "./snippets/ruleset.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "a628f216-dbbd-4785-899b-e541ec289ebc",
+		"publisherId": "4c6d9dea-1a83-45db-ac56-4c2b8bdb3c09",
+		"publisherDisplayName": "Adrian Wilczyński"
+	}
+}
