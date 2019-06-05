@@ -1,0 +1,44 @@
+{
+	"name": "vsclassic-icon-theme",
+	"displayName": "Visual Studio classic icons",
+	"description": "An icon theme for Visual Studio Code taking its inspiration from classic versions of Visual Studio prior to 2012.",
+	"version": "1.2.1",
+	"publisher": "jez9999",
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://gitlab.com/jez9999/vsclassic-icon-theme/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/jez9999/vsclassic-icon-theme"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Themes",
+		"Other"
+	],
+	"keywords": [
+		"icon",
+		"icons",
+		"theme",
+		"icon-theme",
+		"customization"
+	],
+	"icon": "logo.png",
+	"contributes": {
+		"iconThemes": [
+			{
+				"id": "vsclassic-icon-theme",
+				"label": "Visual Studio classic icons",
+				"path": "icons.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "dee1e742-9069-42bb-823b-56a3eee772c1",
+		"publisherId": "d47040e7-c2fe-465f-b133-4be82074d183",
+		"publisherDisplayName": "jez9999"
+	}
+}
