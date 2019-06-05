@@ -1,0 +1,38 @@
+{
+	"name": "comfy-monokai-theme",
+	"displayName": "Comfy Monokai Theme",
+	"description": "A personalized Monokai theme for Visual Studio Code.",
+	"version": "0.0.1",
+	"publisher": "AfarWind",
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/afarwind/comfy-monokai/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/afarwind/comfy-monokai"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Comfy Monokai",
+				"uiTheme": "vs-dark",
+				"path": "./themes/comfy-monokai-theme.json"
+			},
+			{
+				"label": "Comfy Monokai(Italic)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/comfy-monokai-theme-italic.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "cf857d78-0ed7-43df-9c1c-2f294314684d",
+		"publisherId": "52eaad68-618e-4d51-8c3f-ab2bacbc0e20",
+		"publisherDisplayName": "AfarWind Z"
+	}
+}

@@ -1,0 +1,65 @@
+{
+	"name": "vscode-hipster-theme",
+	"displayName": "Hipster Theme",
+	"description": "A very colorful theme inspired by Atom's Hipster theme.",
+	"version": "1.0.2",
+	"publisher": "ModoNoob",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ModoNoob/vscode-hipster-theme"
+	},
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"hipster",
+		"theme",
+		"dark",
+		"light",
+		"colorful"
+	],
+	"icon": "icon.png",
+	"galleryBanner": {
+		"color": "#2C3E50",
+		"theme": "dark"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Hipster",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Hipster-color-theme.json"
+			}
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/ModoNoob/vscode-hipster-theme/issues"
+	},
+	"homepage": "https://github.com/ModoNoob/vscode-hipster-theme",
+	"badges": [
+		{
+			"url": "https://vsmarketplacebadge.apphb.com/version/ModoNoob.vscode-hipster-theme.svg",
+			"href": "https://marketplace.visualstudio.com/items/ModoNoob.vscode-hipster-theme",
+			"description": "Theme version"
+		},
+		{
+			"url": "https://vsmarketplacebadge.apphb.com/rating/ModoNoob.vscode-hipster-theme.svg",
+			"href": "https://marketplace.visualstudio.com/items/ModoNoob.vscode-hipster-theme",
+			"description": "Theme rating"
+		},
+		{
+			"url": "https://vsmarketplacebadge.apphb.com/installs/ModoNoob.vscode-hipster-theme.svg",
+			"href": "https://marketplace.visualstudio.com/items/ModoNoob.vscode-hipster-theme",
+			"description": "Theme installs"
+		}
+	],
+	"__metadata": {
+		"id": "e5de88ca-3844-4ef0-9391-7799c4f03536",
+		"publisherId": "940b43c5-25d0-4633-9760-9fb390857deb",
+		"publisherDisplayName": "ModoNoob"
+	}
+}
