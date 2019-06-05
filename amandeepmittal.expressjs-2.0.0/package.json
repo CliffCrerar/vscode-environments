@@ -1,0 +1,55 @@
+{
+	"name": "expressjs",
+	"displayName": "expressjs",
+	"description": "Expressjs Snippets",
+	"version": "2.0.0",
+	"publisher": "amandeepmittal",
+	"icon": "images/expressjs.png",
+	"engines": {
+		"vscode": "^1.17.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/api-methods.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/middleware.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/router.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/response.json"
+			}
+		]
+	},
+	"keywords": [
+		"javascript",
+		"nodejs",
+		"express",
+		"snippet",
+		"expressjs"
+	],
+	"homepage": "https://amandeepmittal.github.io/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/amandeepmittal/expressjs-vscode"
+	},
+	"__metadata": {
+		"id": "9ca01d82-369d-477a-8ea6-8f1d6e7d5de5",
+		"publisherId": "6a8fe1c3-ed2f-424a-a7dc-16760d766248",
+		"publisherDisplayName": "amandeepmittal"
+	}
+}

@@ -1,0 +1,110 @@
+{
+	"name": "mongogo",
+	"displayName": "mongogo",
+	"description": "Integrates mongo shell into vs code.",
+	"version": "0.1.2",
+	"publisher": "bagonaut",
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Other",
+		"Languages"
+	],
+	"contributors": [
+		"Randy Castleberry"
+	],
+	"os": [
+		"Windows"
+	],
+	"icon": "images/mongogo_leaf.png",
+	"bugs": {
+		"url": "https://github.com/bagonaut/mongogo/issues"
+	},
+	"readme": "readme.MD",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bagonaut/mongogo.git"
+	},
+	"license": "MIT",
+	"activationEvents": [
+		"onCommand:extension.launchMongo",
+		"onLanguage:javascript"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.launchMongo",
+				"title": "Mongo Shell"
+			},
+			{
+				"command": "extension.runMongo",
+				"title": "Run Selection in Mongo"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "extension.runMongo",
+					"group": "navigation"
+				}
+			]
+		},
+		"configuration": {
+			"type": "object",
+			"title": "Mongo Shell Configuration",
+			"properties": {
+				"mongoShell.host": {
+					"type": "string",
+					"default": "",
+					"description": "server to connect to"
+				},
+				"mongoShell.port": {
+					"type": "string",
+					"default": "",
+					"description": "port to connect to"
+				},
+				"mongoShell.verbose": {
+					"type": "bool",
+					"default": false,
+					"description": "increase verbosity"
+				},
+				"mongoShell.quiet": {
+					"type": "bool",
+					"default": false,
+					"description": "be less chatty"
+				},
+				"mongoShell.username": {
+					"type": "string",
+					"default": "",
+					"description": "username for authentication"
+				},
+				"mongoShell.path": {
+					"type": "string",
+					"default": "C:\\MongoDB\\Server\\3.2\\bin\\mongo.exe",
+					"description": "path to mongo shell executable"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"mocha": "^2.3.3",
+		"typescript": "^2.3.4",
+		"vscode": "^1.0.0"
+	},
+	"__metadata": {
+		"id": "aeb971ed-1ecd-4205-ae42-71175ae8688b",
+		"publisherId": "dbfdb239-312c-413f-9384-b9226f14cf21",
+		"publisherDisplayName": "bagonaut"
+	}
+}

@@ -1,0 +1,71 @@
+{
+	"name": "vscode-open-in-node-modules",
+	"displayName": "Open in node_modules",
+	"description": "Open the current selection or arbitrary string in node_modules.",
+	"icon": "resources/logo-128x128.png",
+	"version": "1.1.1",
+	"license": "MIT",
+	"main": "out/extension.js",
+	"publisher": "fabiospampinato",
+	"activationEvents": [
+		"onCommand:openInNodeModules.open"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "openInNodeModules.open",
+				"title": "Open in node_modules"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "rm -rf out && webpack --mode production",
+		"publish": "vsce publish && npm publish",
+		"compile": "webpack --mode development",
+		"compile:watch": "webpack --mode development --watch",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"bugs": {
+		"url": "https://github.com/fabiospampinato/vscode-open-in-node-modules/issues"
+	},
+	"author": {
+		"name": "Fabio Spampinato",
+		"email": "spampinabio@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fabiospampinato/vscode-open-in-node-modules.git"
+	},
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"keywords": [
+		"vscode",
+		"extension",
+		"open",
+		"node_modules",
+		"node",
+		"modules"
+	],
+	"categories": [
+		"Other"
+	],
+	"dependencies": {
+		"lodash": "^4.17.4",
+		"resolve-from": "^4.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^6.0.40",
+		"ts-loader": "^5.2.1",
+		"typescript": "~2.4.1",
+		"vscode": "^1.1.4",
+		"webpack": "^4.20.2",
+		"webpack-cli": "^3.1.2"
+	},
+	"__metadata": {
+		"id": "cdecb62e-4da9-4ba0-a499-a0294bcdbd32",
+		"publisherId": "4288bdb9-145e-438b-ab6b-4a6839ee9c6f",
+		"publisherDisplayName": "Fabio Spampinato"
+	}
+}

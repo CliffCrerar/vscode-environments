@@ -1,0 +1,52 @@
+{
+	"name": "VSCodeExpressiveTheme",
+	"displayName": "Expressive Theme",
+	"description": "An expressive theme based on Dark Pro (Atom) but much more colorful",
+	"version": "1.0.2",
+	"publisher": "Gaulomatic",
+	"author": {
+		"email": "tobiaspunke@googlemail.com",
+		"name": "Tobias Punke",
+		"url": "https://punke.eu"
+	},
+	"bugs": {
+		"url": "https://github.com/Gaulomatic/VSCode-Expressive-Theme/issues"
+	},
+	"homepage": "https://github.com/Gaulomatic/VSCode-Expressive-Theme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Gaulomatic/VSCode-Expressive-Theme"
+	},
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Expressive Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Expressive-Theme.json"
+			}
+		]
+	},
+	"icon": "icon.png",
+	"keywords": [
+		"expressive theme",
+		"expressivetheme",
+		"colorful",
+		"onedark",
+		"atom"
+	],
+	"galleryBanner": {
+		"color": "#2d323b",
+		"theme": "dark"
+	},
+	"__metadata": {
+		"id": "b8e354d1-bdc8-4daf-a0bb-2b0a97a032ba",
+		"publisherId": "55b7b7c0-e39b-4e98-9b45-c02a833f15c0",
+		"publisherDisplayName": "Tobias Punke"
+	}
+}
