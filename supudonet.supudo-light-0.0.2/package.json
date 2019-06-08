@@ -1,0 +1,42 @@
+{
+	"name": "supudo-light",
+	"displayName": "supudo Light Theme",
+	"description": "supudo.net Light Theme",
+	"version": "0.0.2",
+	"publisher": "supudonet",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"light"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "supudo.net",
+				"uiTheme": "vs",
+				"path": "./themes/supudo_light.tmTheme"
+			}
+		]
+	},
+	"bugs": {
+		"url": "https://github.com/supudo/vscode-supudo-theme/issues",
+		"email": "supudo@gmail.com"
+	},
+	"homepage": "https://github.com/supudo/vscode-supudo-theme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/supudo/vscode-supudo-theme"
+	},
+	"__metadata": {
+		"id": "66a10e7a-0ac3-487e-a0ec-0464a8e74f10",
+		"publisherId": "edd681fb-4dce-4a2c-9ca3-3b3955e9177a",
+		"publisherDisplayName": "supudonet"
+	}
+}

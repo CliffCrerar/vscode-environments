@@ -1,0 +1,41 @@
+{
+	"name": "theme-monokai-hc",
+	"displayName": "Monokai - High Contrast",
+	"description": "A high contrast theme based on the TextMate Monokai theme.",
+	"icon": "images/Monokai-HC.png",
+	"version": "1.1.1",
+	"publisher": "DataByne",
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"license": "LICENSE.txt",
+	"bugs": {
+		"url": "https://github.com/DataByne/Monokai-HighContrast/issues",
+		"email": "databyne@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://GitHub.com/DataByne/Monokai-HighContrast.git"
+	},
+	"categories": [
+		"Themes"
+	],
+	"engines": {
+		"vscode": "*"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Monokai High Contrast",
+				"uiTheme": "hc-black",
+				"path": "./themes/hc_Monokai.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "2d52a525-c1cf-4238-970e-f085ae9a542b",
+		"publisherId": "22654f24-59e1-4080-8064-624fb5d6cc3e",
+		"publisherDisplayName": "Nathan O'Halloran"
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"name": "one-dark-nx",
+	"displayName": "One Dark NX",
+	"description": "Slightly modified One Dark Vivid theme.",
+	"version": "0.1.0",
+	"publisher": "vxna",
+	"license": "MIT",
+	"homepage": "https://github.com/vxna/one-dark-nx",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vxna/one-dark-nx"
+	},
+	"engines": {
+		"vscode": "^1.27.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"atom",
+		"theme",
+		"dark",
+		"one dark"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "One Dark NX",
+				"uiTheme": "vs-dark",
+				"path": "./themes/one-dark-nx.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "a546bf5c-70a7-449b-901b-3ebcdec5e855",
+		"publisherId": "b25449a2-80e0-4306-8833-03750d93575e",
+		"publisherDisplayName": "vxna"
+	}
+}

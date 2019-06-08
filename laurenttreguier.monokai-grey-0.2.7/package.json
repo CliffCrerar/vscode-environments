@@ -1,0 +1,47 @@
+{
+	"name": "monokai-grey",
+	"displayName": "Monokai Grey",
+	"description": "A version of Monokai with a more grey background",
+	"license": "MIT",
+	"version": "0.2.7",
+	"publisher": "LaurentTreguier",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LaurentTreguier/vscode-monokai-grey"
+	},
+	"bugs": {
+		"url": "https://github.com/LaurentTreguier/vscode-monokai-grey/issues"
+	},
+	"galleryBanner": {
+		"theme": "dark",
+		"color": "#252729"
+	},
+	"icon": "images/vscode.png",
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"monokai"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Monokai Grey",
+				"uiTheme": "vs-dark",
+				"path": "./themes/monokai-grey-color-theme.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"vsce": "^1.53.2"
+	},
+	"__metadata": {
+		"id": "6a16ba54-0fc8-4db6-be42-40cfc5696625",
+		"publisherId": "08f24380-f487-49dd-ba4a-ea7bc7bda282",
+		"publisherDisplayName": "Laurent Tréguier"
+	}
+}

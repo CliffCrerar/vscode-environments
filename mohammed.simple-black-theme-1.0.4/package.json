@@ -1,0 +1,34 @@
+{
+	"name": "simple-black-theme",
+	"displayName": "Simple Black Theme",
+	"description": "This theme for Visual Studio Code adds a simple dark black theme.",
+	"publisher": "Mohammed",
+	"icon": "icon.png",
+	"repository": {
+		"url": "https://github.com/matrix2526/simple-black-theme"
+	},
+	"scripts": {
+		"publish": "vsce publish -p dhhtilwucthsukzty7ifrsbx3blqyka7y6d5c6caztfj4ynxbeja"
+	},
+	"version": "1.0.4",
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Simple Black Theme",
+				"uiTheme": "vs-dark",
+				"path": "./themes/simple-black-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "5f1b8bad-7da0-416b-99b7-7cec354f2b64",
+		"publisherId": "e3be5e60-edec-4438-8349-81d15040dca3",
+		"publisherDisplayName": "Mohammed"
+	}
+}

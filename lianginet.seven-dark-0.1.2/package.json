@@ -1,0 +1,28 @@
+{
+	"name": "seven-dark",
+	"displayName": "Seven-dark",
+	"description": "Simple dark theme.",
+	"version": "0.1.2",
+	"publisher": "lianginet",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "imgs/icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "seven-dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/seven-dark.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4544413a-b54a-48d7-b85b-732526729299",
+		"publisherId": "b5e4c37b-dc5a-4d83-a5e9-b5603d0b8853",
+		"publisherDisplayName": "lianginet"
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"name": "themed-themes-max",
+	"displayName": "Themed Themes Max",
+	"author": "Maxwell Clarke",
+	"publisher": "maxwell-clarke-intranel",
+	"description": "A colour coordinated set of themes. Now you can have different but consistent themes for different workspaces.",
+	"version": "0.1.0",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.11.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "TT Max Marine",
+				"uiTheme": "vs-dark",
+				"path": "max-marine.json"
+			},
+			{
+				"label": "TT Max Meadow",
+				"uiTheme": "vs-dark",
+				"path": "max-meadow.json"
+			},
+			{
+				"label": "TT Max Molten",
+				"uiTheme": "vs-dark",
+				"path": "max-molten.json"
+			},
+			{
+				"label": "TT Max Magic",
+				"uiTheme": "vs-dark",
+				"path": "max-magic.json"
+			},
+			{
+				"label": "TT Max Moonlight",
+				"uiTheme": "vs-dark",
+				"path": "max-moonlight.json"
+			}
+		]
+	},
+	"icon": "icon.png",
+	"__metadata": {
+		"id": "ce762156-0ce4-4077-9586-67473b642280",
+		"publisherId": "0a3d6d8b-16fa-4ad8-b2ef-ff165712b788",
+		"publisherDisplayName": "maxwell-clarke-intranel"
+	}
+}

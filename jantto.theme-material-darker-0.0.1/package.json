@@ -1,0 +1,28 @@
+{
+	"name": "theme-material-darker",
+	"displayName": "Material Darker Theme",
+	"description": "A modified and updated Material Theme Neutral with darker colors",
+	"version": "0.0.1",
+	"publisher": "jantto",
+	"engines": {
+		"vscode": "^0.10.10"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Material Darker",
+				"uiTheme": "vs-dark",
+				"path": "./themes/MaterialDarker.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "f8faaefc-2c2c-4484-9241-3ba13b2161a4",
+		"publisherId": "9da6e22b-d231-433b-b225-2cefcf94778f",
+		"publisherDisplayName": "jantto"
+	}
+}

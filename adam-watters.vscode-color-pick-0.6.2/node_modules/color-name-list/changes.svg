@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 1550">
+  <defs>
+    <style type="text/css">
+      @import url('https://rsms.me/inter/inter.css');
+      text {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 40px;
+        font-weight: 900;
+      }
+    </style>
+  </defs>
+  <rect fill="#212121" x="0" y="0" width="600" height="1550"/>
+  <text x="40" y="90" fill="#eeff00">Banana Flash</text><text x="40" y="160" fill="#4d5e42">Bavarian</text><text x="40" y="230" fill="#dcd6d2">Bread Flavour</text><text x="40" y="300" fill="#fed200">Cavendish</text><text x="40" y="370" fill="#ead1da">Distant Flare</text><text x="40" y="440" fill="#faf4ce">Fresh Eggs</text><text x="40" y="510" fill="#9b8c7b">German Camouflage Beige</text><text x="40" y="580" fill="#888a8e">Heavy Metal Armor</text><text x="40" y="650" fill="#ffcba2">Phenomenal Peach</text><text x="40" y="720" fill="#ee55ff">Phenomenal Pink</text><text x="40" y="790" fill="#5f6d36">Russian Uniform</text><text x="40" y="860" fill="#e8e9cf">Saffron Bread</text><text x="40" y="930" fill="#feb209">Saffron Soufflé</text><text x="40" y="1000" fill="#f7d560">Salmon Eggs</text><text x="40" y="1070" fill="#d9ddcb">Smell of Garlic</text><text x="40" y="1140" fill="#d7cecd">Smells of Fresh Bread</text><text x="40" y="1210" fill="#2b8c4e">St. Patrick</text><text x="40" y="1280" fill="#325482">St. Tropez</text><text x="40" y="1350" fill="#f2f3cf">Sulphur Water</text><text x="40" y="1420" fill="#badbdf">Tender Waves</text><text x="40" y="1490" fill="#9e915c">Tirol</text>
+</svg>

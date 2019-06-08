@@ -1,0 +1,33 @@
+{
+	"name": "Theme-Sunburst",
+	"displayName": "Sunburst Theme",
+	"description": "Sunburst Theme ported from the Sunburst TextMate Theme",
+	"version": "0.0.2",
+	"publisher": "gerane",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"icon": "icon.png",
+	"homepage": "https://github.com/gerane/VSCodeThemes/blob/master/gerane.Theme-Sunburst/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gerane/VSCodeThemes.git"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Sunburst",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Sunburst.tmTheme"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "7bdd99b6-ec34-4ad4-b8ba-65e5924f4c37",
+		"publisherId": "a5c25faf-bf60-4941-81b9-9a852b96c5fb",
+		"publisherDisplayName": "gerane"
+	}
+}

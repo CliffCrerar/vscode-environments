@@ -1,0 +1,44 @@
+{
+	"name": "gloom-glam",
+	"displayName": "Gloom Glam",
+	"description": "A glamour version of Gloom syntax theme for VS Code",
+	"version": "1.0.3",
+	"publisher": "rusinovanton",
+	"bugs": {
+		"url": "https://github.com/RusinovAnton/gloom-glam/issues"
+	},
+	"homepage": "https://github.com/RusinovAnton/gloom-glam",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/RusinovAnton/gloom-glam"
+	},
+	"engines": {
+		"vscode": "^1.10.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"syntax",
+		"theme",
+		"gloom",
+		"glamour",
+		"vscode"
+	],
+	"license": "MIT",
+	"icon": "icon.png",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Gloom Glam",
+				"uiTheme": "vs-dark",
+				"path": "./themes/gloom-glam.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "8c76850b-6b92-4d77-9df0-16b5e9171878",
+		"publisherId": "f44fd00e-592c-4994-b727-1f7b3cff4384",
+		"publisherDisplayName": "Anton Rusinov"
+	}
+}

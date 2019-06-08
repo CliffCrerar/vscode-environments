@@ -1,0 +1,46 @@
+{
+	"name": "pretentious-name",
+	"displayName": "Pretentious Name",
+	"description": "Uncreatively named theme, based off Will Stone's Plastic v1",
+	"version": "1.1.2",
+	"publisher": "zhiayang",
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Pretentious Name - deprioritised punctuation",
+				"uiTheme": "vs-dark",
+				"path": "./themes/pretentious-name-theme-punctuation.json"
+			}
+		]
+	},
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zhiayang/vscode-theme-pretentious-name"
+	},
+	"devDependencies": {
+		"babel-eslint": "^8.2.3",
+		"eslint": "^4.19.1",
+		"eslint-config-prettier": "^2.9.0",
+		"lite-server": "^2.3.0",
+		"prettier": "^1.12.1",
+		"react": "^16.3.2",
+		"vsce": "^1.40.0"
+	},
+	"scripts": {
+		"docs": "lite-server",
+		"vspublish": "vsce publish",
+		"build": "node --experimental-modules scripts/build.mjs"
+	},
+	"__metadata": {
+		"id": "fcc03630-d2be-4e25-ac91-ccf24d26fa9e",
+		"publisherId": "d5a604b4-b8c6-4894-b44b-c90e1ce4e37b",
+		"publisherDisplayName": "zhiayang"
+	}
+}

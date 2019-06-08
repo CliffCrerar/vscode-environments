@@ -1,0 +1,30 @@
+{
+	"name": "tranquilizer-dark",
+	"displayName": "Tranquilizer Dark",
+	"description": "Just a dark theme.",
+	"version": "0.0.5",
+	"publisher": "a-sam",
+	"engines": {
+		"vscode": "^1.32.0"
+	},
+	"repository": "https://github.com/A-Sam/tranquilizer-dark",
+	"icon": "tranquilizer_dark_icon.png",
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Tranquilizer Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Tranquilizer Dark-color-theme.json"
+			}
+		]
+	},
+	"readme": "README.md",
+	"__metadata": {
+		"id": "9c678712-25a7-4df2-9e9d-5382593e5be9",
+		"publisherId": "b13359eb-d39f-4f60-b7a3-7da1048f71b0",
+		"publisherDisplayName": "Sam"
+	}
+}
