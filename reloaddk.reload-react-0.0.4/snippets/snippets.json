@@ -1,0 +1,62 @@
+{
+  "Reload functional component": {
+    "prefix": "rld-component-functional",
+    "description": "Functional Component, Reload style.",
+    "body": [
+      "import React from 'react'",
+      "import { node } from 'prop-types'",
+      "",
+      "export const ${TM_FILENAME/(.*)\\..+$/$1/} = ({ children }) => (",
+      "  <div>{ children }</div>",
+      ")",
+      "",
+      "${TM_FILENAME/(.*)\\..+$/$1/}.propTypes = {",
+      "  children: node",
+      "}",
+      "",
+      "export default ${TM_FILENAME/(.*)\\..+$/$1/}",
+      ""
+    ]
+  },
+  "Reload class component": {
+    "prefix": "rld-component-class",
+    "description": "Class Component, Reload style.",
+    "body": [
+      "import React, { PureComponent } from 'react'",
+      "import { node } from 'prop-types'",
+      "",
+      "class ${TM_FILENAME/(.*)\\..+$/$1/} extends PureComponent {",
+      "  static propTypes = {",
+      "    children: node",
+      "  }",
+      "",
+      "  state = {",
+      "    name: ''",
+      "  }",
+      "",
+      "  render = () => {",
+      "    return (",
+      "      <div>{ this.state.name }{ this.props.children }</div>",
+      "    )",
+      "  }",
+      "}",
+      "",
+      "export default ${TM_FILENAME/(.*)\\..+$/$1/}",
+      ""
+    ]
+  },
+  "Reload style component": {
+    "prefix": "rld-component-glamorous",
+    "description": "Glamorous Component, Reload style.",
+    "body": [
+      "import glamorous from 'glamorous'",
+      "",
+      "export default glamorous.${1:div}({",
+      "  backgroundColor: 'red'",
+      "}, ({ theme }) => ({",
+      "  color: theme.colors.primary",
+      "}))",
+      ""
+    ]
+  }
+}

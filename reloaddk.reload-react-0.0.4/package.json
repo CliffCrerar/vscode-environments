@@ -1,0 +1,38 @@
+{
+	"name": "reload-react",
+	"displayName": "Reload React",
+	"description": "Will provide you with the Reload opinionated way of writing React components.",
+	"version": "0.0.4",
+	"publisher": "reloaddk",
+	"author": {
+		"name": "lasseborly <lasse@reload.dk>"
+	},
+	"engines": {
+		"vscode": "^1.19.0"
+	},
+	"galleryBanner": {
+		"color": "#fff",
+		"theme": "light"
+	},
+	"icon": "images/icon.png",
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/reload/reload-react.git"
+	},
+	"__metadata": {
+		"id": "b1230956-3a75-485e-9fc5-e3b3ba81c22d",
+		"publisherId": "dd6daddd-4667-46fb-9e1b-94f1b3e947ff",
+		"publisherDisplayName": "Reload"
+	}
+}

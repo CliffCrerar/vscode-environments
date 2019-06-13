@@ -1,0 +1,70 @@
+{
+	"name": "react-refractor",
+	"displayName": "react-refractor",
+	"description": "refractor your react components from selection",
+	"version": "1.0.0",
+	"publisher": "altocan",
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"keywords": [
+		"javascript",
+		"react",
+		"refractor",
+		"extract react"
+	],
+	"main": "./extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.extractInline",
+				"title": "ReactExtract inline to stateless fn on top of current class"
+			},
+			{
+				"command": "extension.extractToFn",
+				"title": "ReactExtract Div to out of render function, and into ints own renderFn"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "resourceLangId == javascript",
+					"command": "extension.extractToFn",
+					"group": "navigation"
+				},
+				{
+					"when": "resourceLangId == javascript",
+					"command": "extension.extractInline",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.32",
+		"@types/node": "^6.0.40",
+		"eslint": "^3.6.0",
+		"mocha": "^2.3.3",
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0"
+	},
+	"dependencies": {
+		"line-column": "^1.0.2",
+		"lodash": "^4.17.4"
+	},
+	"__metadata": {
+		"id": "2828429f-35f9-4fdb-83e7-ca2a4b9cbbba",
+		"publisherId": "289b8f24-5195-47d0-9ddc-8dea94ae9564",
+		"publisherDisplayName": "Momen Zalabany"
+	}
+}
